@@ -142,6 +142,10 @@ dependencies {
     // Tool libraries
     //noinspection AnnotationProcessorOnCompilePath
     implementation 'commons-io:commons-io:2.22.0'
+
+    // 7z workspace: encrypted archive support (pure Java, AES-256 read + write)
+    // https://github.com/srikanth-lingala/zip4j - License: Apache 2.0
+    implementation 'net.lingala.zip4j:zip4j:2.11.6'
     if (enable_plugin_kotlin) {
         implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${version_plugin_kotlin}"
     }

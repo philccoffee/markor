@@ -109,7 +109,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="archive">Arkivér</string>
     <string name="add_task">Tilføj opgave</string>
     <string name="add_x_witharg">Tilføj %s</string>
-    <string name="document_to_be_loaded_and_saved_as_witharg">Dokumentet bliver hentet og gemt som \"%s\"</string>
     <string name="refresh">Genopfrisk</string>
     <string name="create_shortcut">Opret genvej</string>
     <string name="tried_to_create_shortcut_for_this_notice">Prøvede at oprette en genvej på din hjemmeskærm. Bemærk at ikke alle hjemmeskærme understøtter dette.</string>
@@ -117,8 +116,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="file_not_in_current_folder_do_copy__appspecific">Filen er ikke placeret i den aktuelle mappe. Vil du kopiere den til den aktuelle mappe? Dette vil overskrive en eksisterende fil med samme navn.</string>
     <string name="files_and_folders">Filer og mapper</string>
     <string name="document_browser">Gennemse dokumenter</string>
-    <string name="set_due_date">Angiv forfaldsdato</string>
-    <string name="insert_replace_date">Insert date</string>
     <string name="create_note" needed="false">Opret note</string>
     <string name="special_documents" needed="false">Specielle dokumenter</string>
     <string name="keep_screen_on" needed="false">Hold skærmen tændt</string>
@@ -149,8 +146,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="underline">Understreget</string>
     <string name="underline_hex_color_wether_or_not_to_description__appspecific">Bestemmer om linie under hexadecimale farvekoder skal fremhæves ved farve</string>
     <string name="underline_hex_color_codes">Linie under hexadecimale farvekoder</string>
-    <string name="insert_current_date_when_starting_new_task">Indsæt aktuelle dato når en ny opgave startes</string>
-    <string name="tasks_with_todays_date">Opgaver med dato i dag</string>
     <string name="append_contexts_and_projects">Tilføj kontekster og projekter</string>
     <string name="append_contexts_and_projects_on_end_of_task">Tilføj kontekster og projekter i slutningen af en opgave når du bruger den relevante tekst handling</string>
     <string name="rtl_rendering">Højre-mod-venstre visning</string>
@@ -165,8 +160,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="resources">Ressourcer</string>
     <string name="space_between_lines_in_percent">Mellemrum mellem linier i procent</string>
     <string name="line_spacing">Linieafstand</string>
-    <string name="archive_does_move_done_tasks">Flyt færdige opgaver til denne fil i samme mappe</string>
-    <string name="sort_tasks_by_selected_order">Sorter opgaver efter valgt ordre</string>
     <string name="special_key">Specialtast</string>
     <string name="key_ctrl_a">Vælg alle (Ctrl+A)</string>
     <string name="start_on_bottom">Start på bunden</string>
@@ -206,7 +199,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="project_team">Projekthold</string>
     <string name="contributors_public_add_yourself_description">Vis info på folk der bidrager. Opgiv, frivilligt, detaljer for at blive vist her</string>
     <string name="descending">faldende</string>
-    <string name="ascending">Stigende</string>
     <string name="disable_spelling_underline">Deaktiver linie under stavekontrol</string>
     <string name="spellcheck_keyboard_suggestion_stay_red_underline_vanishes">Tastaturforslag bliver, rød linie forsvinder</string>
     <string name="location">Placering</string>
@@ -268,8 +260,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="internal_storage">Intern lagerplads</string>
     <string name="open_the_document_from_main_view">Du kan åbne dokumentet fra hovedvisning i bunden, filbrowseren eller launcher. Der er også mulighed for at tilføje tekst delt i Markor.</string>
     <string name="notebook_is_the_home_of_your_files">Notebook er den mappe, som Markor indlæser i filbrowseren, når app\'en startes. Det er hjemmemappen for dine filer.</string>
-    <string name="quicknote_is_the_fastest_option_to_write_down_notes">QuickNote er den hurtigste mulighed for at skrive ned noter. Det er en fil i Markdown format med standard placering &gt;Notebook / QuickNote. d&lt;, kan du indstille en brugerdefineret filsti i indstillingerne.</string>
-    <string name="todo_is_the_easiest_way_">Administrer dine opgaver med ToDo. Det er en fil i todo.txt format med standard placering &gt;Notebook / todo. xt&lt;, du kan indstille en brugerdefineret filsti i indstillingerne.</string>
     <string name="black">Sort</string>
     <string name="white">Hvid</string>
     <string name="view">Vis</string>
@@ -333,14 +323,12 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="link_color">Link farve</string>
     <string name="add_context">Tilføj kontekst</string>
     <string name="add_project">Tilføj projekt</string>
-    <string name="archive_completed_tasks">Arkiv fuldførte opgaver</string>
     <string name="create_new_file_or_folder">Opret en ny fil eller mappe</string>
     <string name="choose_format">Vælg format</string>
     <string name="selected">Valgt</string>
     <string name="back">Tilbage</string>
     <string name="expand_collapse">Udvid / Kollaps</string>
     <string name="essential">Væsentlig</string>
-    <string name="append_human_readable_uuid_to_new_tasks">Tilføj læsbar UUUID til nye opgaver</string>
     <string name="action_order">Handlings rækkefølge</string>
     <string name="toggle_action_visibility">Slå synlighed for handling til</string>
     <string name="load_default_settings">Indlæs standardindstillinger</string>
@@ -355,7 +343,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="password_already_set_setting_a_new_password_will_overwrite">Adgangskode allerede angivet. Indstilling af en ny adgangskode vil overskrive den eksisterende adgangskode, og du kan muligvis ikke længere tilgå filer, hvis du glemmer adgangskoden.</string>
     <string name="code_block">Kode blok</string>
     <string name="add_completion_date">Tilføj slutdato</string>
-    <string name="add_completion_date_for_todos_when_marking_them_as_done">Tilføj færdiggørelsesdato for gøremål når de markeres som gjort</string>
     <string name="file_description_format">Fil beskrivelse format</string>
     <string name="file_description_format_dialog">Format for beskrivelsen under hver fil i filbrowseren. Følger Androids SimpleDateFormat regler, med tilføjelsen af FS for at vise filstørrelse. Lad stå tomt for at bruge standardformatet for din landestandard.\n\nEksempel input:\nFS yyyy MMM dd hhh:mm:ss aa\nOutput format:\n30KB 2020 Mar 20 11:24:52 PM</string>
     <string name="loading_default_value">Indlæser standardværdi</string>
@@ -388,24 +375,7 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="skip_all">Skip (alle)</string>
     <string name="overwrite_all">Overskriv (alle)</string>
     <string name="copy_move_conflict_message">\'%s\' findes allerede i %s</string>
-    <string name="additional_contexts_and_projects">Yderligere sammenhænge og projekter</string>
-    <string name="enter_space_seperated_contexts_and_projects_these_will">Indtast mellemrumsadskilte @contexts og +projects. Disse vil altid være synlige på todo.txt indsætte dialoger.</string>
     <string name="infinite">Uendelig</string>
-    <string name="browse_by_project">Gennemse efter projekt</string>
-    <string name="browse_by_context">Gennemse efter kontekst</string>
-    <string name="insert_project">Indsæt projekter</string>
-    <string name="insert_context">Insert contexts</string>
-    <string name="browse_todo">Gennemse todo</string>
-    <string name="browse_by_priority">Gennemse efter prioritet</string>
-    <string name="browse_by_due_date">Gennemse efter forfaldsdato</string>
-    <string name="due_overdue">Forsinket</string>
-    <string name="due_today">Forfalder i dag</string>
-    <string name="due_future">Forfalder i fremtiden</string>
-    <string name="completed">Afsluttet</string>
-    <string name="match_any">Match Enhver</string>
-    <string name="match_all">Match Alle</string>
-    <string name="dynamic_notebook_root_links">Dynamisk søgning efter notesbog rod</string>
-    <string name="search_dynamically_for_notebook_root">For at følge wiki-links skal du dynamisk søge efter filen notebook.zim for at identificere rodmappen for den aktuelle notesbog. Markér dette hvis du bruger flere zim notesbøger eller den notesbog mappe der er sat i appen, svarer ikke til din zim notesbog.</string>
     <string name="share_into_format">Del på - Format</string>
     <string name="auto_format">Auto-format</string>
     <string name="insert_snippet">Insert snippet</string>

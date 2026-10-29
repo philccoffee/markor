@@ -114,7 +114,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="archive">歸檔</string>
     <string name="add_task">新增工作</string>
     <string name="add_x_witharg">新增 %s</string>
-    <string name="document_to_be_loaded_and_saved_as_witharg">這個文件將被輸出並儲存為 \'%s\'</string>
     <string name="refresh">更新</string>
     <string name="create_shortcut">建立捷徑</string>
     <string name="tried_to_create_shortcut_for_this_notice">嘗試在您的主頁建立一個捷徑以方便編輯這個文件，注意，有的啟動器不支援這個功能。</string>
@@ -122,8 +121,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="file_not_in_current_folder_do_copy__appspecific">該檔案不在目前的資料夾中。您要將它複製到現行的資料夾裡嗎？這將會覆寫任何已存在的同名檔案。</string>
     <string name="files_and_folders">檔案和資料夾</string>
     <string name="document_browser">文件瀏覽器</string>
-    <string name="set_due_date">設定到期日</string>
-    <string name="insert_replace_date">插入日期</string>
     <string name="create_note" needed="false">建立筆記</string>
     <string name="special_documents" needed="false">指定文件</string>
     <string name="keep_screen_on" needed="false">保持螢幕開啓</string>
@@ -154,8 +151,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="underline">底線</string>
     <string name="underline_hex_color_wether_or_not_to_description__appspecific">依顏色突顯Hex顏色碼</string>
     <string name="underline_hex_color_codes">突顯 Hex 顏色碼</string>
-    <string name="insert_current_date_when_starting_new_task">當開始一項新工作時插入當今日期</string>
-    <string name="tasks_with_todays_date">有今天日期的工作</string>
     <string name="append_contexts_and_projects">增補內文與專案等</string>
     <string name="append_contexts_and_projects_on_end_of_task">使用對應的文字動作時，在任務的結尾加入情境與專案</string>
     <string name="rtl_rendering">RTL 顯現</string>
@@ -170,8 +165,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="resources">來源</string>
     <string name="space_between_lines_in_percent">行距以百分比表示</string>
     <string name="line_spacing">行距</string>
-    <string name="archive_does_move_done_tasks">移動完成的工作到相同資料夾的指定文件上。</string>
-    <string name="sort_tasks_by_selected_order">依所選的順序進行任務排列</string>
     <string name="special_key">特殊鍵</string>
     <string name="asciidoc_special_key">特殊 AsciiDoc 內容</string>
     <string name="key_ctrl_a">全選 (Ctrl + A)</string>
@@ -220,7 +213,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="community">社群</string>
     <string name="contributors_public_add_yourself_description">顯示 貢獻者的資訊，貢獻者在提供所有後可在此留下訊息（選項）</string>
     <string name="descending">降冪</string>
-    <string name="ascending">升羃</string>
     <string name="disable_spelling_underline">停用拼字底線</string>
     <string name="spellcheck_keyboard_suggestion_stay_red_underline_vanishes">鍵盤輸入的建議停止時，紅色底線消失</string>
     <string name="location">地點</string>
@@ -283,8 +275,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="internal_storage">內部儲存空間</string>
     <string name="open_the_document_from_main_view">您可以從主檢視區的底部，檔案瀏覽器或啟動器中開啟文件，您還可以將文字分享至 Markor。</string>
     <string name="notebook_is_the_home_of_your_files">「筆記本」是 Markor 啟動時在檔案管理器中的載入的資料夾，也是您檔案的主資料夾。</string>
-    <string name="quicknote_is_the_fastest_option_to_write_down_notes">「QuickNote」是快速紀錄筆記的最佳選擇，以 Markdown 格式存放在預設位置 &gt;Notebook/QuickNote.md&lt;，您可以在設定裡自訂檔案路徑。</string>
-    <string name="todo_is_the_easiest_way_">「ToDo」可以用來管理您的工作任務，以 todo.txt 格式存放在預設位置 &gt;Notebook/todo.txt&lt;，您可以在設定裡自訂檔案路徑。</string>
     <string name="black">黑色</string>
     <string name="white">白色</string>
     <string name="view">檢視</string>
@@ -350,7 +340,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="link_color">連結顏色</string>
     <string name="add_context">加入情境</string>
     <string name="add_project">加入專案</string>
-    <string name="archive_completed_tasks">歸檔已完成的任務</string>
     <string name="create_new_file_or_folder">建立新檔案或資料夾</string>
     <string name="choose_format">選擇格式</string>
     <string name="clear_selection">清除選取</string>
@@ -358,7 +347,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="back">返回</string>
     <string name="expand_collapse">展開／摺疊</string>
     <string name="essential">基本設定</string>
-    <string name="append_human_readable_uuid_to_new_tasks">增添人類可讀的UUID到新任務</string>
     <string name="action_order">動作順序</string>
     <string name="toggle_action_visibility">切换動作可見性</string>
     <string name="load_default_settings">載入預設設定</string>
@@ -373,7 +361,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="password_already_set_setting_a_new_password_will_overwrite">已設好密碼。設定新密碼將會覆蓋既存的密碼，如果你忘了新密碼，可能不能再讀取檔案了。</string>
     <string name="code_block">程式碼區塊</string>
     <string name="add_completion_date">加入完成日期</string>
-    <string name="add_completion_date_for_todos_when_marking_them_as_done">將待辦事項標示為已完成時，加入完成日期</string>
     <string name="file_description_format">檔案加密格式</string>
     <string name="file_description_format_dialog">檔案瀏覽器中每個檔案下的描述格式。遵循 Android 的 SimpleDateFormat 規則，並且新增 FS 用於顯示檔案大小。留空以使用你所在地區的預設格式。\n\n輸入範例：\nFS yyyy MMM dd hh:mm:ss aa\n輸出格式：\n30KB 2020 Mar 20 11:24:52 PM</string>
     <string name="loading_default_value">正在載入預設值</string>
@@ -406,25 +393,7 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="skip_all">全部跳過</string>
     <string name="overwrite_all">全部覆寫</string>
     <string name="copy_move_conflict_message">「%s」 已存在於 %s</string>
-    <string name="additional_contexts_and_projects">常用的情境與專案</string>
-    <string name="enter_space_seperated_contexts_and_projects_these_will">輸入以空格分隔的 @情境 和 +專案，這些選項將一直顯示在 todo.txt 的插入欄位中。</string>
     <string name="infinite">無限</string>
-    <string name="browse_by_project">依專案瀏覽</string>
-    <string name="browse_by_context">依情境瀏覽</string>
-    <string name="insert_project">插入專案</string>
-    <string name="insert_context">插入情境</string>
-    <string name="browse_todo">瀏覽待辦事項</string>
-    <string name="browse_by_priority">依優先級瀏覽</string>
-    <string name="browse_by_due_date">依到期日瀏覽</string>
-    <string name="due_overdue">逾期</string>
-    <string name="due_today">今天到期</string>
-    <string name="due_future">未來到期</string>
-    <string name="completed">已完成</string>
-    <string name="advanced_filtering">進階篩選</string>
-    <string name="match_any">任意匹配</string>
-    <string name="match_all">匹配全部</string>
-    <string name="dynamic_notebook_root_links">動態搜尋筆記本根目錄</string>
-    <string name="search_dynamically_for_notebook_root">若要追蹤維基連結，動態搜尋 notebook.zim 檔案以識別目前筆記本的根目錄。如果你使用多個 zim 筆記本或應用程式中設定的筆記本目錄與你的 zim 筆記本不對應時，請勾選此項目。</string>
     <string name="share_into_format_prefix_for_text_shared">分享至 Markor 的文字的格式／前綴。遵循 Android 的 SimpleDateFormat 規則。\n\n使用佔位符 {{text}} 來定位分享的文字。如果未指定，則會附加分享文字並將格式用作前綴。</string>
     <string name="share_into_format">分享到 - 格式</string>
     <string name="attachment_folder_name">附件資料夾名稱</string>
@@ -435,7 +404,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="error_could_not_open_file">錯誤：無法開啟檔案。</string>
     <string name="document_error_clip">遇到錯誤：文字已複製至剪貼簿。</string>
     <string name="wont_save_min_length">為了防止資料遺失，不會自動儲存少於 %d 個字元的檔案。</string>
-    <string name="advanced_filtering_help"><![CDATA[<small><a href="https://www.github.com/gsantner/markor/discussions/1940">進階過濾語法</a></small>]]></string>
     <string name="filter">過濾器</string>
     <string name="text_case">文本大小寫</string>
 </resources>

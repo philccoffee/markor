@@ -110,7 +110,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="archive">アーカイブ</string>
     <string name="add_task">タスクを追加</string>
     <string name="add_x_witharg">%s を追加</string>
-    <string name="document_to_be_loaded_and_saved_as_witharg">ドキュメントを読み込んで、\"%s\"として保存します。</string>
     <string name="refresh">更新</string>
     <string name="create_shortcut">ショートカットを作成</string>
     <string name="tried_to_create_shortcut_for_this_notice">編集中のこのドキュメントに対して、ホーム画面にショートカットを追加します。 一部のランチャーはこの機能をサポートしていません。</string>
@@ -118,8 +117,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="file_not_in_current_folder_do_copy__appspecific">現在のフォルダーにファイルがありません。 現在のフォルダーにコピーしますか？ これにより、同じ名前の既存のファイルが上書きされます。</string>
     <string name="files_and_folders">ファイルとフォルダー</string>
     <string name="document_browser">ドキュメントブラウザー</string>
-    <string name="set_due_date">期日を設定</string>
-    <string name="insert_replace_date">日付を挿入</string>
     <string name="create_note" needed="false">ノートを作成</string>
     <string name="special_documents" needed="false">特別なドキュメント</string>
     <string name="keep_screen_on" needed="false">画面をオンのままにする</string>
@@ -150,8 +147,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="underline">下線</string>
     <string name="underline_hex_color_wether_or_not_to_description__appspecific">16 進コードの色による下線を引くかどうか</string>
     <string name="underline_hex_color_codes">下線の 16 進色コード</string>
-    <string name="insert_current_date_when_starting_new_task">新しいタスクを開始するとき、現在の日付を挿入します</string>
-    <string name="tasks_with_todays_date">今日の日付のタスク</string>
     <string name="append_contexts_and_projects">コンテキストとプロジェクトを追加</string>
     <string name="append_contexts_and_projects_on_end_of_task">適切なテキスト操作を使用したとき、タスクの終了時にコンテキストとプロジェクトを追加します</string>
     <string name="rtl_rendering">RTL レンダリング</string>
@@ -166,8 +161,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="resources">リソース</string>
     <string name="space_between_lines_in_percent">行間のスペース (%)</string>
     <string name="line_spacing">行間</string>
-    <string name="archive_does_move_done_tasks">完了したタスクを同じフォルダーの指定したファイルに移動します</string>
-    <string name="sort_tasks_by_selected_order">選択した順序でタスクをソートします</string>
     <string name="special_key">特殊キー</string>
     <string name="key_ctrl_a">すべて選択 (Ctrl+A)</string>
     <string name="start_on_bottom">下部で開始</string>
@@ -207,7 +200,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="project_team">プロジェクトチーム</string>
     <string name="contributors_public_add_yourself_description">貢献者の情報を表示します。貢献後にオプトインした方法でここに表示されます</string>
     <string name="descending">降順</string>
-    <string name="ascending">昇順</string>
     <string name="disable_spelling_underline">スペルチェックの下線を無効にする</string>
     <string name="spellcheck_keyboard_suggestion_stay_red_underline_vanishes">キーボードの提案は残り、赤の下線が消えます</string>
     <string name="location">場所</string>
@@ -269,8 +261,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="internal_storage">内部ストレージ</string>
     <string name="open_the_document_from_main_view">メインビューの下、ファイルブラウザーまたはランチャーからドキュメントを開くことができます。また、Markor に共有テキストを追加するオプションがあります。</string>
     <string name="notebook_is_the_home_of_your_files">Notebook は、アプリが起動する時に、Markor がファイルブラウザーで読み込むフォルダーです。あなたのファイルのホームフォルダーになります。</string>
-    <string name="quicknote_is_the_fastest_option_to_write_down_notes">QuickNote は、メモを書くための最速のオプションです。デフォルトの場所は &gt;Notebook/QuickNote.md&lt; で Markdown 形式のファイルです。設定でカスタムのパスを設定できます。</string>
-    <string name="todo_is_the_easiest_way_">ToDo とタスクを管理します。デフォルトの場所は &gt;Notebook/todo.txt&lt; で Todo.txt 形式のファイルです。設定でカスタムパスを設定できます。</string>
     <string name="black">黒</string>
     <string name="white">白</string>
     <string name="view">表示</string>
@@ -334,14 +324,12 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="link_color">リンクの色</string>
     <string name="add_context">コンテキストを追加</string>
     <string name="add_project">プロジェクトを追加</string>
-    <string name="archive_completed_tasks">完了したタスクをアーカイブ</string>
     <string name="create_new_file_or_folder">新しいファイルまたはフォルダーを作成</string>
     <string name="choose_format">書式の選択</string>
     <string name="selected">選択済み</string>
     <string name="back">戻る</string>
     <string name="expand_collapse">展開 / 折りたたみ</string>
     <string name="essential">必須</string>
-    <string name="append_human_readable_uuid_to_new_tasks">人間が読めるUUIDを新しいタスクに追加</string>
     <string name="action_order">操作の順序</string>
     <string name="toggle_action_visibility">アクションの表示を切り替える</string>
     <string name="load_default_settings">デフォルトの設定を読み込む</string>
@@ -356,7 +344,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="password_already_set_setting_a_new_password_will_overwrite">パスワードがすでに設定されています。新しいパスワードを設定すると、既存のパスワードを上書きします。パスワードを忘れた場合はファイルにアクセスできなくなる可能性があります。</string>
     <string name="code_block">コードブロック</string>
     <string name="add_completion_date">完了日を追加</string>
-    <string name="add_completion_date_for_todos_when_marking_them_as_done">完了時にタスクの完了日を追加する</string>
     <string name="file_description_format">ファイル説明の形式</string>
     <string name="file_description_format_dialog">ファイルブラウザの各ファイルの下の説明のためのフォーマット。ファイルサイズを表示するためのFSの追加で、AndroidのSimpleDateFormatルールに従います。 ロケールにデフォルトの形式を使用するには、空白のままにしてください。\n\n入力例:\nFS yyyyMMM dd hhh:mm:ss aa\n出力形式:\n30KB 2020 Mar 20 11:24:52 PM</string>
     <string name="loading_default_value">既定値を読み込み中</string>
@@ -389,24 +376,7 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="skip_all">スキップ (all)</string>
     <string name="overwrite_all">上書き (すべて)</string>
     <string name="copy_move_conflict_message">\'%s\' はすでに %s に存在します</string>
-    <string name="additional_contexts_and_projects">追加のコンテキストとプロジェクト</string>
-    <string name="enter_space_seperated_contexts_and_projects_these_will">スペースで区切られた @contexts と +projects を入力してください。これらは常に todo.txt のダイアログで表示されます。</string>
     <string name="infinite">Infinite</string>
-    <string name="browse_by_project">プロジェクトで閲覧</string>
-    <string name="browse_by_context">コンテキストで閲覧</string>
-    <string name="insert_project">プロジェクトを挿入</string>
-    <string name="insert_context">Insert contexts</string>
-    <string name="browse_todo">タスクを参照</string>
-    <string name="browse_by_priority">優先度で参照</string>
-    <string name="browse_by_due_date">期日で参照</string>
-    <string name="due_overdue">期限切れ</string>
-    <string name="due_today">今日が期限</string>
-    <string name="due_future">今後の予定</string>
-    <string name="completed">完了</string>
-    <string name="match_any">どれにでも一致</string>
-    <string name="match_all">すべて一致</string>
-    <string name="dynamic_notebook_root_links">ノートブックのルートを動的に検索</string>
-    <string name="search_dynamically_for_notebook_root">wiki のリンクをたどるために、notebook.zim ファイルを動的に検索して、現在のノートブックのルートディレクトリを特定します。 複数のzimノートブックを使用している場合や、アプリ内で設定されているノートブックディレクトリがzimノートブックに対応していない場合は、これを確認してください。</string>
     <string name="share_into_format">共有 → 書式</string>
     <string name="auto_format">自動フォーマット</string>
     <string name="insert_snippet">Insert snippet</string>

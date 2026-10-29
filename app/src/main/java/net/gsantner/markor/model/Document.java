@@ -175,7 +175,8 @@ public class Document implements Serializable {
     }
 
     public boolean isBinaryFileNoTextLoading() {
-        return file != null && FormatRegistry.CONVERTER_EMBEDBINARY.isFileOutOfThisFormat(file);
+        // Binary / media preview was removed; every supported file is treated as text
+        return false;
     }
 
     public boolean isEncrypted() {

@@ -100,8 +100,6 @@ public class MarkorFileBrowserFactory {
         opts.iconMaps.put(GsFileBrowserListAdapter.VIRTUAL_STORAGE_POPULAR, R.drawable.ic_favorite_black_24dp);
         opts.iconMaps.put(notebook, R.drawable.ic_home_black_24dp);
         opts.iconMaps.put(downloads, R.drawable.baseline_download_24);
-        opts.iconMaps.put(appSettings.getQuickNoteFile(), R.drawable.ic_lightning_black_24dp);
-        opts.iconMaps.put(appSettings.getTodoFile(), R.drawable.ic_assignment_turned_in_black_24dp);
     }
 
     private static GsFileBrowserDialog showDialog(final FragmentManager fm, final GsFileBrowserOptions.Options opts) {

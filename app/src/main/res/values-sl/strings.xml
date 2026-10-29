@@ -116,7 +116,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="archive">Arhiviraj</string>
     <string name="add_task">Dodaj opravilo</string>
     <string name="add_x_witharg">Dodaj %s</string>
-    <string name="document_to_be_loaded_and_saved_as_witharg">Dokument bo naložen in shranjen kot \"%s\"</string>
     <string name="refresh">Osveži</string>
     <string name="create_shortcut">Ustvari bližnjico</string>
     <string name="tried_to_create_shortcut_for_this_notice">Poskusili smo ustvariti bližnjico na vašem domačem zaslonu. Zavedajte se, da nekateri zaganjalniki tega morda ne podpirajo.</string>
@@ -124,8 +123,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="file_not_in_current_folder_do_copy__appspecific">Datoteke ni v trenutni mapi. Jo želite kopirati v trenutno mapo? To bo prepisalo morebitno že obstoječo datoteko z enakim imenom.</string>
     <string name="files_and_folders">Datoteke in mape</string>
     <string name="document_browser">Brskalnik dokumentov</string>
-    <string name="set_due_date">Določi rok</string>
-    <string name="insert_replace_date">Vstavi datum</string>
     <string name="create_note" needed="false">Ustavri opombo</string>
     <string name="special_documents" needed="false">Posebni dokumenti</string>
     <string name="keep_screen_on" needed="false">Ohrani zaslon prižgan</string>
@@ -156,8 +153,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="underline">Podčrtano</string>
     <string name="underline_hex_color_wether_or_not_to_description__appspecific">Ali naj se šestnajstiške barvne kode (HEX) označujejo glede na barvo</string>
     <string name="underline_hex_color_codes">Podčrtaj šestnajstiške barvne kode (HEX)</string>
-    <string name="insert_current_date_when_starting_new_task">Ob ustvarjanju noveha opravila vstavi trenutni datum</string>
-    <string name="tasks_with_todays_date">Opravila z danajšnjim datumom</string>
     <string name="append_contexts_and_projects">Pripni okvirje in projekte</string>
     <string name="append_contexts_and_projects_on_end_of_task">Ob uporabi ustreznega besedilnega dejanja pripni okvirje in projekte na konec opravila</string>
     <string name="rtl_rendering">Upodabljanje z desne proti levi</string>
@@ -172,8 +167,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="resources">Sredstva</string>
     <string name="space_between_lines_in_percent">Razmik med vrsticami v odstotkih</string>
     <string name="line_spacing">Razmik med vrsticami</string>
-    <string name="archive_does_move_done_tasks">Premanki dokončana opravila v določeno datoteko v isti mapi</string>
-    <string name="sort_tasks_by_selected_order">Razvrsti opravila po izbranem vrstnem redu</string>
     <string name="special_key">Poseben znak</string>
     <string name="asciidoc_special_key">Posebna vsebina AsciiDoc</string>
     <string name="key_ctrl_a">Izberi vse (Ctrl+A)</string>
@@ -223,7 +216,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="community">Skupnost</string>
     <string name="contributors_public_add_yourself_description">Prikaži podatke o prispevanju. Posredujte jih, da se po prispevkih prikažejo tukaj, v kar privolite.</string>
     <string name="descending">Padajoče</string>
-    <string name="ascending">Naraščajoče</string>
     <string name="disable_spelling_underline">Onemogoči podčrtavanje napačnega črkovanja</string>
     <string name="spellcheck_keyboard_suggestion_stay_red_underline_vanishes">Predlogi tipkovnice ostanejo, rdeče podčrtavanje izgine</string>
     <string name="location">Mesto</string>
@@ -286,8 +278,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="internal_storage">Notranji pomnilnik</string>
     <string name="open_the_document_from_main_view">Dokument lahko odprete v glavnem pogledu na dnu, v datotečnem brskalniku ali zaganjalniku. Obstaja tudi možnost dodajanja besedila, ki je bilo deljeno v Markor.</string>
     <string name="notebook_is_the_home_of_your_files">Beležka je mapa, ki jo Markor ob svojem zagonu naloži v brskalnik datotek. To je domača mapa vaših datotek.</string>
-    <string name="quicknote_is_the_fastest_option_to_write_down_notes">Hitra beležka je najhitrejša možnost zapisovanja zapiskov. To je datoteka v obliki Markdown s privzetim mestom &gt;Notebook/QuickNote.md&lt;, lahko pa tudi nastavite svoje mesto v nastavitvah.</string>
-    <string name="todo_is_the_easiest_way_">Upravljajte s svojimi opravili z Opravili. To je datoteka v obliki todo.txt s privzetim mestom &gt;Notebook/todo.txt&lt;, lahko pa tudi nastavite svoje mesto v nastavitvah.</string>
     <string name="black">Črna</string>
     <string name="white">Bela</string>
     <string name="view">Pogled</string>
@@ -354,7 +344,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="link_color">Barva povezave</string>
     <string name="add_context">Dodaj okvir</string>
     <string name="add_project">Dodaj projekt</string>
-    <string name="archive_completed_tasks">Arhiviraj končana opravila</string>
     <string name="create_new_file_or_folder">Ustvari novo datoteko ali mapo</string>
     <string name="choose_format">Izberi obliko datoteke</string>
     <string name="clear_selection">Počisti izbiro</string>
@@ -362,7 +351,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="back">Nazaj</string>
     <string name="expand_collapse">Razširi / zloži</string>
     <string name="essential">Nujno</string>
-    <string name="append_human_readable_uuid_to_new_tasks">Dodaj UUID, berljiv za ljudi, k novim opravilom</string>
     <string name="action_order">Vrstni red dejanj</string>
     <string name="toggle_action_visibility">Preklopi vidljivost dejanj</string>
     <string name="load_default_settings">Naloži privzete nastavitve</string>
@@ -377,7 +365,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="password_already_set_setting_a_new_password_will_overwrite">Geslo je že nastavljeno. Nastavitev novega gesla bo prepisala že obstoječe geslo in v primeru, da pozabite geslo, morda ne boste več mogli dostopati do datotek.</string>
     <string name="code_block">Odek kode</string>
     <string name="add_completion_date">Dodaj datum dokončanja</string>
-    <string name="add_completion_date_for_todos_when_marking_them_as_done">Dodaj datum dokončanja za opravila, ko jih označim kot končana</string>
     <string name="file_description_format">Oblika opisa datoteke</string>
     <string name="file_description_format_dialog">Oblika opisa pod vsako datoteko v brskalniku datotek. Sledi Androidovim pravilom SimpleDateFormat z dodatkom FS za prikaz velikosti datotek. Pustite prazno za uporabo privzete oblike po lokalnih nastavitvah.\n\n Primer vhoda:\nFS llll MMM dd uu:mm:ss aa\nOblika izhoda:\n30KB 2020 Mar 20 11:24:52 PM</string>
     <string name="loading_default_value">Nalaganje privzete vrednosti</string>
@@ -411,25 +398,7 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="skip_all">Prekoči (vse)</string>
     <string name="overwrite_all">Prepiši (vse)</string>
     <string name="copy_move_conflict_message">\'%s\' že obstaja v %s</string>
-    <string name="additional_contexts_and_projects">Dodatni okvirji in projekti</string>
-    <string name="enter_space_seperated_contexts_and_projects_these_will">Vnesi @contexts in +projects ločene s presledkom. Ti bodo vedno vidni na vstavljalnem oknu todo.txt.</string>
     <string name="infinite">Neskočno</string>
-    <string name="browse_by_project">Brskaj glede na projekt</string>
-    <string name="browse_by_context">Brskaj glede na okvir</string>
-    <string name="insert_project">Vstavi projekte</string>
-    <string name="insert_context">Vstavi okvirje</string>
-    <string name="browse_todo">Brskaj po opravilih</string>
-    <string name="browse_by_priority">Brskaj po prednosti</string>
-    <string name="browse_by_due_date">Brskaj po rokih</string>
-    <string name="due_overdue">Zakasneli</string>
-    <string name="due_today">Rok danes</string>
-    <string name="due_future">Rok v prihodnosti</string>
-    <string name="completed">Končano</string>
-    <string name="advanced_filtering">Napredno filtriranje</string>
-    <string name="match_any">Ujemi katerikoliga</string>
-    <string name="match_all">Ujemi vse</string>
-    <string name="dynamic_notebook_root_links">Dinamično iskanje korenske mape beležke</string>
-    <string name="search_dynamically_for_notebook_root">Za sledenje viki povezavam se dinamično iščite datoteko notebook.zim, da določite korenski imenik trenutne beležke. Omogočite to, če uporabljate več zvezkov ZIM ali če imenik, nastavljen v orodju, ne ustreza vaši beležki ZIM.</string>
     <string name="share_into_format_prefix_for_text_shared">Oblika/predpona za besedilo, deljeno v Markor. Upošteva Androidova pravila.\n\nZa umestitev deljenega besedila uporabite oznako {{text}}. Če ni navedena, se besedilo doda na konec, oblika pa se uporabi kot predpona.</string>
     <string name="share_into_format">Deljenje v - oblika</string>
     <string name="attachment_folder_name">Ime mape priloge</string>
@@ -440,7 +409,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="error_could_not_open_file">Napaka: datoteke ni bilo mogoče odpreti.</string>
     <string name="document_error_clip">Prišlo je do napake: besedilo je kopirano v odložišče.</string>
     <string name="wont_save_min_length">Datoteke z manj kot %d znaki se ne shranijo samodejno, da se prepreči izguba podatkov.</string>
-    <string name="advanced_filtering_help"><![CDATA[<small><a href="https://www.github.com/gsantner/markor/discussions/1940">Napredna skladnja filtriranja</a></small>]]></string>
     <string name="filter">Filter</string>
     <string name="text_case">Velikost črk</string>
     <string name="toggle_case">Preklopi velikost (Navadno→VELIKO→malo)</string>

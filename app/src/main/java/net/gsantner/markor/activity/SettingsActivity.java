@@ -33,7 +33,6 @@ import net.gsantner.markor.frontend.filebrowser.MarkorFileBrowserFactory;
 import net.gsantner.markor.model.AppSettings;
 import net.gsantner.markor.util.BackupUtils;
 import net.gsantner.markor.util.MarkorContextUtils;
-import net.gsantner.markor.widget.TodoWidgetProvider;
 import net.gsantner.opoc.frontend.base.GsActivityBase;
 import net.gsantner.opoc.frontend.base.GsPreferenceFragmentBase;
 import net.gsantner.opoc.frontend.filebrowser.GsFileBrowserOptions;
@@ -156,12 +155,6 @@ public class SettingsActivity extends MarkorBaseActivity {
             updateSummary(R.string.pref_key__notebook_directory,
                     _cu.htmlToSpanned("<small><small>" + _appSettings.getNotebookDirectory().getAbsolutePath().replace(remove, "") + "</small></small>")
             );
-            updateSummary(R.string.pref_key__quicknote_filepath,
-                    _cu.htmlToSpanned("<small><small>" + _appSettings.getQuickNoteFile().getAbsolutePath().replace(remove, "") + "</small></small>")
-            );
-            updateSummary(R.string.pref_key__todo_filepath,
-                    _cu.htmlToSpanned("<small><small>" + _appSettings.getTodoFile().getAbsolutePath().replace(remove, "") + "</small></small>")
-            );
             updatePreference(R.string.pref_key__is_launcher_for_special_files_enabled, null,
                     ("Launcher (" + getString(R.string.special_documents) + ")"),
                     getString(R.string.app_drawer_launcher_special_files_description), true
@@ -242,9 +235,8 @@ public class SettingsActivity extends MarkorBaseActivity {
                 } catch (IllegalArgumentException e) {
                     Toast.makeText(context, e.getLocalizedMessage() + "\n\n" + getString(R.string.loading_default_value), Toast.LENGTH_SHORT).show();
                 }
-            } else if (eq(key, R.string.pref_key__notebook_directory, R.string.pref_key__quicknote_filepath, R.string.pref_key__todo_filepath)) {
+            } else if (eq(key, R.string.pref_key__notebook_directory)) {
                 WrMarkorWidgetProvider.updateLauncherWidgets();
-                TodoWidgetProvider.updateTodoWidgets();
             }
         }
 
@@ -289,42 +281,6 @@ public class SettingsActivity extends MarkorBaseActivity {
                             dopt.rootFolder = _appSettings.getNotebookDirectory();
                         }
                     }, fragManager, getActivity());
-                    return true;
-                }
-                case R.string.pref_key__quicknote_filepath: {
-                    MarkorFileBrowserFactory.showFileDialog(new GsFileBrowserOptions.SelectionListenerAdapter() {
-                        @Override
-                        public void onFsViewerSelected(String request, File file, final Integer lineNumber) {
-                            _appSettings.setQuickNoteFile(file);
-                            _appSettings.setRecreateMainRequired(true);
-                            doUpdatePreferences();
-                        }
-
-                        @Override
-                        public void onFsViewerConfig(GsFileBrowserOptions.Options dopt) {
-                            dopt.titleText = R.string.quicknote;
-                            dopt.rootFolder = _appSettings.getNotebookDirectory();
-                            dopt.newDirButtonEnable = false;
-                        }
-                    }, fragManager, getActivity(), MarkorFileBrowserFactory.IsMimeText);
-                    return true;
-                }
-                case R.string.pref_key__todo_filepath: {
-                    MarkorFileBrowserFactory.showFileDialog(new GsFileBrowserOptions.SelectionListenerAdapter() {
-                        @Override
-                        public void onFsViewerSelected(String request, File file, final Integer lineNumber) {
-                            _appSettings.setTodoFile(file);
-                            _appSettings.setRecreateMainRequired(true);
-                            doUpdatePreferences();
-                        }
-
-                        @Override
-                        public void onFsViewerConfig(GsFileBrowserOptions.Options dopt) {
-                            dopt.titleText = R.string.todo;
-                            dopt.rootFolder = _appSettings.getNotebookDirectory();
-                            dopt.newDirButtonEnable = false;
-                        }
-                    }, fragManager, getActivity(), MarkorFileBrowserFactory.IsMimeText);
                     return true;
                 }
                 case R.string.pref_key__basic_color_scheme_markor: {

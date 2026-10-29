@@ -116,7 +116,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="archive">Архивировать</string>
     <string name="add_task">Добавить задачу</string>
     <string name="add_x_witharg">Добавить %s</string>
-    <string name="document_to_be_loaded_and_saved_as_witharg">Документ будет загружен и сохранён как \"%s\"</string>
     <string name="refresh">Обновить</string>
     <string name="create_shortcut">Создать ярлык</string>
     <string name="tried_to_create_shortcut_for_this_notice">Сделана попытка создать ярлык на домашнем экране. Некоторые домашние экраны не поддерживают ярлыки.</string>
@@ -125,8 +124,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="files_and_folders">Файлы и папки</string>
     <string name="document_browser">Обозреватель документов</string>
     <string name="file_browser">Файловый браузер</string>
-    <string name="set_due_date">Установить срок выполнения</string>
-    <string name="insert_replace_date">Вставить дату</string>
     <string name="create_note" needed="false">Создать заметку</string>
     <string name="special_documents" needed="false">Особые документы</string>
     <string name="keep_screen_on" needed="false">Не отключать экран</string>
@@ -158,8 +155,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="underline">Подчёркивание</string>
     <string name="underline_hex_color_wether_or_not_to_description__appspecific">Подчёркивать цветовые HEX-коды в соответствии с цветом</string>
     <string name="underline_hex_color_codes">Подчеркивать цветовые HEX-коды</string>
-    <string name="insert_current_date_when_starting_new_task">Вставлять текущую дату при добавлении задачи</string>
-    <string name="tasks_with_todays_date">Задачи с сегодняшней датой</string>
     <string name="append_contexts_and_projects">Добавить контекст и проекты</string>
     <string name="append_contexts_and_projects_on_end_of_task">Добавлять контекст и проекты в конце задачи при использовании соответствующего текстового действия</string>
     <string name="rtl_rendering">Письмо слева направо</string>
@@ -174,8 +169,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="resources">Ресурсы</string>
     <string name="space_between_lines_in_percent">Междустрочный пробел в процентах</string>
     <string name="line_spacing">Интерлиньяж</string>
-    <string name="archive_does_move_done_tasks">Перемещать выполненные задачи в указанный файл в той же папке</string>
-    <string name="sort_tasks_by_selected_order">Сортировать задачи в выбранном порядке</string>
     <string name="special_key">Специальная клавиша</string>
     <string name="asciidoc_special_key">Настройки AsciiDoc</string>
     <string name="key_ctrl_a">Выбрать всё (Ctrl+A)</string>
@@ -226,7 +219,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="community">Сообщество</string>
     <string name="contributors_public_add_yourself_description">Показ информации об участниках. Предоставьте информацию о себе, если вы внесли свой вклад в проект</string>
     <string name="descending">по убыванию</string>
-    <string name="ascending">по возрастанию</string>
     <string name="disable_spelling_underline">Отключить подчёркивание ошибок</string>
     <string name="spellcheck_keyboard_suggestion_stay_red_underline_vanishes">Оставить подсказки клавиатуры, но выключить красное подчёркивание</string>
     <string name="location">Местоположение</string>
@@ -289,8 +281,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="internal_storage">Внутренняя память</string>
     <string name="open_the_document_from_main_view">Вы можете открыть документ из главного вида внизу, файлового браузера или лаунчера. Также есть возможность добавить текст, разделенный в Markor.</string>
     <string name="notebook_is_the_home_of_your_files">Блокнот — это папка, которую Markor открывает в обозревателе файлов при запуске. Это папка по умолчанию для ваших файлов.</string>
-    <string name="quicknote_is_the_fastest_option_to_write_down_notes">QuickNote помогает быстро делать заметки. Это файл в формате Markdown, путь по умолчанию: &gt;Notebook/QuickNote.md&lt;. Вы можете изменить путь в настройках.</string>
-    <string name="todo_is_the_easiest_way_">Управляйте задачами с помощью ToDo. Это файл в формате todo.txt, путь по умолчанию: &gt;Notebook/todo.txt&lt;. Вы можете изменить путь в настройках.</string>
     <string name="black">Чёрный</string>
     <string name="white">Белый</string>
     <string name="view">Просмотр</string>
@@ -361,7 +351,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="link_color">Цвет ссылок</string>
     <string name="add_context">Добавить контекст</string>
     <string name="add_project">Добавить проект</string>
-    <string name="archive_completed_tasks">Архивировать завершенные задачи</string>
     <string name="overline">Надстрочный</string>
     <string name="superscript">Верхний Индекс</string>
     <string name="subscript">Подстрочный</string>
@@ -372,7 +361,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="back">Назад</string>
     <string name="expand_collapse">Развернуть / Свернуть</string>
     <string name="essential">Основное</string>
-    <string name="append_human_readable_uuid_to_new_tasks">Добавить человекочитаемый UUID к новым задачам</string>
     <string name="action_order">Порядок действий</string>
     <string name="toggle_action_visibility">Переключить видимость операции</string>
     <string name="load_default_settings">Загрузить настройки по умолчанию</string>
@@ -396,7 +384,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="password_already_set_setting_a_new_password_will_overwrite">Пароль уже установлен. Установка нового пароля перезапишет существующий пароль, и вы больше не сможете получить доступ к файлам в случае, если вы забудете пароль.</string>
     <string name="code_block">Блок кода</string>
     <string name="add_completion_date">Добавить дату завершения</string>
-    <string name="add_completion_date_for_todos_when_marking_them_as_done">Добавлять дату завершения для задач при пометке их как выполненных</string>
     <string name="file_description_format">Формат описания файла</string>
     <string name="file_description_format_dialog">Формат описания для каждого файла в обозревателе. Следуйте правилам SimpleDateFormat Android, добавив FS для отображения размера файла. Оставьте пустым, чтобы использовать формат по умолчанию для вашей локали.\n\nПример ввода:\nFS yyyy MMM dd hh:mm:ss aa\nФормат вывода:\n30KB 2020 Мар 20 11:24:52 PM</string>
     <string name="loading_default_value">Загрузка значения по умолчанию</string>
@@ -431,25 +418,7 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="skip_all">Пропустить (все)</string>
     <string name="overwrite_all">Перезаписать (все)</string>
     <string name="copy_move_conflict_message">\'%s\' уже существует в %s</string>
-    <string name="additional_contexts_and_projects">Дополнительные контексты и проекты</string>
-    <string name="enter_space_seperated_contexts_and_projects_these_will">Введите контексты, разделенные пробелами, и +проекты. Они всегда будут видны в todo.txt диалогах.</string>
     <string name="infinite">Бесконечный</string>
-    <string name="browse_by_project">Просмотр по проектам</string>
-    <string name="browse_by_context">Просмотр по контексту</string>
-    <string name="insert_project">Вставить проекты</string>
-    <string name="insert_context">Вставить контекст</string>
-    <string name="browse_todo">Обзор задачи</string>
-    <string name="browse_by_priority">Просмотр по приоритету</string>
-    <string name="browse_by_due_date">Просмотр по дате выполнения</string>
-    <string name="due_overdue">Просрочено</string>
-    <string name="due_today">Срок сдачи сегодня</string>
-    <string name="due_future">Выполнить в будущем</string>
-    <string name="completed">Выполнено</string>
-    <string name="advanced_filtering">Продвинутая фильтрация</string>
-    <string name="match_any">Любое совпадение</string>
-    <string name="match_all">Полное совпадение</string>
-    <string name="dynamic_notebook_root_links">Динамический поиск корня блокнота</string>
-    <string name="search_dynamically_for_notebook_root">Чтобы перейти по вики-ссылкам, необходимо динамически искать файл notebook.zim для определения корневого каталога текущей записной книжки. Установите флажок, если вы используете несколько цим-блокнотов или установленный в приложении каталог блокнота не соответствует вашему блокноту zim.</string>
     <string name="share_into_format_prefix_for_text_shared">Формат/Префикс для текста, отправленного в Markor. Соответствует правилам Android SimpleDateFormat. \n\nИспользуйте переменную \'{{text}}\' (с одинарными кавычками) для размещения отправленного текста. Если не указано, отправленный текст добавляется и формат используется в качестве префикса.</string>
     <string name="share_into_format">Поделиться - Формат</string>
     <string name="attachment_folder_name">Название папки с вложением</string>
@@ -460,7 +429,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="error_could_not_open_file">Ошибка: Не удалось открыть файл.</string>
     <string name="document_error_clip">Произошла ошибка: текст скопирован в буфер обмена.</string>
     <string name="wont_save_min_length">Файлы содержащие менее %d символов не сохраняются автоматически во избежание случайного удаления данных.</string>
-    <string name="advanced_filtering_help"><![CDATA[<small><a href="https://www.github.com/gsantner/markor/discussions/1940">Расширенный синтаксис фильтрации</a></small>]]></string>
     <string name="filter">Фильтр</string>
     <string name="text_case">Регистр</string>
     <string name="toggle_case">Переключать регистр (напр., Слово-СЛОВО-слово)</string>

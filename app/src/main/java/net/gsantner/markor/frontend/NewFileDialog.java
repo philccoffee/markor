@@ -65,12 +65,7 @@ public class NewFileDialog extends DialogFragment {
 
     private static final List<Integer> NEW_FILE_FORMATS = Arrays.asList(
             FormatRegistry.FORMAT_MARKDOWN,
-            FormatRegistry.FORMAT_PLAIN,
-            FormatRegistry.FORMAT_TODOTXT,
-            FormatRegistry.FORMAT_WIKITEXT,
-            FormatRegistry.FORMAT_ASCIIDOC,
-            FormatRegistry.FORMAT_ORGMODE,
-            FormatRegistry.FORMAT_CSV
+            FormatRegistry.FORMAT_PLAIN
     );
 
     private GsCallback.a1<File> callback;
@@ -283,10 +278,6 @@ public class NewFileDialog extends DialogFragment {
             final String title = getTitle.callback();
             final String ext = extEdit.getText().toString().trim();
             String fileName = GsFileUtils.getFilteredFilenameWithoutDisallowedChars(title + ext);
-
-            if (fmt.format == FormatRegistry.FORMAT_WIKITEXT) {
-                fileName = fileName.replace(" ", "_");
-            }
 
             // Get template string
             // -------------------------------------------------------------------------------------

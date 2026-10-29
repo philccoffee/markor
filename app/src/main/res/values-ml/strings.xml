@@ -103,7 +103,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="archive">ആർക്കൈവ്</string>
     <string name="add_task">പുതിയ കർത്തവ്യം</string>
     <string name="add_x_witharg">%s ചേർക്കുക</string>
-    <string name="document_to_be_loaded_and_saved_as_witharg">\"%s\" ആയി തുറക്കുകയും സൂക്ഷിക്കുകയും ചെയ്യേണ്ട ഡോക്യുമെന്റ്</string>
     <string name="refresh">പുതുക്കുക</string>
     <string name="create_shortcut">എളുപ്പവഴി സൃഷ്ടിക്കുക</string>
     <string name="tried_to_create_shortcut_for_this_notice">ഹോം സ്ക്രീനിലേക്ക് എളുപ്പവഴി സൃഷ്ടിക്കാൻ ശ്രമിച്ചു. എല്ലാ ലോഞ്ചേഴ്സും ഇത് അനുവദിക്കണമെന്നില്ല എന്നറിയുക.</string>

@@ -14,6 +14,20 @@
     tools:ignore="AlwaysShowAction">
 
     <item
+        android:id="@+id/action_workspace_unpack"
+        android:icon="@drawable/ic_folder_white_24dp"
+        android:orderInCategory="10"
+        android:title="@string/sevenzip_unpack"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_workspace_pack"
+        android:icon="@drawable/ic_save_black_24dp"
+        android:orderInCategory="11"
+        android:title="@string/sevenzip_pack"
+        app:showAsAction="never" />
+
+    <item
         android:id="@+id/action_settings"
         android:icon="@drawable/ic_settings_black_24dp"
         android:orderInCategory="100"

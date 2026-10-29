@@ -111,7 +111,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="archive">Arsip</string>
     <string name="add_task">Tambahkan tugas</string>
     <string name="add_x_witharg">Tambahkan %s</string>
-    <string name="document_to_be_loaded_and_saved_as_witharg">Dokumen akan dimuat dan disimpan sebagai \"%s\"</string>
     <string name="refresh">Menyegarkan</string>
     <string name="create_shortcut">Buat pintasan</string>
     <string name="tried_to_create_shortcut_for_this_notice">Mencoba membuat pintasan ke layar beranda Anda. Beberapa peluncur mungkin tidak mendukung fitur ini.</string>
@@ -119,8 +118,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="file_not_in_current_folder_do_copy__appspecific">Berkas tidak terletak di folder saat ini. Apakah Anda ingin menyalinnya ke folder saat ini? Ini akan menimpa berkas yang ada dengan nama yang sama.</string>
     <string name="files_and_folders">Berkas dan folder</string>
     <string name="document_browser">Penjelajah dokumen</string>
-    <string name="set_due_date">Atur batas waktu</string>
-    <string name="insert_replace_date">Sisipkan tanggal</string>
     <string name="create_note" needed="false">Buat catatan</string>
     <string name="special_documents" needed="false">Dokumen spesial</string>
     <string name="keep_screen_on" needed="false">Biarkan layar tetap menyala</string>
@@ -151,8 +148,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="underline">Garis bawah</string>
     <string name="underline_hex_color_wether_or_not_to_description__appspecific">Apakah untuk garis bawah menggunakan kode warna hexa</string>
     <string name="underline_hex_color_codes">Kode Warna Hexa Garis Bawah</string>
-    <string name="insert_current_date_when_starting_new_task">Masukkan tanggal sekarang saat mulai tugas baru</string>
-    <string name="tasks_with_todays_date">Tugas dengan tanggal sekarang</string>
     <string name="append_contexts_and_projects">Tambahkan konteks dan proyek</string>
     <string name="append_contexts_and_projects_on_end_of_task">Tambahkan konteks dan proyek di akhir task saat menggunakan aksi teks sesuai</string>
     <string name="rtl_rendering">Renderan RTL</string>
@@ -167,8 +162,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="resources">Sumber Daya</string>
     <string name="space_between_lines_in_percent">Jarak antar baris dalam persen</string>
     <string name="line_spacing">Jarak Baris</string>
-    <string name="archive_does_move_done_tasks">Memindahkan tugas yang sudah selesai ke file yang ditentukan dalam folder yang sama</string>
-    <string name="sort_tasks_by_selected_order">Urutkan tugas dari daftar yang dipilih</string>
     <string name="special_key">Kunci Spesial</string>
     <string name="asciidoc_special_key">Isi AsciiDoc khusus</string>
     <string name="key_ctrl_a">Pilih semua (Ctrl+A)</string>
@@ -213,7 +206,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="community">Komunitas</string>
     <string name="contributors_public_add_yourself_description">Tampilkan info kontributor. Berikan untuk ditampilkan di sini secara opt-in setelah berkontribusi</string>
     <string name="descending">menurun</string>
-    <string name="ascending">menaik</string>
     <string name="disable_spelling_underline">Non-aktifkan garis bawah ejaan</string>
     <string name="spellcheck_keyboard_suggestion_stay_red_underline_vanishes">Saran keyboard tetap, garis bawah merah lenyap</string>
     <string name="location">Lokasi</string>
@@ -274,8 +266,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="internal_storage">Penyimpanan internal</string>
     <string name="open_the_document_from_main_view">Anda dapat membuka dokumen dari tampilan utama di bagian bawah, browser file atau peluncur. Ada juga opsi untuk menambahkan teks yang dibagikan ke Markor.</string>
     <string name="notebook_is_the_home_of_your_files">Notebook adalah folder yang dimuat Markor di browser file saat aplikasi dimulai. Ini adalah folder beranda dari file Anda.</string>
-    <string name="quicknote_is_the_fastest_option_to_write_down_notes">QuickNote adalah opsi tercepat untuk menuliskan catatan. Ini adalah file dalam format Markdown dengan lokasi default &gt;Notebook/QuickNote.md&lt;, Anda bisa mengatur jalur file kustom di pengaturan.</string>
-    <string name="todo_is_the_easiest_way_">Kelola tugas Anda dengan ToDo. Ini adalah file dalam format todo.txt dengan lokasi default &gt;Notebook/todo.txt&lt;, Anda dapat mengatur jalur file kustom di pengaturan.</string>
     <string name="black">Hitam</string>
     <string name="white">Putih</string>
     <string name="view">Lihat</string>
@@ -339,14 +329,12 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="link_color">Warna tautan</string>
     <string name="add_context">Tambah konteks</string>
     <string name="add_project">Tambah proyek</string>
-    <string name="archive_completed_tasks">Arsipkan tugas yang selesai</string>
     <string name="create_new_file_or_folder">Buat berkas baru atau folder</string>
     <string name="choose_format">Pilih format</string>
     <string name="selected">Dipilih</string>
     <string name="back">Kembali</string>
     <string name="expand_collapse">Perluas / Runtuhkan</string>
     <string name="essential">Penting</string>
-    <string name="append_human_readable_uuid_to_new_tasks">Menambahkan UUID yang dapat dibaca manusia untuk tugas-tugas baru</string>
     <string name="action_order">Perintah tindakan</string>
     <string name="toggle_action_visibility">Mengalihkan visibilitas tindakan</string>
     <string name="load_default_settings">Memuat setelan bawaan</string>
@@ -361,7 +349,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="password_already_set_setting_a_new_password_will_overwrite">Kata sandi sudah diatur. Mengatur kata sandi baru akan menimpa kata sandi yang ada dan Anda mungkin tidak dapat mengakses file lagi jika Anda lupa kata sandi.</string>
     <string name="code_block">Blok kode</string>
     <string name="add_completion_date">Menambahkan tanggal penyelesaian</string>
-    <string name="add_completion_date_for_todos_when_marking_them_as_done">Menambahkan tanggal penyelesaian untuk todos saat menandainya seperti yang dilakukan</string>
     <string name="file_description_format">Deskripsi format file</string>
     <string name="file_description_format_dialog">Format untuk deskripsi di bawah setiap file di browser file. Mengikuti aturan SimpleDateFormat Android, dengan penambahan FS untuk menampilkan ukuran file. Biarkan kosong untuk menggunakan format default untuk lokal Anda.\n\nContoh input:\nFS yyyy MMM dd hh:mm:ss aa\nOutput format:\n30KB 2020 Mar 20 11:24:52 PM</string>
     <string name="loading_default_value">Memuat nilai default</string>
@@ -394,23 +381,7 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="skip_all">Lewati (semua)</string>
     <string name="overwrite_all">Timpa (semua)</string>
     <string name="copy_move_conflict_message">\'%s\' sudah ada di %s</string>
-    <string name="additional_contexts_and_projects">Konteks dan proyek tambahan</string>
-    <string name="enter_space_seperated_contexts_and_projects_these_will">Masukkan @contexts dan +proyek yang terpisah dari ruang. Ini akan selalu terlihat di todo.txt untuk menyisipkan dialog.</string>
     <string name="infinite">Tidak terbatas</string>
-    <string name="browse_by_project">Menelusuri menurut proyek</string>
-    <string name="browse_by_context">Menelusuri menurut konteks</string>
-    <string name="insert_project">Menyisipkan proyek</string>
-    <string name="insert_context">Menyisipkan konteks</string>
-    <string name="browse_todo">Telusuri todo</string>
-    <string name="browse_by_priority">Menelusuri menurut prioritas</string>
-    <string name="browse_by_due_date">Menelusuri berdasarkan tenggat</string>
-    <string name="due_overdue">Lewat tenggat</string>
-    <string name="due_today">Tenggat hari ini</string>
-    <string name="due_future">Tenggat mendatang</string>
-    <string name="completed">Diselesaikan</string>
-    <string name="advanced_filtering">Filter lanjutan</string>
-    <string name="match_any">Cocokkan apa saja</string>
-    <string name="match_all">Cocokkan semua</string>
     <string name="share_into_format">Bagikan dalam bentuk - format</string>
     <string name="auto_format">Format otomatis</string>
     <string name="insert_snippet">Sisipkan cuplikan</string>

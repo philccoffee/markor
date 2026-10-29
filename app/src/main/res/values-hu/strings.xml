@@ -116,7 +116,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="archive">Archivál</string>
     <string name="add_task">Feladat hozzáadása</string>
     <string name="add_x_witharg">%s hozzáadása</string>
-    <string name="document_to_be_loaded_and_saved_as_witharg">A dokumentum \"%s\" néven lesz megnyitva és mentve</string>
     <string name="save_or_not">Szeretnéd menteni a változásokat?</string>
     <string name="reload_or_not">Elveted a változásokat és újratöltöd a fájlt?</string>
     <string name="refresh">Frissítés</string>
@@ -127,8 +126,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="files_and_folders">Fájlok és mappák</string>
     <string name="document_browser">Dokumentum böngésző</string>
     <string name="file_browser">Fájlkezelő</string>
-    <string name="set_due_date">Határidő beállítása</string>
-    <string name="insert_replace_date">Dátum beszúrása</string>
     <string name="create_note" needed="false">Jegyzet létrehozása</string>
     <string name="special_documents" needed="false">Speciális dokumentumok</string>
     <string name="keep_screen_on" needed="false">Képernyő ébren tartása</string>
@@ -160,8 +157,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="underline">Aláhúzott</string>
     <string name="underline_hex_color_wether_or_not_to_description__appspecific">Alá legyenek-e húzva szín szerint a hexa színkódok</string>
     <string name="underline_hex_color_codes">Hexa színkódok aláhúzása</string>
-    <string name="insert_current_date_when_starting_new_task">Új feladat felvételekor a mai dátum beszúrása</string>
-    <string name="tasks_with_todays_date">Feladatok a mai dátummal</string>
     <string name="append_contexts_and_projects">Kontextusok és projektek hozzáadása</string>
     <string name="append_contexts_and_projects_on_end_of_task">Kontextusok és projektek hozzáadása a feladathoz a megfelelő műveleti gomb használatával</string>
     <string name="rtl_rendering">Jobbra igazítás</string>
@@ -176,8 +171,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="resources">Források</string>
     <string name="space_between_lines_in_percent">Sorok közötti tér százalékban</string>
     <string name="line_spacing">Sorköz</string>
-    <string name="archive_does_move_done_tasks">Az elkészült feladatok áthelyezése adott fájlba ugyanazon mappában</string>
-    <string name="sort_tasks_by_selected_order">Feladatok sorba rendezése a kiválasztott opció szerint</string>
     <string name="special_key">Speciális billentyű</string>
     <string name="asciidoc_special_key">Speciális AsciiDoc tartalom</string>
     <string name="key_page_up">Oldal fel (PgUp)</string>
@@ -244,7 +237,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="community">Közösség</string>
     <string name="contributors_public_add_yourself_description">Hozzájárulók információinak megjelenítése. Add meg az infóidat, hogy megjelenjenek itt; ez önkéntes alapon történik a hozzájárulás után.</string>
     <string name="descending">csökkenő</string>
-    <string name="ascending">növekvő</string>
     <string name="disable_spelling_underline">Helyesírás-ellenőrzés kikapcsolása</string>
     <string name="spellcheck_keyboard_suggestion_stay_red_underline_vanishes">Billentyűzetjavaslatok maradnak, piros aláhúzás eltűnik</string>
     <string name="location">Hely</string>
@@ -312,8 +304,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="internal_storage">Belső tárhely</string>
     <string name="open_the_document_from_main_view">A dokumentumot megnyithatod az alsó menüből alap nézetben, a fájlkezelőből, vagy a kezdőképernyőről. Van egy olyan lehetőség is, hogy Markor-ral megosztott szöveget adsz hozzá.</string>
     <string name="notebook_is_the_home_of_your_files">A jegyzetfüzet az a mappa, amit Markor megnyit induláskor. A szövegfájlok helye.</string>
-    <string name="quicknote_is_the_fastest_option_to_write_down_notes">A QuickNote az ötletek gyors leírására szolgál Markdown formátumban. Alapértelmezetten a &gt;Jegyzetfüzet/QuickNote.md&lt; helyen található, de helye beállításokban testreszabható.</string>
-    <string name="todo_is_the_easiest_way_">A ToDo-val \"todo.txt\" formátumban kezelheted a feladataidat. Alapértelmezetten a &gt;Jegyzetfüzet/todo.txt&lt; helyen található, de helye a beállításokban testreszabható.</string>
     <string name="black">Fekete</string>
     <string name="white">Fehér</string>
     <string name="view">Megtekintés</string>
@@ -385,7 +375,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="link_color">Hivatkozás színe</string>
     <string name="add_context">Kontextus hozzáadása</string>
     <string name="add_project">Projekt hozzáadása</string>
-    <string name="archive_completed_tasks">Befejezett feladatok archiválása</string>
     <string name="overline">Felső vonal</string>
     <string name="superscript">Felső index</string>
     <string name="subscript">Alsó index</string>
@@ -396,7 +385,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="back">Vissza</string>
     <string name="expand_collapse">Kibontás / Összecsukás</string>
     <string name="essential">Alapvető</string>
-    <string name="append_human_readable_uuid_to_new_tasks">Ember által olvasható UUID hozzárendelése új feladatokhoz</string>
     <string name="action_order">Műveletek sorrendje</string>
     <string name="show_bottom_action_bar">Alsó műveletsáv megjelenítése</string>
     <string name="toggle_action_visibility">Műveletek láthatóságának állítása</string>
@@ -422,7 +410,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="password_already_set_setting_a_new_password_will_overwrite">Már van jelszó beállítva. Új jelszó megadása az előzőt felülírja, és nem biztos hogy hozzá fogsz majd férni az eddig mentett fájlokhoz, ha elfelejted a jelszót.</string>
     <string name="code_block">Kódtömb</string>
     <string name="add_completion_date">Teljesítés dátuma</string>
-    <string name="add_completion_date_for_todos_when_marking_them_as_done">A teljesítés dátumának beszúrása amikor késznek vannak jelölve</string>
     <string name="file_description_format">Fájl leírásának formátuma</string>
     <string name="file_description_format_dialog">A fájlok alatt található leírás formátuma a fájlböngészőben. Az Android \"SimpleDateFormat\" szabályait követi, azzal a kiegészítéssel, hogy az FS mutatja a fájlméretet. Hagyd üresen az alapértelmezett formátum használatához.\n\nPélda bemenet:\nFS yyyy MMM dd hh:mm:ss aa\nKimenet:\n30KB 2020 Mar 20 11:24:52 PM</string>
     <string name="loading_default_value">Alapértelmezett érték betöltése</string>
@@ -457,25 +444,7 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="skip_all">Összes kihagyása</string>
     <string name="overwrite_all">Az összes felülírása</string>
     <string name="copy_move_conflict_message">\'%s\' már létezik %s-ben</string>
-    <string name="additional_contexts_and_projects">További kontextusok és projektek</string>
-    <string name="enter_space_seperated_contexts_and_projects_these_will">Adj hozzá szóközzel elválasztott @kontextusokat és +projekteket. Ezek mindig láthatók lesznek a todo.txt beszúrási párbeszédablakában.</string>
     <string name="infinite">Végtelen</string>
-    <string name="browse_by_project">Böngészés projektenként</string>
-    <string name="browse_by_context">Böngészés kontextusonként</string>
-    <string name="insert_project">Projektek beszúrása</string>
-    <string name="insert_context">Kontextusok beszúrása</string>
-    <string name="browse_todo">Teendők böngészése</string>
-    <string name="browse_by_priority">Böngészés prioritás szerint</string>
-    <string name="browse_by_due_date">Böngészés esedékesség szerint</string>
-    <string name="due_overdue">Esedékes</string>
-    <string name="due_today">Ma esedékes</string>
-    <string name="due_future">Jövőben esedékes</string>
-    <string name="completed">Kész</string>
-    <string name="advanced_filtering">Haladó szűrés</string>
-    <string name="match_any">Bármelyikkel egyező</string>
-    <string name="match_all">Mindegyikkel egyező</string>
-    <string name="dynamic_notebook_root_links">Jegyzetfüzet gyökér dinamikus keresése</string>
-    <string name="search_dynamically_for_notebook_root">Wiki linkek követéséhez dinamikusan keresse meg a notebook.zim fájlt, hogy beazonosítsa az adott jegyzetfüzet gyökér mappáját. Pipáld be, ha több zim jegyzetfüzetet használasz vagy az alkalmazásban beállított jegyzetfüzet mappa nem egyezik meg a te zim jegyzetfüzeteddel.</string>
     <string name="share_into_format_prefix_for_text_shared">Formátum/előtag a Markor-ral megosztott szöveghez. Az Android SimpleDateFormat szabályt követi.\n\nA megosztott szöveg elhelyezéséhez használd a {{text}} helykitöltőt. Ha nincs meghatározva, a megosztott szöveg hozzá lesz adva és a formátum előtagként kerül felhasználásra.</string>
     <string name="share_into_format">Megosztás - formátum</string>
     <string name="attachment_folder_name">Csatolmány mappa neve</string>
@@ -486,7 +455,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="error_could_not_open_file">Hiba: Fájl nem nyitható meg.</string>
     <string name="document_error_clip">Hiba történt: Szöveg a vágólapra másolva.</string>
     <string name="wont_save_min_length">A kevesebb, mint %d karaktert tartalmazó fájlok nem kerülnek automatikusan mentésre megelőzve az adatvesztést.</string>
-    <string name="advanced_filtering_help"><![CDATA[<small><a href="https://www.github.com/gsantner/markor/discussions/1940">Haladó szűrés szabályai</a></small>]]></string>
     <string name="filter">Szűrő</string>
     <string name="text_case">Betűeset</string>
     <string name="toggle_case">Kis- és nagybetű váltása (Példa→PÉLDA→példa)</string>

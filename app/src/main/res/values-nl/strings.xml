@@ -114,7 +114,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="archive">Archief</string>
     <string name="add_task">Taak toevoegen</string>
     <string name="add_x_witharg">Toevoegen %s</string>
-    <string name="document_to_be_loaded_and_saved_as_witharg">Document dat moet worden geladen en opgeslagen als \"%s\"</string>
     <string name="refresh">Verversen</string>
     <string name="create_shortcut">Maak snelkoppeling</string>
     <string name="tried_to_create_shortcut_for_this_notice">Poging om snelkoppeling toe te voegen aan je beginscherm. Niet alle launchers ondersteunen dit.</string>
@@ -122,8 +121,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="file_not_in_current_folder_do_copy__appspecific">Het bestand is niet in de huidige map geplaatst. Wilt u het kopiëren naar de huidige map? Dit overschrijft elk bestaand bestand met dezelfde naam.</string>
     <string name="files_and_folders">Bestanden en mappen</string>
     <string name="document_browser">Document verkenner</string>
-    <string name="set_due_date">Vervaldatum instellen</string>
-    <string name="insert_replace_date">Insert date</string>
     <string name="create_note" needed="false">Maak notitie</string>
     <string name="special_documents" needed="false">Speciale documenten</string>
     <string name="keep_screen_on" needed="false">Scherm aanlaten</string>
@@ -154,8 +151,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="underline">Onderstrepen</string>
     <string name="underline_hex_color_wether_or_not_to_description__appspecific">Of om hex kleurcodes te onderstrepen naar kleur</string>
     <string name="underline_hex_color_codes">Onderstreep Hex Kleurcodes</string>
-    <string name="insert_current_date_when_starting_new_task">Voer de huidige datum in bij het starten van een nieuwe taak</string>
-    <string name="tasks_with_todays_date">Taken met de datum van vandaag</string>
     <string name="append_contexts_and_projects">Context en projecten toevoegen</string>
     <string name="append_contexts_and_projects_on_end_of_task">contexten en projecten aan het einde van een taak toevoegen wanneer de juiste tekst actie wordt gebruikt</string>
     <string name="rtl_rendering">Rechts-naar-links</string>
@@ -170,8 +165,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="resources">Bronnen</string>
     <string name="space_between_lines_in_percent">Ruimte tussen regels in procenten</string>
     <string name="line_spacing">Regelafstand</string>
-    <string name="archive_does_move_done_tasks">Verplaats voltooide taken naar opgegeven bestand in dezelfde map</string>
-    <string name="sort_tasks_by_selected_order">Sorteer taken op geselecteerde volgorde</string>
     <string name="special_key">Speciale toets</string>
     <string name="asciidoc_special_key">Speciale AsciiDoc inhoud</string>
     <string name="key_ctrl_a">Alles selecteren (Ctrl+A)</string>
@@ -221,7 +214,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="community">Gemeenschap</string>
     <string name="contributors_public_add_yourself_description">Toon bijdrager info. Geef het hier weer op een opt-in basis na bijdragen</string>
     <string name="descending">aflopend</string>
-    <string name="ascending">oplopend</string>
     <string name="disable_spelling_underline">Schakel spelling onderstreping uit</string>
     <string name="spellcheck_keyboard_suggestion_stay_red_underline_vanishes">Toetsenbordsuggesties blijven, rode onderstrepingstekens verdwijnen</string>
     <string name="location">Locatie</string>
@@ -284,8 +276,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="internal_storage">Interne opslag</string>
     <string name="open_the_document_from_main_view">U kunt het document openen vanuit de hoofdweergave op de onderkant, de bestandsbrowser of de launcher. Er is ook een optie om tekst toe te voegen die in Markor wordt gedeeld.</string>
     <string name="notebook_is_the_home_of_your_files">Notebook is de map die Markor in de bestandsbrowser laadt wanneer de app is gestart. Het is de home map van uw bestanden.</string>
-    <string name="quicknote_is_the_fastest_option_to_write_down_notes">QuickNote is de snelste optie om notities op te schrijven. Het is een bestand in Markdown formaat met standaard locatie &gt;Notebook/QuickNote.md&lt;, u kunt een aangepast bestandspad instellen in de instellingen.</string>
-    <string name="todo_is_the_easiest_way_">Beheer uw taken met ToDo. Het is een bestand in todo.txt formaat met standaard locatie &gt;Notebook/todo.txt&lt;, u kunt een aangepast bestandspad instellen in de instellingen.</string>
     <string name="black">Zwart</string>
     <string name="white">Wit</string>
     <string name="view">Bekijk</string>
@@ -352,7 +342,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="link_color">Linkkleur</string>
     <string name="add_context">Context toevoegen</string>
     <string name="add_project">Voeg project toe</string>
-    <string name="archive_completed_tasks">Voltooide taken archiveren</string>
     <string name="create_new_file_or_folder">Maak een nieuw bestand of map aan</string>
     <string name="choose_format">Kies formaat</string>
     <string name="clear_selection">Selectie wissen</string>
@@ -360,7 +349,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="back">Terug</string>
     <string name="expand_collapse">Uitvouwen / samenvouwen</string>
     <string name="essential">Essentieel</string>
-    <string name="append_human_readable_uuid_to_new_tasks">Mensen leesbare UUID toevoegen aan nieuwe taken</string>
     <string name="action_order">Actie volgorde</string>
     <string name="toggle_action_visibility">Actie zichtbaarheid in-/uitschakelen</string>
     <string name="load_default_settings">Laad standaardinstellingen</string>
@@ -375,7 +363,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="password_already_set_setting_a_new_password_will_overwrite">Wachtwoord is al ingesteld Een nieuw wachtwoord instellen zal het bestaande wachtwoord overschrijven en u zult mogelijk geen toegang meer hebben tot bestanden indien u het wachtwoord vergeet.</string>
     <string name="code_block">Code blok</string>
     <string name="add_completion_date">Voeg voltooiingsdatum toe</string>
-    <string name="add_completion_date_for_todos_when_marking_them_as_done">Voeg voltooiingsdatum voor todos toe bij het markeren als voltooid</string>
     <string name="file_description_format">Bestand beschrijving formaat</string>
     <string name="file_description_format_dialog">Formaat voor de beschrijving onder elk bestand in de browser. Volgt Android\'s SimpleDateFormaty-regels, met toevoeging van FS voor het tonen van bestandsgrootte. Laat leeg om het standaardformaat voor uw taal te gebruiken.\n\nVoorbeeld invoer:\nFS yyyy MMM dd hhh:mm:ss aa\nOutput formaat:\n30KB 2020 Mar 20 11:24:52 PM</string>
     <string name="loading_default_value">Standaardwaarde wordt geladen</string>
@@ -408,25 +395,7 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="skip_all">Overslaan (alles)</string>
     <string name="overwrite_all">Overschrijf (alles)</string>
     <string name="copy_move_conflict_message">\'%s\' bestaat al in %s</string>
-    <string name="additional_contexts_and_projects">Aanvullende contexten en projecten</string>
-    <string name="enter_space_seperated_contexts_and_projects_these_will">Voer spatie gescheiden @contexts en + projecten in. Deze zijn altijd zichtbaar bij todo.txt invoegen dialogen.</string>
     <string name="infinite">Oneindig</string>
-    <string name="browse_by_project">Op project zoeken</string>
-    <string name="browse_by_context">Bladeren op context</string>
-    <string name="insert_project">Projecten toevoegen</string>
-    <string name="insert_context">Insert contexts</string>
-    <string name="browse_todo">Todo doorbladeren</string>
-    <string name="browse_by_priority">Bladeren op prioriteit</string>
-    <string name="browse_by_due_date">Bladeren op vervaldatum</string>
-    <string name="due_overdue">Achterstallig</string>
-    <string name="due_today">Vervalt vandaag</string>
-    <string name="due_future">Vervalt in de toekomst</string>
-    <string name="completed">Voltooid</string>
-    <string name="advanced_filtering">Geavanceerd filteren</string>
-    <string name="match_any">Overeenkomen met elke</string>
-    <string name="match_all">Alles overeenkomen</string>
-    <string name="dynamic_notebook_root_links">Dynamisch zoeken naar notitieboekroot</string>
-    <string name="search_dynamically_for_notebook_root">Om wiki-links te volgen, zoek je dynamisch naar het notebook.zim-bestand om de hoofdmap te identificeren voor het huidige notitieboek. Vink dit aan als je meerdere zim-notitieboekjes of de schrijffolder in de app niet overeenkomt met je zim-notitieboekje.</string>
     <string name="share_into_format_prefix_for_text_shared">Indeling/voorvoegsel voor tekst gedeeld in Markor. Volgt de SimpleDateFormat-regels van Android.\n\nGebruik de plaatsaanduiding {{text}} om de gedeelde tekst te positioneren. Indien niet opgegeven, wordt de gedeelde tekst toegevoegd en wordt de opmaak als voorvoegsel gebruikt.</string>
     <string name="share_into_format">Deel mee - Formaat</string>
     <string name="attachment_folder_name">Foldernaam voor bijlagen</string>
@@ -437,7 +406,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="error_could_not_open_file">Fout: bestand kon niet worden geopend.</string>
     <string name="document_error_clip">Fout opgetreden: tekst gekopieerd naar klembord.</string>
     <string name="wont_save_min_length">Bestanden met minder dan %d karakters worden niet automatisch opgeslagen om gegevensverlies te voorkomen.</string>
-    <string name="advanced_filtering_help"><![CDATA[<small><a href="https://www.github.com/gsantner/markor/discussions/1940">Geavanceerde filter-syntaxis</a></small>]]></string>
     <string name="filter">Filter</string>
     <string name="text_case">Hoofdlettergebruik</string>
     <string name="use_tab_to_indent">Regels inspringen met TAB-toets</string>

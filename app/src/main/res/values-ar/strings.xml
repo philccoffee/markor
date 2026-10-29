@@ -114,7 +114,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="archive">أرشفة</string>
     <string name="add_task">إضافة مهمة</string>
     <string name="add_x_witharg">إضافة %s</string>
-    <string name="document_to_be_loaded_and_saved_as_witharg">تحميل وحفظ المستند كـ \"%s\"</string>
     <string name="refresh">تحديث</string>
     <string name="create_shortcut">إنشاء اختصار</string>
     <string name="tried_to_create_shortcut_for_this_notice">محاولة إنشاء رابط مختصر في الشاشة الرئيسية. تذكر أنها قد تكون غير مدعومة في نظامك.</string>
@@ -122,8 +121,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="file_not_in_current_folder_do_copy__appspecific">الملف غير موجود في المجلد الحالي. هل تريد نسخه إلى المجلد الحالي؟ سيؤدي هذا إلى استبدال أي ملف موجود بنفس الاسم.</string>
     <string name="files_and_folders">الملفات والمجلدات</string>
     <string name="document_browser">متصفح المستندات</string>
-    <string name="set_due_date">تعيين تاريخ الاستحقاق</string>
-    <string name="insert_replace_date">Insert date</string>
     <string name="create_note" needed="false">إنشاء ملاحظة</string>
     <string name="special_documents" needed="false">مستندات خاصة</string>
     <string name="keep_screen_on" needed="false">إبقاء الشاشة مضيئة</string>
@@ -154,8 +151,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="underline">أسفل</string>
     <string name="underline_hex_color_wether_or_not_to_description__appspecific">وضع خط تحت رموز الألوان ام لا</string>
     <string name="underline_hex_color_codes">وضع خط تحت رموز الألوان</string>
-    <string name="insert_current_date_when_starting_new_task">كتابة التاريخ عند كتابة مهمة جديدة</string>
-    <string name="tasks_with_todays_date">المهام بتاريخ اليوم</string>
     <string name="append_contexts_and_projects">إلحاق السياقات والمشاريع</string>
     <string name="append_contexts_and_projects_on_end_of_task">إلحاق السياقات والمشاريع في نهاية المهمة عند استخدام إجراء النص المناسب</string>
     <string name="rtl_rendering">عرض من اليمين لليسار</string>
@@ -170,8 +165,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="resources">الموارد</string>
     <string name="space_between_lines_in_percent">المسافة بين الأسطر بالمئة</string>
     <string name="line_spacing">تباعد الأسطر</string>
-    <string name="archive_does_move_done_tasks">نقل المهام المنفذة إلى ملف معين في نفس المجلد</string>
-    <string name="sort_tasks_by_selected_order">فرز المهام حسب نظام معين</string>
     <string name="special_key">مفتاح خاص</string>
     <string name="asciidoc_special_key">محتوى AsciiDoc المميز</string>
     <string name="key_ctrl_a">اختيار الكل (Ctrl + A)</string>
@@ -220,7 +213,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="community">المجتمع</string>
     <string name="contributors_public_add_yourself_description">إظهار معلومات المساهمين. قم بتوفيرها لعرضها هنا على أساس الاختيار الصريح بعد المساهمة</string>
     <string name="descending">تنازلي</string>
-    <string name="ascending">تصاعدي</string>
     <string name="disable_spelling_underline">تعطيل التدقيق الإملائي</string>
     <string name="spellcheck_keyboard_suggestion_stay_red_underline_vanishes">اقتراحات لوحة المفاتيح، اختفت سطر أحمر</string>
     <string name="location">موقع</string>
@@ -283,8 +275,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="internal_storage">وحدة التخزين الداخلية</string>
     <string name="open_the_document_from_main_view">يمكنك فتح المستند من العرض الرئيسي في الأسفل، أو متصفح الملف أو المشغل. وهناك أيضا خيار لإلحاق نص مشترك في ماركور.</string>
     <string name="notebook_is_the_home_of_your_files">دفتر الملاحظات هو المجلد الذي تحمله العلامات في متصفح الملفات عند بدء التطبيق. إنه المجلد الرئيسي للملفات الخاصة بك.</string>
-    <string name="quicknote_is_the_fastest_option_to_write_down_notes">QuickNote هو أسرع خيار لكتابة الملاحظات. إنه ملف بتنسيق Markdown مع الموقع الافتراضي &gt;ملاحظات/QuickNote. (د)&lt;، يمكنك تعيين ملف مخصص في الإعدادات.</string>
-    <string name="todo_is_the_easiest_way_">إدارة المهام الخاصة بك مع ToDo. وهو ملف في تنسيق todo.txt مع الموقع الافتراضي &gt;الملاحظات/todo. xt&lt;، يمكنك تعيين ملف مخصص في الإعدادات.</string>
     <string name="black">أسود</string>
     <string name="white">أبيض</string>
     <string name="view">عرض</string>
@@ -351,7 +341,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="link_color">لون الرابط</string>
     <string name="add_context">إضافة سياق</string>
     <string name="add_project">إضافة مشروع</string>
-    <string name="archive_completed_tasks">أرشيف المهام المكتملة</string>
     <string name="create_new_file_or_folder">إنشاء ملف أو مجلد جديد</string>
     <string name="choose_format">اختيار التنسيق</string>
     <string name="clear_selection">إزالة التحديد</string>
@@ -359,7 +348,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="back">الرجوع</string>
     <string name="expand_collapse">توسيع / إغلاق</string>
     <string name="essential">جوهري</string>
-    <string name="append_human_readable_uuid_to_new_tasks">إلحاق UUID مقروء بشر إلى مهام جديدة</string>
     <string name="action_order">أمر العمل</string>
     <string name="toggle_action_visibility">تبديل رؤية الإجراء</string>
     <string name="load_default_settings">تحميل الإعدادات الافتراضية</string>
@@ -374,7 +362,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="password_already_set_setting_a_new_password_will_overwrite">تم تعيين كلمة المرور بالفعل. سيؤدي تعيين كلمة مرور جديدة إلى الكتابة فوق كلمة المرور الحالية وقد لا تتمكن من الوصول إلى الملفات بعد الآن في حالة نسيت كلمة المرور.</string>
     <string name="code_block">كتلة التعليمات البرمجية</string>
     <string name="add_completion_date">إضافة تاريخ الإكمال</string>
-    <string name="add_completion_date_for_todos_when_marking_them_as_done">إضافة تاريخ إنجاز المهام عند وضع علامة عليها كما تم</string>
     <string name="file_description_format">تنسيق وصف الملف</string>
     <string name="file_description_format_dialog">تنسيق الوصف تحت كل ملف في متصفح الملفات. يتبع قواعد SimpleDateFormat الخاصة بالأندرويد، مع إضافة FS لعرض حجم الملف. اتركه فارغاً لاستخدام التنسيق الافتراضي للغة الخاصة بك.\n\nمثال المدخلات:\nFS yyyy MMM dd hh:mm:ss aa\nتنسيق المخرج:\n30KB 2020 Mar 20 11:24:52 PM</string>
     <string name="loading_default_value">تحميل القيمة الافتراضية</string>
@@ -407,25 +394,7 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="skip_all">تخطي (الكل)</string>
     <string name="overwrite_all">الكتابة فوق (الكل)</string>
     <string name="copy_move_conflict_message">\'%s\' موجود بالفعل في %s</string>
-    <string name="additional_contexts_and_projects">سياقات ومشاريع إضافية</string>
-    <string name="enter_space_seperated_contexts_and_projects_these_will">أدخل @contexts و +مشاريع. ستكون هذه دائما مرئية في todo.txt إدخال الحوار.</string>
     <string name="infinite">لانهائي</string>
-    <string name="browse_by_project">تصفح حسب المشروع</string>
-    <string name="browse_by_context">تصفح حسب السياق</string>
-    <string name="insert_project">إدراج مشاريع</string>
-    <string name="insert_context">Insert contexts</string>
-    <string name="browse_todo">تصفح المهمة</string>
-    <string name="browse_by_priority">تصفح حسب الأولوية</string>
-    <string name="browse_by_due_date">تصفح حسب تاريخ الاستحقاق</string>
-    <string name="due_overdue">متأخرة</string>
-    <string name="due_today">الواجب اليوم</string>
-    <string name="due_future">مستحق في المستقبل</string>
-    <string name="completed">مكتمل</string>
-    <string name="advanced_filtering">التصفية المتقدمة</string>
-    <string name="match_any">مطابقة أي</string>
-    <string name="match_all">مطابقة الكل</string>
-    <string name="dynamic_notebook_root_links">البحث الديناميكي عن جذر دفتر الملاحظات</string>
-    <string name="search_dynamically_for_notebook_root">من أجل اتباع روابط ويكي، البحث بشكل ديناميكي عن ملف notebook.zim لتحديد الدليل الجذر لكتاب الملاحظات الحالي. حدد هذا الخيار إذا كنت تستخدم العديد من الملاحظات المضغوطة أو دليل الملاحظات المحدد في التطبيق لا يتوافق مع دفتر الملاحظات المضغوط.</string>
     <string name="share_into_format_prefix_for_text_shared">تنسيق/بادئة للنصوص المشاركة في Markor. يتبع قواعد Android SimpleDateFormat.\n\nاستخدم العنصر النائب {{text}} لتحديد موضع النص المشارك. إذا لم يتم تحديده، يتم إلحاق النص المشارك ويُستخدم التنسيق كبادئة.</string>
     <string name="share_into_format">المشاركة في - التنسيق</string>
     <string name="attachment_folder_name">اسم مجلد المرفقات</string>
@@ -436,7 +405,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="error_could_not_open_file">خطأ: تعذر فتح الملف.</string>
     <string name="document_error_clip">حدث خطأ: تم نسخ النص إلى الحافظة.</string>
     <string name="wont_save_min_length">الملفات التي تحتوي على أقل من %d من الأحرف لا يتم حفظها تلقائياً لمنع فقدان البيانات.</string>
-    <string name="advanced_filtering_help"><![CDATA[<small><a href="https://www.github.com/gsantner/markor/discussions/1940">بنية التصفية المتقدمة</a></small>]]></string>
     <string name="filter">تصفية</string>
     <string name="use_tab_to_indent">وضع مسافة بادئة بين الأسطر باستخدام مفتاح TAB</string>
     <string name="folder_local">المجلد المحلي</string>

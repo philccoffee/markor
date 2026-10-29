@@ -116,7 +116,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="archive">संग्रह</string>
     <string name="add_task">कार्य जोड़ें</string>
     <string name="add_x_witharg">%s जोड़ें</string>
-    <string name="document_to_be_loaded_and_saved_as_witharg">दस्तावेज़ को \"%s\" के रूप में लोड और सहेजा जाना चाहिए</string>
     <string name="refresh">रिफ्रेश</string>
     <string name="create_shortcut">शॉर्टकट बनाएँ</string>
     <string name="tried_to_create_shortcut_for_this_notice">आपकी होम स्क्रीन का शॉर्टकट बनाने की कोशिश की है। ध्यान दें कि कुछ लॉन्चर इसे सपोर्ट नहीं कर सकते हैं।</string>
@@ -125,8 +124,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="files_and_folders">फाइलें और फोल्डर।</string>
     <string name="document_browser">दस्तावेज़ ब्राउज़र।</string>
     <string name="file_browser">फाइल ब्राउज़र।</string>
-    <string name="set_due_date">नियत तिथि निर्धारित करें।</string>
-    <string name="insert_replace_date">तारीख डालें‌।</string>
     <string name="create_note" needed="false">नोट बनाएं</string>
     <string name="special_documents" needed="false">विशेष दस्तावेज</string>
     <string name="keep_screen_on" needed="false">स्क्रीन चालू रखें</string>
@@ -158,8 +155,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="underline">रेखांकित</string>
     <string name="underline_hex_color_wether_or_not_to_description__appspecific">क्या हेक्स कलर कोड को रंग के अनुसार रेखांकित करना है?</string>
     <string name="underline_hex_color_codes">हेक्स कलर कोड को रेखांकित करें।</string>
-    <string name="insert_current_date_when_starting_new_task">नया कार्य शुरू करते समय वर्तमान डेटा डालें।</string>
-    <string name="tasks_with_todays_date">आज के कार्य।</string>
     <string name="append_contexts_and_projects">संदर्भ और परियोजनाएं जोड़ें।</string>
     <string name="append_contexts_and_projects_on_end_of_task">उपयुक्त टेक्स्ट एक्शन का उपयोग करते समय, कार्य के अंत में संदर्भ और प्रोजेक्ट जोड़ें।</string>
     <string name="rtl_rendering">आरटीएल रेंडरिंग।</string>
@@ -174,8 +169,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="resources">संसाधने</string>
     <string name="space_between_lines_in_percent">पंक्तियों के बीच का अंतर प्रतिशत में ।</string>
     <string name="line_spacing">पंक्ति अंतराल</string>
-    <string name="archive_does_move_done_tasks">पूर्ण किए गए कार्यों को उसी फ़ोल्डर में निर्दिष्ट फ़ाइल में ले जाएं।</string>
-    <string name="sort_tasks_by_selected_order">कार्यों को चयनित क्रम के अनुसार क्रमबद्ध करें।</string>
     <string name="special_key">विशेष कुंजी। </string>
     <string name="asciidoc_special_key">विशेष ASCIIDoc सामग्री।</string>
     <string name="key_ctrl_a">सभी का चयन करें (Ctrl + A)</string>
@@ -226,7 +219,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="community">Community</string>
     <string name="contributors_public_add_yourself_description">योगदानकर्ता जानकारी दिखाएं। योगदान करने के बाद इसे यहां ऑप्ट-इन आधार पर दिखाने के लिए प्रदान करें</string>
     <string name="descending">घटते क्रम में</string>
-    <string name="ascending">बढ़ते क्रम में</string>
     <string name="disable_spelling_underline">वर्तनी संबंधी अंडरलाइन को अक्षम करें।</string>
     <string name="spellcheck_keyboard_suggestion_stay_red_underline_vanishes">कीबोर्ड के सुझाव बने रहते हैं, लाल अंडरलाइन गायब हो जाती है।</string>
     <string name="location">स्थान</string>
@@ -319,7 +311,4 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="search_for">इसे खोजें</string>
     <string name="replace_with">से बदलें</string>
     <string name="matches">मिलता-जुलता</string>
-    <string name="due_overdue">अतिदेय</string>
-    <string name="due_today">आज ही देय</string>
-    <string name="completed">पूर्ण</string>
 </resources>

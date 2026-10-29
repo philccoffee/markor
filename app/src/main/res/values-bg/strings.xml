@@ -114,7 +114,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="archive">Архив</string>
     <string name="add_task">Добавяне на задача</string>
     <string name="add_x_witharg">Добавяне на %s</string>
-    <string name="document_to_be_loaded_and_saved_as_witharg">Документът трябва да бъде зареден и запазен като %s</string>
     <string name="refresh">Опресняване</string>
     <string name="create_shortcut">Създаване на пряк път</string>
     <string name="tried_to_create_shortcut_for_this_notice">Опитахте се да създадете пряк път към началния екран. Имайте предвид, че някои стартиращи програми може да не поддържат тази функция.</string>
@@ -122,8 +121,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="file_not_in_current_folder_do_copy__appspecific">Файлът не се намира в текущата папка. Искате ли да го копирате в текущата папка? Това ще презапише всички съществуващи файлове със същото име.</string>
     <string name="files_and_folders">Файлове и папки</string>
     <string name="document_browser">Разглеждане на документ</string>
-    <string name="set_due_date">Задаване на краен срок</string>
-    <string name="insert_replace_date">Вмъкване на дата</string>
     <string name="create_note" needed="false">Създаване на бележка</string>
     <string name="special_documents" needed="false">Специални документи</string>
     <string name="keep_screen_on" needed="false">Запазване на екрана включен</string>
@@ -154,8 +151,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="underline">Подчертаване</string>
     <string name="underline_hex_color_wether_or_not_to_description__appspecific">Дали да се подчертават шестнадесетичните цветови кодове според цвета</string>
     <string name="underline_hex_color_codes">Подчертани шестнадесетични цветни кодове</string>
-    <string name="insert_current_date_when_starting_new_task">Въвеждане на текущата дата при започване на нова задача</string>
-    <string name="tasks_with_todays_date">Задачи с днешна дата</string>
     <string name="append_contexts_and_projects">Добавяне на контексти и проекти</string>
     <string name="append_contexts_and_projects_on_end_of_task">Добавяне на контексти и проекти в края на задача при използване на съответното текстово действие</string>
     <string name="rtl_rendering">RTL рендиране</string>
@@ -170,8 +165,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="resources">Ресурси</string>
     <string name="space_between_lines_in_percent">Разстояние между редовете в проценти</string>
     <string name="line_spacing">Разстояние между редовете</string>
-    <string name="archive_does_move_done_tasks">Преместване на изпълнените задачи в указания файл в същата папка</string>
-    <string name="sort_tasks_by_selected_order">Сортиране на задачи по избран ред</string>
     <string name="special_key">Специален клавиш</string>
     <string name="asciidoc_special_key">Специално AsciiDoc съдържание</string>
     <string name="key_ctrl_a">Избери всички (Ctrl+A)</string>
@@ -221,7 +214,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="community">Общност</string>
     <string name="contributors_public_add_yourself_description">Показване на информация за сътрудника. Предоставете го, за да бъде показано тук на базата на включване, след като допринесете</string>
     <string name="descending">низходящ</string>
-    <string name="ascending">възходящ</string>
     <string name="disable_spelling_underline">Деактивиране на подчертаването на правописа</string>
     <string name="spellcheck_keyboard_suggestion_stay_red_underline_vanishes">Предложенията на клавиатурата остават, червеното подчертаване изчезва</string>
     <string name="location">Местоположение</string>

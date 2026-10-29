@@ -20,6 +20,7 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.widget.Toolbar;
@@ -149,6 +150,14 @@ public class DocumentActivity extends MarkorBaseActivity {
         StoragePermissionActivity.requestPermissions(this);
         AppSettings.clearDebugLog();
         setContentView(R.layout.document__activity);
+
+        // Route back presses through the dispatcher (the Activity#onBackPressed override is deprecated)
+        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                handleBackPress();
+            }
+        });
         _toolbar = findViewById(R.id.toolbar);
 
         if (_appSettings.isHideSystemStatusbar()) {
@@ -171,22 +180,10 @@ public class DocumentActivity extends MarkorBaseActivity {
         if (rawIntent == null) return;
 
         final Intent intent = normalizeIntent(rawIntent, this);
-        final String intentAction = intent.getAction();
 
         // Pull the file from the intent
         // -----------------------------------------------------------------------
         final File file = (File) intent.getSerializableExtra(Document.EXTRA_FILE);
-
-        final boolean intentIsSend = Intent.ACTION_SEND.equals(intentAction) || Intent.ACTION_SEND_MULTIPLE.equals(intentAction);
-
-        if (intentIsSend) {
-            showShareInto(intent);
-            return;
-        } else if (Intent.ACTION_PROCESS_TEXT.equals(intentAction) && intent.hasExtra(Intent.EXTRA_PROCESS_TEXT)) {
-            intent.putExtra(Intent.EXTRA_TEXT, intent.getStringExtra("android.intent.extra.PROCESS_TEXT"));
-            showShareInto(intent);
-            return;
-        }
 
         // Decide what to do with the file
         // -----------------------------------------------------------------------
@@ -342,20 +339,17 @@ public class DocumentActivity extends MarkorBaseActivity {
         }
     }
 
-    public void showShareInto(Intent intent) {
-        setTitle(getString(R.string.share_into));
-        showFragment(DocumentShareIntoFragment.newInstance(intent, this));
-    }
-
     @Override
     protected void onResume() {
         super.onResume();
         _cu.setKeepScreenOn(this, _appSettings.isKeepScreenOn());
     }
 
-    @Override
-    @SuppressWarnings("StatementWithEmptyBody")
-    public void onBackPressed() {
+    /**
+     * Handles back navigation, invoked from the {@link androidx.activity.OnBackPressedDispatcher}
+     * instead of the deprecated {@code Activity#onBackPressed()} override.
+     */
+    private void handleBackPress() {
         final int entryCount = _fragManager.getBackStackEntryCount();
         final GsFragmentBase<?, ?> top = getCurrentVisibleFragment();
 
@@ -368,11 +362,7 @@ public class DocumentActivity extends MarkorBaseActivity {
         }
 
         // Handle in this activity
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            finishAndRemoveTask();
-        } else {
-            finish();
-        }
+        finishAndRemoveTask();
     }
 
     @Override

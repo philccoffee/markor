@@ -259,7 +259,7 @@ public class GsFileBrowserFragment extends GsFragmentBase<GsSharedPreferencesPro
             selWritable &= f.canWrite();
             selDirectoriesOnly &= f.isDirectory();
             allSelectedFav &= favFiles.contains(f);
-            selWritable &= !Arrays.asList(_appSettings.getQuickNoteFile(), _appSettings.getTodoFile(), _appSettings.getNotebookDirectory()).contains(f);
+            selWritable &= !Arrays.asList(_appSettings.getNotebookDirectory()).contains(f);
         }
 
         if (_fragmentMenu != null && _fragmentMenu.findItem(R.id.action_delete_selected_items) != null) {

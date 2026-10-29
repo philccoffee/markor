@@ -109,7 +109,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="archive">Naka-archive</string>
     <string name="add_task">Magdagdag ng gawain</string>
     <string name="add_x_witharg">Idagdag ang %s</string>
-    <string name="document_to_be_loaded_and_saved_as_witharg">Dokumentong ilo-load at ise-save bilang \"%s\"</string>
     <string name="refresh">I-refresh</string>
     <string name="create_shortcut">Gumawa ng shortcut</string>
     <string name="tried_to_create_shortcut_for_this_notice">Sinubukang gumawa ng shortcut sa iyong home screen. Tandaan lamang na may mga launcher na hindi suportado ito.</string>
@@ -117,8 +116,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="file_not_in_current_folder_do_copy__appspecific">Wala sa kasalukuyang folder ang file. Gusto mo ba itong kopyahin sa kasalukuyang folder? Susulatan nito ang kahit anong file na may kaparehong pangalan.</string>
     <string name="files_and_folders">Mga File at folder</string>
     <string name="document_browser">Browser ng Dokumento</string>
-    <string name="set_due_date">Magtakda ng due date</string>
-    <string name="insert_replace_date">Magsingit ng petsa</string>
     <string name="create_note" needed="false">Gumawa ng Tala</string>
     <string name="special_documents" needed="false">Mga Espesyal ng Dokumento</string>
     <string name="keep_screen_on" needed="false">Panatilihing nakabukas ang screen</string>
@@ -148,8 +145,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="underline">Salungguhitan</string>
     <string name="underline_hex_color_wether_or_not_to_description__appspecific">Kung sasalungguhitan ba ang mga hex color code ayon sa kulay</string>
     <string name="underline_hex_color_codes">Salungguhitan ang mga Hex Color Code</string>
-    <string name="insert_current_date_when_starting_new_task">Isingit ang petsa ngayon kapag gagawa ng bagong gawain</string>
-    <string name="tasks_with_todays_date">Mga Gawain na may petsa ngayon</string>
     <string name="append_contexts_and_projects">Isama ang mga konteksto at proyekto</string>
     <string name="append_contexts_and_projects_on_end_of_task">Ilagay ang mga konteksto at proyekto sa baba ng isang gawain sa tuwing gumagamit ng tamang text action</string>
     <string name="rtl_rendering">Pagre-render ng RTL</string>
@@ -164,8 +159,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="resources">Mga Mapagkukunan</string>
     <string name="space_between_lines_in_percent">Porsyento ng espasyo sa pagitan ng mga linya</string>
     <string name="line_spacing">Espasyo ng Linya</string>
-    <string name="archive_does_move_done_tasks">Ilipat ang mga natapos na gawain sa tinukoy na file sa parehong folder</string>
-    <string name="sort_tasks_by_selected_order">Ayusin ang mga gawain sa piniling ayos</string>
     <string name="special_key">Espesyal na Key</string>
     <string name="key_ctrl_a">Piliin lahat (Ctrl+A)</string>
     <string name="start_on_bottom">Magsimula sa ibaba</string>
@@ -204,7 +197,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="community">Komunidad</string>
     <string name="contributors_public_add_yourself_description">Ipakita ang impormasyon ng mga nag-ambag. Nasa opt-in basis ang pagpapakita dito matapos mag-ambag</string>
     <string name="descending">pababa</string>
-    <string name="ascending">pataas</string>
     <string name="disable_spelling_underline">I-disable ang spelling underline</string>
     <string name="spellcheck_keyboard_suggestion_stay_red_underline_vanishes">Mananatili ang mga suhestyon sa keyboard, mawawala ang pulang salungguhit</string>
     <string name="location">Lokasyon</string>
@@ -265,8 +257,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="internal_storage">Internal na storage</string>
     <string name="open_the_document_from_main_view">Maari mong buksan ang dokumento mula sa pangunahing view sa ibaba, mula sa file browser o kaya naman sa launcher. May opsyon din na idagdag ang ibinahaging teksto sa Markor.</string>
     <string name="notebook_is_the_home_of_your_files">Ang Notebook ay ang folder na nilo-load ng Markor sa file brower sa kada magbubukas ang app. Ito ang home folder ng iyong mga file.</string>
-    <string name="quicknote_is_the_fastest_option_to_write_down_notes">Ang Quicknote ay ang pinakamabilis na opsyon para magsulat ng mga tala. Ito ay isang file sa format na Markdown na default na nakalagay sa &gt;Notebook/QuickNote.md&lt;, maari kang magtakda ng custom na filepath sa mga pagsasaayos.</string>
-    <string name="todo_is_the_easiest_way_">Pamahalaan ang iyong mga gawain sa ToDo. Ito ay isang file sa format na todo.txt na default na nakalagay sa &gt;Notebook/todo.txt&lt;, maari kang magtakda ng custom ng filepath sa mga pagsasaayos.</string>
     <string name="black">Itim</string>
     <string name="white">Puti</string>
     <string name="view">View</string>

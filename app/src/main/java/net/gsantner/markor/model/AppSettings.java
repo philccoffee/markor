@@ -105,28 +105,30 @@ public class AppSettings extends GsSharedPreferencesPropertyBackend {
                 rstr(R.string.app_name).toLowerCase(Locale.ROOT));
     }
 
-    public File getQuickNoteFile() {
-        return new File(getString(R.string.pref_key__quicknote_filepath, getDefaultQuickNoteFile().getAbsolutePath()));
+    /**
+     * The workspace directory: app-private storage ("/data/data/<pkg>/files/workspace") that the
+     * file browser is rooted at. Not readable by other apps or the user's file manager.
+     */
+    public File getWorkspaceDirectory() {
+        final File dir = new File(_context.getFilesDir(), "workspace");
+        if (!dir.isDirectory()) {
+            //noinspection ResultOfMethodCallIgnored
+            dir.mkdirs();
+        }
+        return dir;
     }
 
-    public void setQuickNoteFile(final File file) {
-        setString(R.string.pref_key__quicknote_filepath, GsFileUtils.getPath(file));
-    }
-
-    public File getDefaultQuickNoteFile() {
-        return new File(getDefaultNotebookFile(), rstr(R.string.quicknote_default_filename));
-    }
-
-    public File getTodoFile() {
-        return new File(getString(R.string.pref_key__todo_filepath, getDefaultTodoFile().getAbsolutePath()));
-    }
-
-    public void setTodoFile(final File file) {
-        setString(R.string.pref_key__todo_filepath, GsFileUtils.getPath(file));
-    }
-
-    public File getDefaultTodoFile() {
-        return new File(getDefaultNotebookFile(), rstr(R.string.todo_default_filename));
+    /**
+     * Where packed archives are written when no source archive is known for the session.
+     */
+    public File getWorkspaceOutputDirectory() {
+        final File dir = _context.getExternalFilesDir(Environment.DIRECTORY_DOCUMENTS);
+        final File fallback = dir != null ? dir : _context.getFilesDir();
+        if (!fallback.isDirectory()) {
+            //noinspection ResultOfMethodCallIgnored
+            fallback.mkdirs();
+        }
+        return fallback;
     }
 
     public File getSnippetsDirectory() {
@@ -209,10 +211,6 @@ public class AppSettings extends GsSharedPreferencesPropertyBackend {
 
     public boolean isHighlightCodeBlock() {
         return !getBool(R.string.pref_key__highlight_code_block_disabled, false);
-    }
-
-    public int getHighlightingDelayTodoTxt() {
-        return getInt(R.string.pref_key__todotxt__hl_delay, 870);
     }
 
     public boolean isRenderRtl() {
@@ -339,14 +337,6 @@ public class AppSettings extends GsSharedPreferencesPropertyBackend {
         return getBool(R.string.pref_key__is_highlighting_for_hexcolor_activated, false);
     }
 
-    public boolean isTodoAppendProConOnEndEnabled() {
-        return getBool(R.string.pref_key__todotxt__append_contexts_and_projects_on_end_of_task, true);
-    }
-
-    public boolean isTodoAddCompletionDateEnabled() {
-        return getBool(R.string.pref_key__todotxt__add_completion_date_for_todos, true);
-    }
-
     public boolean isAppCurrentVersionFirstStart(boolean doSet) {
         int value = getInt(R.string.pref_key__app_first_start_current_version, -1);
         if (doSet) {
@@ -357,10 +347,6 @@ public class AppSettings extends GsSharedPreferencesPropertyBackend {
 
     public float getEditorLineSpacing() {
         return getInt(R.string.pref_key__editor_line_spacing, 100) / 100f;
-    }
-
-    public String getLastTodoUsedArchiveFilename() {
-        return getString(R.string.pref_key__todotxt__last_used_archive_filename, "todo.archive.txt");
     }
 
     public boolean isEditorStartOnBotttom() {
@@ -384,17 +370,13 @@ public class AppSettings extends GsSharedPreferencesPropertyBackend {
             return;
         }
         final String path = GsFileUtils.getPath(file);
-        if (!file.equals(getTodoFile()) && !file.equals(getQuickNoteFile())) {
-            ArrayList<String> recent = getRecentDocuments();
-            recent.add(0, path);
-            recent.remove(GsFileUtils.getPath(getTodoFile()));
-            recent.remove(GsFileUtils.getPath(getQuickNoteFile()));
-            recent.remove("");
-            recent.remove(null);
+        ArrayList<String> recent = getRecentDocuments();
+        recent.add(0, path);
+        recent.remove("");
+        recent.remove(null);
 
-            setInt(path, getInt(path, 0, _prefCache) + 1, _prefCache);
-            setRecentDocuments(recent);
-        }
+        setInt(path, getInt(path, 0, _prefCache) + 1, _prefCache);
+        setRecentDocuments(recent);
         ShortcutUtils.setShortcuts(_context);
     }
 
@@ -435,24 +417,8 @@ public class AppSettings extends GsSharedPreferencesPropertyBackend {
     private static final String PREF_PREFIX_AUTO_FORMAT = "PREF_PREFIX_AUTO_FORMAT";
     private static final String PREF_PREFIX_VIEW_SCROLL_Y = "PREF_PREFIX_VIEW_SCROLL_Y";
     private static final String PREF_PREFIX_VIEW_HEIGHT = "PREF_PREFIX_VIEW_HEIGHT";
-    private static final String PREF_PREFIX_TODO_DONE_NAME = "PREF_PREFIX_TODO_DONE_NAME";
     private static final String PREF_PREFIX_LINE_NUM_STATE = "PREF_PREFIX_LINE_NUM_STATE";
     private static final String PREF_PREFIX_VIEW_FONT_SIZE = "PREF_PREFIX_VIEW_FONT_SIZE";
-
-    public void setLastTodoDoneName(final String path, final String name) {
-        if (fexists(path)) {
-            setString(PREF_PREFIX_TODO_DONE_NAME + path, name);
-        }
-    }
-
-    public String getLastTodoDoneName(final String path) {
-        final String def = getLastTodoUsedArchiveFilename();
-        if (!fexists(path)) {
-            return def;
-        } else {
-            return getString(PREF_PREFIX_TODO_DONE_NAME + path, def);
-        }
-    }
 
     public void setLastEditPosition(final String path, final int pos) {
         if (fexists(path)) {
@@ -823,13 +789,7 @@ public class AppSettings extends GsSharedPreferencesPropertyBackend {
 
     public @IdRes
     int getAppStartupTab() {
-        int i = getIntOfStringPref(R.string.pref_key__app_start_tab_v2, R.id.nav_notebook);
-        switch (i) {
-            case 1:
-                return R.id.nav_todo;
-            case 2:
-                return R.id.nav_quicknote;
-        }
+        // Only the Files and More tabs exist in this build
         return R.id.nav_notebook;
     }
 
@@ -1047,15 +1007,6 @@ public class AppSettings extends GsSharedPreferencesPropertyBackend {
             return setValue[0];
         }
         return getBool(k, false);
-    }
-
-    public String getTodotxtAdditionalContextsAndProjects() {
-        return getString(R.string.pref_key__todotxt__additional_projects_contexts, "+music +video @home @shop");
-    }
-
-    // Not tied to an actual settings. Just moved here for clarity.
-    public int getDueDateOffset() {
-        return getInt(R.string.pref_key__todotxt__due_date_offset, 3);
     }
 
     public boolean isWikitextDynamicNotebookRootEnabled() {

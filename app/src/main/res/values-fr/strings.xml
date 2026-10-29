@@ -113,7 +113,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="archive">Archive</string>
     <string name="add_task">Ajouter une tâche</string>
     <string name="add_x_witharg">Ajouter %s</string>
-    <string name="document_to_be_loaded_and_saved_as_witharg">Le document à charger et à enregistrer comme \"%s\"</string>
     <string name="refresh">Rafraîchir</string>
     <string name="create_shortcut">Créer un raccourci</string>
     <string name="tried_to_create_shortcut_for_this_notice">Une erreur est survenue lors de l\'ajout d\'un raccourci vers l\'édition de ce document sur votre écran d\'accueil. Tous les écrans d\'accueil ne gèrent pas cette fonctionnalité.</string>
@@ -121,8 +120,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="file_not_in_current_folder_do_copy__appspecific">Le fichier n\'est pas situé dans le dossier actuel. Voulez-vous le copier dans le dossier actuel ? Cela remplacera tout fichier existant avec le même nom.</string>
     <string name="files_and_folders">Fichiers et dossiers</string>
     <string name="document_browser">Explorateur de documents</string>
-    <string name="set_due_date">Définir la date d\'échéance</string>
-    <string name="insert_replace_date">Insérer la date</string>
     <string name="create_note" needed="false">Nouvelle note</string>
     <string name="special_documents" needed="false">Documents spéciaux</string>
     <string name="keep_screen_on" needed="false">Garder l\'écran allumé</string>
@@ -153,8 +150,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="underline">Souligné</string>
     <string name="underline_hex_color_wether_or_not_to_description__appspecific">Surligne les codes couleurs hexadécimaux de la couleur correspondante</string>
     <string name="underline_hex_color_codes">Surligner les codes couleurs</string>
-    <string name="insert_current_date_when_starting_new_task">Insérer la date courante à la création d\'une nouvelle tâche</string>
-    <string name="tasks_with_todays_date">Tâches d\'aujourd\'hui</string>
     <string name="append_contexts_and_projects">Ajout des contextes et projets</string>
     <string name="append_contexts_and_projects_on_end_of_task">Ajouter des contextes et des projets à la fin d\'une tâche lorsque vous utilisez l\'action de texte appropriée</string>
     <string name="rtl_rendering">Écriture de droite à gauche</string>
@@ -169,8 +164,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="resources">Ressources</string>
     <string name="space_between_lines_in_percent">Espacement de lignes (%)</string>
     <string name="line_spacing">Espacement de lignes</string>
-    <string name="archive_does_move_done_tasks">Déplacer vers un fichier du dossier</string>
-    <string name="sort_tasks_by_selected_order">Ordonnez les tâches selon l\'ordre sélectionné</string>
     <string name="special_key">Touches spéciales</string>
     <string name="asciidoc_special_key">Contenu spécial AsciiDoc</string>
     <string name="key_ctrl_a">Tout sélectionner (Ctrl + A)</string>
@@ -219,7 +212,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="community">Communauté</string>
     <string name="contributors_public_add_yourself_description">Informations sur les contributeurs. Les contributeurs peuvent fournir des informations qui s\'afficheront ici (option) après contribution</string>
     <string name="descending">décroissant</string>
-    <string name="ascending">croissant</string>
     <string name="disable_spelling_underline">Désactiver le soulignement des fautes</string>
     <string name="spellcheck_keyboard_suggestion_stay_red_underline_vanishes">Les suggestions du clavier restent, les soulignements rouges disparaissent</string>
     <string name="location">Emplacement</string>
@@ -282,8 +274,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="internal_storage">Stockage interne</string>
     <string name="open_the_document_from_main_view">Vous pouvez ouvrir le document depuis la vue principale en bas, le navigateur de fichiers ou le lanceur. Il y a aussi une option pour ajouter du texte partagé via Markor.</string>
     <string name="notebook_is_the_home_of_your_files">Notebook est le dossier depuis lequel Markor charge les fichiers à son démarrage. C\'est le dossier principal de vos fichiers.</string>
-    <string name="quicknote_is_the_fastest_option_to_write_down_notes">QuickNote est l\'option la plus rapide pour prendre des notes. Il s\'agit d\'un fichier au format Markdown dont l\'emplacement par défaut est &gt;Notebook/QuickNote.md&lt;, vous pouvez définir un emplacement personnalisé dans les paramètres.</string>
-    <string name="todo_is_the_easiest_way_">Gérez vos tâches avec ToDo. Il s\'agit d\'un fichier au format todo.txt dont l\'emplacement par défaut est &gt;NoteBook/todo.txt&lt;, vous pouvez définir un emplacement personnalisé dans les paramètres.</string>
     <string name="black">Noir</string>
     <string name="white">Blanc</string>
     <string name="view">Vue</string>
@@ -350,7 +340,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="link_color">Couleur du lien</string>
     <string name="add_context">Ajouter un contexte</string>
     <string name="add_project">Ajouter un projet</string>
-    <string name="archive_completed_tasks">Archiver les tâches terminées</string>
     <string name="create_new_file_or_folder">Créer un nouveau fichier ou dossier</string>
     <string name="choose_format">Choisir le format</string>
     <string name="clear_selection">Effacer la sélection</string>
@@ -358,7 +347,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="back">Retour</string>
     <string name="expand_collapse">Développer / Réduire</string>
     <string name="essential">Essentiel</string>
-    <string name="append_human_readable_uuid_to_new_tasks">Ajouter un UUID intelligible aux nouvelles tâches</string>
     <string name="action_order">Ordre des actions</string>
     <string name="toggle_action_visibility">Activer/désactiver la visibilité de l\'action</string>
     <string name="load_default_settings">Charger les paramètres par défaut</string>
@@ -373,7 +361,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="password_already_set_setting_a_new_password_will_overwrite">Mot de passe déjà défini. Définir un nouveau mot de passe écrasera le mot de passe existant et vous risquez de ne plus pouvoir accéder aux fichiers en cas d\'oubli du mot de passe.</string>
     <string name="code_block">Bloc de code</string>
     <string name="add_completion_date">Ajouter une date de fin</string>
-    <string name="add_completion_date_for_todos_when_marking_them_as_done">Ajouter une date de fin pour les todos lorsque vous les marquez comme terminées</string>
     <string name="file_description_format">Format de la description du fichier</string>
     <string name="file_description_format_dialog">Format pour la description sous chaque fichier dans le navigateur de fichiers. Suit les règles SimpleDateFormat d\'Android, avec l\'ajout de FS pour afficher la taille du fichier. Laissez vide pour utiliser le format par défaut pour votre locale.\n\nExemple d\'entrée :\nFS yyyy MMM dd hhh:mm:ss aa\nFormat de sortie :\n30KB 2020 20 11:24:52 PM</string>
     <string name="loading_default_value">Chargement de la valeur par défaut</string>
@@ -406,25 +393,7 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="skip_all">Ignorer (tous)</string>
     <string name="overwrite_all">Écraser (tous)</string>
     <string name="copy_move_conflict_message">\'%s\' existe déjà dans %s</string>
-    <string name="additional_contexts_and_projects">Contextes et projets supplémentaires</string>
-    <string name="enter_space_seperated_contexts_and_projects_these_will">Entrez les @contexts séparés par des espaces et +projets. Ils seront toujours visibles dans les boîtes de dialogue d\'insertion todo.txt.</string>
     <string name="infinite">Infinie</string>
-    <string name="browse_by_project">Parcourir par projet</string>
-    <string name="browse_by_context">Naviguer par contexte</string>
-    <string name="insert_project">Insérer des projets</string>
-    <string name="insert_context">Insert contexts</string>
-    <string name="browse_todo">Parcourir la todo</string>
-    <string name="browse_by_priority">Parcourir par priorité</string>
-    <string name="browse_by_due_date">Parcourir par date d\'échéance</string>
-    <string name="due_overdue">En retard</string>
-    <string name="due_today">À faire aujourd\'hui</string>
-    <string name="due_future">Échéance dans le futur</string>
-    <string name="completed">Terminé</string>
-    <string name="advanced_filtering">Filtrage avancé</string>
-    <string name="match_any">Correspondre à n\'importe quel</string>
-    <string name="match_all">Tout faire correspondre</string>
-    <string name="dynamic_notebook_root_links">Recherche dynamique de la racine du bloc-notes</string>
-    <string name="search_dynamically_for_notebook_root">Afin de suivre les liens du wiki, recherchez dynamiquement le fichier notebook.zim pour identifier le répertoire racine du cahier actuel. Cochez cette case si vous utilisez plusieurs blocs-notes zim ou si le répertoire de bloc-notes défini dans l\'application ne correspond pas à votre bloc-notes zim.</string>
     <string name="share_into_format_prefix_for_text_shared">Format/Préfixe des textes partagés dans Markor. Suis les règles de format de dates simplifiées d\'Android.\n\nUtiliser le texte réservé {{text}} pour positionner le texte partagé. S\'il n\'est pas spécifié, le texte partagé sera annexés et le format utilisé comme préfixe.</string>
     <string name="share_into_format">Partager dans - Format</string>
     <string name="attachment_folder_name">Nom du dossier en attachement</string>
@@ -435,7 +404,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="error_could_not_open_file">Impossible d\'ouvrir le fichier.</string>
     <string name="document_error_clip">Erreur rencontrée: Texte copié dans le presse-papiers.</string>
     <string name="wont_save_min_length">Les fichiers avec moins de %d caractères ne seront pas automatiquement sauvegardé afin d\'éviter les pertes de données.</string>
-    <string name="advanced_filtering_help"><![CDATA[<small><a href="https://www.github.com/gsantner/markor/discussions/1940">Filtres syntaxiques avancés</a></small>]]></string>
     <string name="filter">Filtrer</string>
     <string name="text_case">Casse du texte</string>
     <string name="use_tab_to_indent">Indenter les lignes avec la toucher TAB</string>

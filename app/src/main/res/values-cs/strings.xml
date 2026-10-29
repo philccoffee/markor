@@ -116,7 +116,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="archive">Archivovat</string>
     <string name="add_task">Přidat úkol</string>
     <string name="add_x_witharg">Přidat %s</string>
-    <string name="document_to_be_loaded_and_saved_as_witharg">Dokument, který má být nahrán a uložen jako \"%s\"</string>
     <string name="save_or_not">Přejete si uložit provedené změny?</string>
     <string name="reload_or_not">Zahodit změny a znovu načíst?</string>
     <string name="refresh">Obnovit</string>
@@ -127,8 +126,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="files_and_folders">Soubory a složky</string>
     <string name="document_browser">prohlížeč dokumentů</string>
     <string name="file_browser">Správce souborů</string>
-    <string name="set_due_date">Nastavit termín dokončení</string>
-    <string name="insert_replace_date">Vložit datum</string>
     <string name="create_note" needed="false">Vytvořit poznámku</string>
     <string name="special_documents" needed="false">Speciální dokumenty</string>
     <string name="keep_screen_on" needed="false">Udržovat obrazovku zapnutou</string>
@@ -160,8 +157,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="underline">Podtržení</string>
     <string name="underline_hex_color_wether_or_not_to_description__appspecific">Podtrhovat hex kódy barev odpovídající barvou</string>
     <string name="underline_hex_color_codes">Podtrhnout Hex barevné kódy</string>
-    <string name="insert_current_date_when_starting_new_task">Vložit aktuální datum při zahájení nového úkolu</string>
-    <string name="tasks_with_todays_date">Úkoly s dnešním datem</string>
     <string name="append_contexts_and_projects">Připojit kontexty a projekty</string>
     <string name="append_contexts_and_projects_on_end_of_task">Použití příslušného textového modulu přidá na konec úkolu kontexty a projekty</string>
     <string name="rtl_rendering">vykreslování RTL</string>
@@ -176,8 +171,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="resources">Zdroje</string>
     <string name="space_between_lines_in_percent">Mezery mezi řádky v procentech</string>
     <string name="line_spacing">Řádkování</string>
-    <string name="archive_does_move_done_tasks">Přesun hotových úloh do zadaného souboru ve stejné složce</string>
-    <string name="sort_tasks_by_selected_order">Řadit úkoly podle zvoleného pořadí</string>
     <string name="special_key">Speciální klíč</string>
     <string name="asciidoc_special_key">Speciální AsciiDoc Obsah</string>
     <string name="key_page_up">O stránku nahoru (PgUp)</string>
@@ -244,7 +237,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="community">Komunita</string>
     <string name="contributors_public_add_yourself_description">Zobrazit informace o přispěvatelích. Po přispění mohou přispěvatelé poskytnout informace, které se zde zobrazí na základě opt-in</string>
     <string name="descending">sestupně</string>
-    <string name="ascending">vzestupně</string>
     <string name="disable_spelling_underline">Deaktivovat podtržení pravopisných chyb</string>
     <string name="spellcheck_keyboard_suggestion_stay_red_underline_vanishes">Návrhy oprav zůstanou, červené podtržení zmizí</string>
     <string name="location">Pozice</string>
@@ -312,8 +304,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="internal_storage">Vnitřní úložiště</string>
     <string name="open_the_document_from_main_view">Dokument můžete otevřít z hlavního zobrazení dole, z prohlížeče souborů nebo launcheru. Je zde také možnost připojit sdílený text do aplikace Markor.</string>
     <string name="notebook_is_the_home_of_your_files">Notebook je složka, kterou Markor načítá v prohlížeči souborů, když je aplikace spuštěna. Je to domácí složka vašich souborů.</string>
-    <string name="quicknote_is_the_fastest_option_to_write_down_notes">QuickNote je nejrychlejší možnost pro psaní poznámek. Je to soubor ve formátu Markdown s výchozí pozicí &gt;Notebook/QuickNote.md&lt;, můžete nastavit vlastní cestu k souboru v nastaveních.</string>
-    <string name="todo_is_the_easiest_way_">Spravujte své úkoly pomocí ToDo. Je to soubor ve formátu todo.txt s výchozím umístění v &gt;Notebook/todo. xt&lt;, můžete nastavit vlastní cestu k souborům v nastavení.</string>
     <string name="black">Černá</string>
     <string name="white">Bílá</string>
     <string name="view">Zobrazení</string>
@@ -385,7 +375,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="link_color">Barva odkazu</string>
     <string name="add_context">Přidat kontext</string>
     <string name="add_project">Přidat projekt</string>
-    <string name="archive_completed_tasks">Archivovat dokončené úkoly</string>
     <string name="overline">Nadtržení</string>
     <string name="superscript">Horní index</string>
     <string name="subscript">Dolní index</string>
@@ -396,7 +385,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="back">Zpět</string>
     <string name="expand_collapse">Rozbalit / Sbalit</string>
     <string name="essential">Základní</string>
-    <string name="append_human_readable_uuid_to_new_tasks">Připojit okem čitelné UUID k novým úkolům</string>
     <string name="action_order">Pořadí tlačítek</string>
     <string name="show_bottom_action_bar">Zobrazit dolní panel akcí</string>
     <string name="toggle_action_visibility">Přepnout viditelnost akce</string>
@@ -420,7 +408,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="password_already_set_setting_a_new_password_will_overwrite">Heslo je již nastaveno. Zadáním nového hesla se přepíše stávající heslo a v případě, že ho zapomenete, již možná nebudete moci přistupovat k souborům.</string>
     <string name="code_block">Blok kódu</string>
     <string name="add_completion_date">Přidat datum dokončení</string>
-    <string name="add_completion_date_for_todos_when_marking_them_as_done">Přidat datum dokončení úloh při označení jako hotové</string>
     <string name="file_description_format">Formát popisu souboru</string>
     <string name="file_description_format_dialog">Formát pro popis každého souboru v prohlížeči souborů. Postupujte podle pravidel SimpleDateFormat Android s přidáním FS pro zobrazení velikosti souboru. Ponechte prázdné pro použití výchozího formátu pro vaše locale.\n\nPříklad vstupu:\nFS yyyy MMM dd hh:mm:ss aa\nVýstupní formát:\n30KB 2020 bře 20 11:24:52</string>
     <string name="loading_default_value">Načítání výchozí hodnoty</string>
@@ -455,25 +442,7 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="skip_all">Přeskočit (vše)</string>
     <string name="overwrite_all">Přepsat (vše)</string>
     <string name="copy_move_conflict_message">\'%s\' již existuje v %s</string>
-    <string name="additional_contexts_and_projects">Dodatečné kontexty a projekty</string>
-    <string name="enter_space_seperated_contexts_and_projects_these_will">Zadejte @contexty oddělené mezerou a +projects. Ty budou vždy viditelné při vkládání dialogových oken.</string>
     <string name="infinite">Nekonečný</string>
-    <string name="browse_by_project">Procházet podle projektu</string>
-    <string name="browse_by_context">Procházet podle kontextu</string>
-    <string name="insert_project">Vložit projekty</string>
-    <string name="insert_context">Insert contexts</string>
-    <string name="browse_todo">Procházet úkol</string>
-    <string name="browse_by_priority">Procházet podle priority</string>
-    <string name="browse_by_due_date">Procházet podle termínu dokončení</string>
-    <string name="due_overdue">Po termínu</string>
-    <string name="due_today">Termín dnes</string>
-    <string name="due_future">Termín v budoucnu</string>
-    <string name="completed">Dokončeno</string>
-    <string name="advanced_filtering">Rozšířené filtrování</string>
-    <string name="match_any">Odpovídat libovolné</string>
-    <string name="match_all">Odpovídat vše</string>
-    <string name="dynamic_notebook_root_links">Dynamické hledání kořene sešitu</string>
-    <string name="search_dynamically_for_notebook_root">Chcete-li sledovat wiki odkazy, dynamicky vyhledat notebook.zim soubor pro identifikaci kořenového adresáře pro aktuální notebook. Zaškrtněte, pokud používáte více sešitů zim nebo nastavený adresář sešitu v aplikaci, neodpovídá Vašemu sešitu zim.</string>
     <string name="share_into_format_prefix_for_text_shared">Formát/prefix pro text sdílený do aplikace Markor. Řídí se pravidly Android SimpleDateFormat.\n\nPoužijte zástupný symbol {{text}} pro umístění sdíleného textu. Pokud není uveden, sdílený text bude připojen na konec a formát bude použit jako prefix.</string>
     <string name="share_into_format">Sdílet do - formát</string>
     <string name="attachment_folder_name">Název adresáře pro přílohy</string>
@@ -484,7 +453,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="error_could_not_open_file">Chyba: Nelze otevřít soubor.</string>
     <string name="document_error_clip">Došlo k chybě: Text zkopírován do schránky.</string>
     <string name="wont_save_min_length">Soubory s méně než %d znaky se neukládají automaticky, aby se předešlo ztrátě dat.</string>
-    <string name="advanced_filtering_help"><![CDATA[<small><a href="https://www.github.com/gsantner/markor/discussions/1940">Pokročilý filtrovací syntax</a></small>]]></string>
     <string name="filter">Filtr</string>
     <string name="text_case">Velikost písma</string>
     <string name="toggle_case">Přepnout velikost písma (Case→CASE→case)</string>

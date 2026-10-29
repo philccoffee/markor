@@ -29,12 +29,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import net.gsantner.markor.R;
 import net.gsantner.markor.format.ActionButtonBase;
 import net.gsantner.markor.format.ActionButtonBase.ActionItem.DisplayMode;
-import net.gsantner.markor.format.asciidoc.AsciidocActionButtons;
 import net.gsantner.markor.format.markdown.MarkdownActionButtons;
-import net.gsantner.markor.format.orgmode.OrgmodeActionButtons;
 import net.gsantner.markor.format.plaintext.PlaintextActionButtons;
-import net.gsantner.markor.format.todotxt.TodoTxtActionButtons;
-import net.gsantner.markor.format.wikitext.WikitextActionButtons;
 import net.gsantner.opoc.util.GsCollectionUtils;
 
 import java.util.ArrayList;
@@ -127,14 +123,6 @@ public class ActionButtonSettingsActivity extends MarkorBaseActivity {
 
         if (documentType == R.string.pref_key__markdown__reorder_actions) {
             _textActions = new MarkdownActionButtons(this, null);
-        } else if (documentType == R.string.pref_key__todotxt__reorder_actions) {
-            _textActions = new TodoTxtActionButtons(this, null);
-        } else if (documentType == R.string.pref_key__wikitext_reorder_actions) {
-            _textActions = new WikitextActionButtons(this, null);
-        } else if (documentType == R.string.pref_key__asciidoc__reorder_actions) {
-            _textActions = new AsciidocActionButtons(this, null);
-        } else if (documentType == R.string.pref_key__orgmode__reorder_actions) {
-            _textActions = new OrgmodeActionButtons(this, null);
         } else { // Default to Plaintext
             _textActions = new PlaintextActionButtons(this, null);
         }

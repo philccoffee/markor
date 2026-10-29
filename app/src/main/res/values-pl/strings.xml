@@ -111,7 +111,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="archive">Archiwum</string>
     <string name="add_task">Dodaj zadanie</string>
     <string name="add_x_witharg">Dodaj %s</string>
-    <string name="document_to_be_loaded_and_saved_as_witharg">Dokument zostanie załadowany i zapisany jako \"%s\"</string>
     <string name="refresh">Odśwież</string>
     <string name="create_shortcut">Utwórz skrót</string>
     <string name="tried_to_create_shortcut_for_this_notice">Próbowałem dodać skrót do ekranu głównego do edycji tego dokumentu. Pamiętaj, że niektóre programy uruchamiające mogą tego nie obsługiwać.</string>
@@ -119,8 +118,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="file_not_in_current_folder_do_copy__appspecific">Plik nie jest zlokalizowany w bieżącym folderze. Czy chcesz skopiować go do bieżącego folderu? Spowoduje to nadpisanie istniejącego pliku o tej samej nazwie.</string>
     <string name="files_and_folders">Pliki i foldery</string>
     <string name="document_browser">Przeglądarka dokumentów</string>
-    <string name="set_due_date">Ustaw termin</string>
-    <string name="insert_replace_date">Wstaw datę</string>
     <string name="create_note" needed="false">Utwórz notatkę</string>
     <string name="special_documents" needed="false">Specjalne dokumenty</string>
     <string name="keep_screen_on" needed="false">Pozostaw ekran włączony</string>
@@ -151,8 +148,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="underline">Podkreślenie</string>
     <string name="underline_hex_color_wether_or_not_to_description__appspecific">Określa, czy należy podświetlać kody kolorów heksadecymalnych w zależności od koloru</string>
     <string name="underline_hex_color_codes">Podkreślaj kolory w układzie szesnastkowym (Hex)</string>
-    <string name="insert_current_date_when_starting_new_task">Wstawianie bieżącej daty podczas uruchamiania nowego zadania</string>
-    <string name="tasks_with_todays_date">Zadania z dzisiejszą datą</string>
     <string name="append_contexts_and_projects">Dodaj konteksty i projekty</string>
     <string name="append_contexts_and_projects_on_end_of_task">Dołącz konteksty i projekty na końcu zadania przy użyciu odpowiedniej akcji tekstu</string>
     <string name="rtl_rendering">Renderowanie RTL</string>
@@ -167,8 +162,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="resources">Zasoby</string>
     <string name="space_between_lines_in_percent">Odstęp między wierszami w procentach</string>
     <string name="line_spacing">Odstępy między wierszami</string>
-    <string name="archive_does_move_done_tasks">Przenieś wykonane zadania do określonego pliku w tym samym folderze</string>
-    <string name="sort_tasks_by_selected_order">Sortuj zadania według</string>
     <string name="special_key">Znaki specjalne</string>
     <string name="key_ctrl_a">Zaznacz wszystko (Ctrl + A)</string>
     <string name="start_on_bottom">Zacznij od dołu</string>
@@ -209,7 +202,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="community">Społeczność</string>
     <string name="contributors_public_add_yourself_description">Pokaż informacje o współtwórcy. Podaj je tutaj, korzystając z opcji \"opt-in\" po dołączeniu</string>
     <string name="descending">malejąco</string>
-    <string name="ascending">rosnąco</string>
     <string name="disable_spelling_underline">Wyłącz podkreślanie pisowni</string>
     <string name="spellcheck_keyboard_suggestion_stay_red_underline_vanishes">Zostają sugestie klawiatury, czerwone podkreślenia znikają</string>
     <string name="location">Lokalizacja</string>
@@ -271,8 +263,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="internal_storage">Pamięć wewnętrzna</string>
     <string name="open_the_document_from_main_view">Możesz otworzyć dokument z widoku głównego aplikacji, w przeglądarce plików lub w launcherze. Istnieje również możliwość udostępnienia tekstu do Markor.</string>
     <string name="notebook_is_the_home_of_your_files">Notatki to katalog, który Markor ładuje w przeglądarce plików po uruchomieniu aplikacji. To domyślny folder dla Twoich plików.</string>
-    <string name="quicknote_is_the_fastest_option_to_write_down_notes">QuickNote to najszybsza możliwość robienia notatek. Jest to plik w formacie Markdown z domyślną lokalizacją &gt;Notatki/QuickNote.md&lt;. Możesz wybrać własną lokalizację w ustawieniach.</string>
-    <string name="todo_is_the_easiest_way_">Zarządzaj zadaniami za pomocą ToDo. Jest to plik w formacie todo.txt z domyślną lokalizacją &gt;Notebook/todo. xt&lt;, możesz ustawić własną ścieżkę plików w ustawieniach.</string>
     <string name="black">Czarny</string>
     <string name="white">Biały</string>
     <string name="view">Wyświetl</string>
@@ -336,14 +326,12 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="link_color">Kolor linku</string>
     <string name="add_context">Dodaj kontekst</string>
     <string name="add_project">Dodaj projekt</string>
-    <string name="archive_completed_tasks">Archiwizuj wykonane zadania</string>
     <string name="create_new_file_or_folder">Utwórz nowy plik lub folder</string>
     <string name="choose_format">Wybierz format</string>
     <string name="selected">Wybrane</string>
     <string name="back">Powrót</string>
     <string name="expand_collapse">Rozwiń / Zwiń</string>
     <string name="essential">Pozostałe</string>
-    <string name="append_human_readable_uuid_to_new_tasks">Dołącz czytelny dla człowieka UUID do nowych zadań</string>
     <string name="action_order">Kolejność przycisków</string>
     <string name="toggle_action_visibility">Przełącz widoczność akcji</string>
     <string name="load_default_settings">Przywróć domyślne ustawienia</string>
@@ -358,7 +346,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="password_already_set_setting_a_new_password_will_overwrite">Hasło już ustawione. Ustawienie nowego hasła nadpisze istniejące hasło i może nie mieć już dostępu do plików, jeśli zapomnisz hasła.</string>
     <string name="code_block">Blok kodu</string>
     <string name="add_completion_date">Dodaj datę wykonania</string>
-    <string name="add_completion_date_for_todos_when_marking_them_as_done">Dodaj datę ukończenia zadania przy oznaczaniu jako wykonane</string>
     <string name="file_description_format">Format opisu pliku</string>
     <string name="file_description_format_dialog">Format opisu w każdej przeglądarce plików. Postępuje zgodnie z regułami SimpleDateFormat Androida, z dodatkiem FS do pokazywania rozmiaru pliku. Pozostaw puste, aby użyć domyślnego formatu dla swojego języka.\n\nPrzykładowe wejście:\nFS yyyy MMM dd hh:mm:ss aa\nFormat wyjściowy:\n30KB 2020 Mar 20 11:24:52 PM</string>
     <string name="loading_default_value">Wczytywanie domyślnych wartości</string>
@@ -391,24 +378,7 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="skip_all">Pomiń (wszystkie)</string>
     <string name="overwrite_all">Nadpisz (wszystkie)</string>
     <string name="copy_move_conflict_message">\'%s\' już istnieje w %s</string>
-    <string name="additional_contexts_and_projects">Dodatkowe konteksty i projekty</string>
-    <string name="enter_space_seperated_contexts_and_projects_these_will">Wprowadź oddzielone spacjami @contexts i +projekty. Będą one zawsze widoczne w oknie dialogowym wstawiania todo.txt.</string>
     <string name="infinite">Bez ograniczeń</string>
-    <string name="browse_by_project">Przeglądaj według projektu</string>
-    <string name="browse_by_context">Przeglądaj według kontekstu</string>
-    <string name="insert_project">Wstaw projekty</string>
-    <string name="insert_context">Insert contexts</string>
-    <string name="browse_todo">Przeglądaj zadanie</string>
-    <string name="browse_by_priority">Przeglądaj według priorytetu</string>
-    <string name="browse_by_due_date">Przeglądaj według terminu</string>
-    <string name="due_overdue">Zaległe</string>
-    <string name="due_today">Termin na dziś</string>
-    <string name="due_future">Termin w przyszłości</string>
-    <string name="completed">Wykonane</string>
-    <string name="match_any">Dopasuj dowolne</string>
-    <string name="match_all">Dopasuj wszystkie</string>
-    <string name="dynamic_notebook_root_links">Dynamiczne wyszukiwanie roota notatnika</string>
-    <string name="search_dynamically_for_notebook_root">Aby śledzić linki wiki, dynamicznie szukaj plik notebook.zim w celu identyfikacji katalogu głównego dla bieżącego notatnika. Zaznacz to, jeśli używasz wielu notatników zim lub katalog notatnika ustawiony w aplikacji nie odpowiada notatnikowi zim.</string>
     <string name="share_into_format">Udostępnij - Format</string>
     <string name="auto_format">Automatyczny format</string>
     <string name="insert_snippet">Insert snippet</string>

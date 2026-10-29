@@ -114,7 +114,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="archive">Arhivează</string>
     <string name="add_task">Adaugă sarcină</string>
     <string name="add_x_witharg">Adaugă %s</string>
-    <string name="document_to_be_loaded_and_saved_as_witharg">Documentul va fi încărcat și salvat ca \"%s\"</string>
     <string name="refresh">Împrospătează</string>
     <string name="create_shortcut">Creează scurtătură</string>
     <string name="tried_to_create_shortcut_for_this_notice">Am încercat să creez o comandă rapidă pe ecranul de pornire. Reține că unele lansatoare pot să nu accepte această funcție.</string>
@@ -122,8 +121,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="file_not_in_current_folder_do_copy__appspecific">Fișierul nu se află în dosarul curent. Doriți să îl copiați în dosarul curent? Aceasta va suprascrie orice fișier existent cu același nume.</string>
     <string name="files_and_folders">Fișiere și dosare</string>
     <string name="document_browser">Browser de documente</string>
-    <string name="set_due_date">Setează data scadentă</string>
-    <string name="insert_replace_date">Inserează data</string>
     <string name="create_note" needed="false">Creează o notă</string>
     <string name="special_documents" needed="false">Documente speciale</string>
     <string name="keep_screen_on" needed="false">Menține ecranul pornit</string>
@@ -154,8 +151,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="underline">Subliniat</string>
     <string name="underline_hex_color_wether_or_not_to_description__appspecific">Subliniază codurile hexazecimale de culoare în funcție de culoare</string>
     <string name="underline_hex_color_codes">Subliniază codurile de culoare Hex</string>
-    <string name="insert_current_date_when_starting_new_task">Inserează data curentă la începerea unei sarcini noi</string>
-    <string name="tasks_with_todays_date">Sarcini cu data de azi</string>
     <string name="append_contexts_and_projects">Atașează contexte și proiecte</string>
     <string name="append_contexts_and_projects_on_end_of_task">Adaugă contexte și proiecte la sfârșitul unei sarcini când se folosește acțiunea text potrivită</string>
     <string name="rtl_rendering">Redare RTL</string>
@@ -170,8 +165,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="resources">Resurse</string>
     <string name="space_between_lines_in_percent">Spațiu între linii în procente</string>
     <string name="line_spacing">Spațiere rânduri</string>
-    <string name="archive_does_move_done_tasks">Mută sarcinile finalizate în fișierul specificat din același dosar</string>
-    <string name="sort_tasks_by_selected_order">Sortează sarcinile după ordinea selectată</string>
     <string name="special_key">Cheie specială</string>
     <string name="asciidoc_special_key">Conținut special AsciiDoc</string>
     <string name="key_ctrl_a">Selectează tot (Ctrl+A)</string>
@@ -221,7 +214,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="community">Comunitate</string>
     <string name="contributors_public_add_yourself_description">Afișează informațiile contribuitorilor. Acestea vor fi afișate aici, cu acordul lor, după ce contribuie</string>
     <string name="descending">descrescător</string>
-    <string name="ascending">ascendent</string>
     <string name="disable_spelling_underline">Dezactivează ortografia subliniată</string>
     <string name="spellcheck_keyboard_suggestion_stay_red_underline_vanishes">Sugestiile tastaturii rămân, sublinierea roșie dispare</string>
     <string name="location">Locaţie</string>
@@ -284,8 +276,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="internal_storage">Stocare internă</string>
     <string name="open_the_document_from_main_view">Puteți deschide documentul din vizualizarea principală de jos, din browserul de fișiere sau din lansator. Există, de asemenea, o opțiune de atașare a textului partajat în Markor.</string>
     <string name="notebook_is_the_home_of_your_files">Caietul este dosarul pe care Markor îl încarcă în browserul de fișiere la pornirea aplicației. Este dosarul principal al fișierelor tale.</string>
-    <string name="quicknote_is_the_fastest_option_to_write_down_notes">QuickNote este cea mai rapidă opțiune pentru a scrie notițe. Este un fișier în format Markdown cu locația implicită &gt;Notebook/QuickNote.md&lt;, puteți seta o cale personalizată în setări.</string>
-    <string name="todo_is_the_easiest_way_">Gestionați sarcinile cu ToDo. Este un fișier în format todo.txt cu locația implicită &gt;Notebook/todo. xt&lt;, puteţi seta o cale personalizată în setări.</string>
     <string name="black">Negru</string>
     <string name="white">Alb</string>
     <string name="view">Vizualizare</string>
@@ -352,7 +342,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="link_color">Culoare link</string>
     <string name="add_context">Adaugă context</string>
     <string name="add_project">Adaugă proiect</string>
-    <string name="archive_completed_tasks">Arhivează sarcinile finalizate</string>
     <string name="create_new_file_or_folder">Creează un fișier sau un dosar nou</string>
     <string name="choose_format">Alege formatul</string>
     <string name="clear_selection">Șterge selecția</string>
@@ -360,7 +349,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="back">Înapoi</string>
     <string name="expand_collapse">Extinde / Restrânge</string>
     <string name="essential">Esențial</string>
-    <string name="append_human_readable_uuid_to_new_tasks">Adaugă un UUID lizibil la sarcinile noi</string>
     <string name="action_order">Ordinea acțiunilor</string>
     <string name="toggle_action_visibility">Comută vizibilitatea acțiunii</string>
     <string name="load_default_settings">Încarcă setările implicite</string>
@@ -375,7 +363,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="password_already_set_setting_a_new_password_will_overwrite">Parola este deja setată. Setarea unei noi parole va suprascrie parola existentă și s-ar putea să nu mai puteți accesa fișierele dacă uitați parola.</string>
     <string name="code_block">Bloc de cod</string>
     <string name="add_completion_date">Adaugă data finalizării</string>
-    <string name="add_completion_date_for_todos_when_marking_them_as_done">Adaugă data finalizării pentru sarcinile de tip \"de făcut\" atunci când le marchezi ca terminate</string>
     <string name="file_description_format">Format descriere fișier</string>
     <string name="file_description_format_dialog">Formatul descrierii de sub fiecare fișier din navigatorul de fișiere. Urmează regulile SimpleDateFormat ale Android, cu adăugarea FS pentru afișarea dimensiunii fișierului. Lăsați necompletat pentru a utiliza formatul implicit pentru setările regionale.\n\nExemplu de intrare:\nFS yyyy MMM dd hh:mm:ss aa\nFormatul rezultat:\n30KB 2020 Mar 20 11:24:52 PM</string>
     <string name="loading_default_value">Se încarcă valoarea implicită</string>
@@ -408,25 +395,7 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="skip_all">Omiteți (toate)</string>
     <string name="overwrite_all">Suprascrie (toate)</string>
     <string name="copy_move_conflict_message">\'%s\' există deja în %s</string>
-    <string name="additional_contexts_and_projects">contexte și proiecte suplimentare</string>
-    <string name="enter_space_seperated_contexts_and_projects_these_will">Introduceți @contexturi și +proiecte separate prin spații. Acestea vor fi întotdeauna vizibile în dialogurile de inserare todo.txt.</string>
     <string name="infinite">Infinit</string>
-    <string name="browse_by_project">Răsfoiește după proiect</string>
-    <string name="browse_by_context">Răsfoiește după context</string>
-    <string name="insert_project">Inserează proiecte</string>
-    <string name="insert_context">Inserează contexte</string>
-    <string name="browse_todo">Răsfoiește todo</string>
-    <string name="browse_by_priority">Răsfoiește după prioritate</string>
-    <string name="browse_by_due_date">Răsfoiește după data scadentă</string>
-    <string name="due_overdue">Depășit</string>
-    <string name="due_today">De finalizat astăzi</string>
-    <string name="due_future">De finalizat în viitor</string>
-    <string name="completed">Completat</string>
-    <string name="advanced_filtering">Filtrare avansată</string>
-    <string name="match_any">Potrivire oricare</string>
-    <string name="match_all">Potrivește tot</string>
-    <string name="dynamic_notebook_root_links">Căutare dinamică pentru rădăcina caietului</string>
-    <string name="search_dynamically_for_notebook_root">Pentru a urmări linkurile wiki, căutați în mod dinamic fișierul notebook.zim pentru a identifica directorul rădăcină pentru caietul curent. Bifați această opțiune dacă utilizați mai multe caiete zim sau dacă directorul caietului setat în aplicație nu corespunde caietului zim.</string>
     <string name="share_into_format_prefix_for_text_shared">Format/Prefix pentru textul partajat în Markor. Urmează regulile SimpleDateFormat ale Android.\n\nFolosește variabila {{text}} pentru a poziționa textul partajat. Dacă nu este specificat, textul partajat este adăugat la sfârșit și formatul este folosit ca prefix.</string>
     <string name="share_into_format">Partajare în - Format</string>
     <string name="attachment_folder_name">Numele dosarului de atașare</string>
@@ -437,7 +406,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="error_could_not_open_file">Eroare: Nu s-a putut deschide fișierul.</string>
     <string name="document_error_clip">Eroare întâlnită: textul a fost copiat în clipboard.</string>
     <string name="wont_save_min_length">Fișierele cu mai puțin de %d caractere nu sunt salvate automat pentru a preveni pierderea de date.</string>
-    <string name="advanced_filtering_help"><![CDATA[<small><a href="https://www.github.com/gsantner/markor/discussions/1940">Sintaxă avansată de filtrare</a></small>]]></string>
     <string name="filter">Filtru</string>
     <string name="text_case">Formatare text</string>
     <string name="use_tab_to_indent">Indentează liniile cu tasta TAB</string>

@@ -61,34 +61,6 @@ public class ShortcutUtils {
 
             final AppSettings appSettings = AppSettings.get(context);
 
-            // Create the to-do shortcut
-            final Intent openTodo = new Intent(context, OpenFromShortcutOrWidgetActivity.class)
-                    .setAction(Intent.ACTION_EDIT)
-                    .setData(Uri.fromFile(appSettings.getTodoFile()))
-                    .putExtra(Document.EXTRA_FILE_LINE_NUMBER, -1);
-
-            final ShortcutInfo shortcutToDo = new ShortcutInfo.Builder(context, ID_TO_DO)
-                    .setShortLabel(createShortLabel(context.getString(R.string.todo)))
-                    .setLongLabel(createLongLabel(context.getString(R.string.todo)))
-                    .setIcon(Icon.createWithResource(context, R.mipmap.ic_shortcut_todo))
-                    .setIntent(openTodo)
-                    .build();
-            newShortcuts.add(shortcutToDo);
-
-            // Create the QuickNote shortcut
-            final Intent openQuickNote = new Intent(context, OpenFromShortcutOrWidgetActivity.class)
-                    .setAction(Intent.ACTION_EDIT)
-                    .setData(Uri.fromFile(appSettings.getQuickNoteFile()))
-                    .putExtra(Document.EXTRA_FILE_LINE_NUMBER, -1);
-
-            final ShortcutInfo shortcutQuickNote = new ShortcutInfo.Builder(context, ID_QUICK_NOTE)
-                    .setShortLabel(createShortLabel(context.getString(R.string.quicknote)))
-                    .setLongLabel(createLongLabel(context.getString(R.string.quicknote)))
-                    .setIcon(Icon.createWithResource(context, R.mipmap.ic_shortcut_quicknote))
-                    .setIntent(openQuickNote)
-                    .build();
-            newShortcuts.add(shortcutQuickNote);
-
             // Generate shortcuts for the most recent documents. Maximum of MAX_RECENT_DOCUMENTS.
             final List<String> recentDocuments = appSettings.getRecentDocuments();
 

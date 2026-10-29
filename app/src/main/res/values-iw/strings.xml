@@ -114,7 +114,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="archive">ארכיון</string>
     <string name="add_task">הוסף מטלה</string>
     <string name="add_x_witharg">הוסף %s</string>
-    <string name="document_to_be_loaded_and_saved_as_witharg">המסמך יטען יישמר כ- \"%s\"</string>
     <string name="refresh">רענן</string>
     <string name="create_shortcut">צור קיצור דרך</string>
     <string name="tried_to_create_shortcut_for_this_notice">ניסיתי ליצור קיצור דרך למסך הבית. שים לב כי קיימים לאנצ\'רים שלא תומכים בזה.</string>
@@ -122,8 +121,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="file_not_in_current_folder_do_copy__appspecific">הקובץ לא נמצא בתיקיה הנוכחית. האם ברצונך להעתיק אותו לתיקיה הנוכחית? פעולה זו תחליף כל קובץ קיים עם אותו שם.</string>
     <string name="files_and_folders">קבצים ותיקיות</string>
     <string name="document_browser">דפדפן מסמכים</string>
-    <string name="set_due_date">הגדר תאריך יעד</string>
-    <string name="insert_replace_date">הוסף תאריך</string>
     <string name="create_note" needed="false">צור פתק</string>
     <string name="special_documents" needed="false">מסמכים מיוחדים</string>
     <string name="keep_screen_on" needed="false">השאר את המסך דולק</string>
@@ -154,8 +151,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="underline">קו תחתון</string>
     <string name="underline_hex_color_wether_or_not_to_description__appspecific">האם להוסיף קו תחתון מתחת לקוד הקסאדצימלי בהתאם לצבע</string>
     <string name="underline_hex_color_codes">הוסף שורה מתחת לקוד צבע הקסאדצימלי</string>
-    <string name="insert_current_date_when_starting_new_task">הכנס את התאריך הנוכחי בתחילת מטלה חדשה</string>
-    <string name="tasks_with_todays_date">מטלות עם התאריך של היום</string>
     <string name="append_contexts_and_projects">הוסף הקשרים ופרויקטים</string>
     <string name="append_contexts_and_projects_on_end_of_task">הוסף קונטקסטים ופרויקטים לסוף מטלה בעת שימוש בפעולת הטקסט המתאימה</string>
     <string name="rtl_rendering">תצוגת ימין-לשמאל</string>
@@ -170,8 +165,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="resources">מקורות</string>
     <string name="space_between_lines_in_percent">המרווח בין שורות באחוזים</string>
     <string name="line_spacing">מרווח בין שורות</string>
-    <string name="archive_does_move_done_tasks">הזז מטלות שבוצעו לקובץ שצויין באותה תיקיה</string>
-    <string name="sort_tasks_by_selected_order">מיין את המטלות לפי הסדר שנבחר</string>
     <string name="special_key">כפתור מיוחד</string>
     <string name="asciidoc_special_key">תוכן AsciiDoc מיוחד</string>
     <string name="key_ctrl_a">בחר הכל (Ctrl+A)</string>
@@ -217,7 +210,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="community">קהילה</string>
     <string name="contributors_public_add_yourself_description">הצג פרטי המתנדב. הבא זאת להצגה כאן על בסיס הסכמה מראש לאחר תרומה</string>
     <string name="descending">בסדר יורד</string>
-    <string name="ascending">בסדר עולה</string>
     <string name="disable_spelling_underline">בטל קו תחתון הקשור לאילת שגוי</string>
     <string name="spellcheck_keyboard_suggestion_stay_red_underline_vanishes">הצעות מקלדת ישארו, קו אדום תחתון יעלם</string>
     <string name="location">מיקום</string>
@@ -280,8 +272,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="internal_storage">אחסון פנימי</string>
     <string name="open_the_document_from_main_view">ניתן לפתוח את המסמך באמצעות הסרגל בתחתית המסך הראשי, מעיין הקבצים או התפריט. יש גם אפשרות להוסיף טקסט אשר שותף לתוך Markor.</string>
     <string name="notebook_is_the_home_of_your_files">תיקיית המחברת הינו מה שMarkor טוען לתוך מעיין הקבצים בפתיחה האפלקיציה. זו תיקיית הבית עבור הקבצים שלכם.</string>
-    <string name="quicknote_is_the_fastest_option_to_write_down_notes">הפתק המהיר הינו הדרך המהירה ביותר לרשום דברים. זהו קובץ בפורמאט Markdown עם מיקום ברירת המחדל &lt;Notebook/QuickNote.md&gt;, הנכם יכולים להגדיר מיקום שונה בהגדרות.</string>
-    <string name="todo_is_the_easiest_way_">נהלו את משימותיכם באמצעות רשימת מטלות. זהו קובץ בפורמאט todo.txt עם מיקום ברירת המחדל &lt;Notebook/todo.txt&gt;, הנכם יכולים להגדיר מיקום שונה בהגדרות.</string>
     <string name="black">שחור</string>
     <string name="white">לבן</string>
     <string name="view">הצג</string>
@@ -348,7 +338,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="link_color">צבע קישור</string>
     <string name="add_context">הוסף הקשר</string>
     <string name="add_project">הוסף פרוייקט</string>
-    <string name="archive_completed_tasks">העבר מטלות שבוצעו לארכיון</string>
     <string name="create_new_file_or_folder">צור קובץ או תיקייה חדשים</string>
     <string name="choose_format">בחר פורמאט</string>
     <string name="clear_selection">נקה בחירה</string>
@@ -356,7 +345,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="back">חזרה</string>
     <string name="expand_collapse">הרחב/קפל</string>
     <string name="essential">חיוני</string>
-    <string name="append_human_readable_uuid_to_new_tasks">צרף מזהה משתמש ייחודי קריא למטלות חדשות</string>
     <string name="action_order">סידור פעולות</string>
     <string name="toggle_action_visibility">הצג או הסתר פעולה</string>
     <string name="load_default_settings">טען הגדרות ברירת מחדל</string>
@@ -373,7 +361,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="password_already_set_setting_a_new_password_will_overwrite">סיסמא כבר מוגדרת. הגדרת סיסמא חדשה תדרוס את הקיימת והנכם עלולים לאבד גישה לקבצים במידה ולא תזכרו את הסיסמא.</string>
     <string name="code_block">תא קוד</string>
     <string name="add_completion_date">הוספת תאריך סיום</string>
-    <string name="add_completion_date_for_todos_when_marking_them_as_done">הוסף תאריך סיום עבור מטלות שבוצעו, בעט סימונים</string>
     <string name="file_description_format">פורמאט תיאור קובץ</string>
     <string name="file_description_format_dialog">פורמאט עבור התיאור עבור כל קובץ במעיין הקבצים. מבוסס על כללי SimpleDateForm של אנדרויד, עם תוספת של FS עבור גודל קובץ. השאר ריק בכדי להשתמש בפורמאט ברירת המחדל המקומי שלך.
 
@@ -411,24 +398,7 @@ FS yyyy MMM dd hh:mm:ss aa
     <string name="skip_all">דלג (על הכל)</string>
     <string name="overwrite_all">לדרוס (את הכל)</string>
     <string name="copy_move_conflict_message">\'%s\' כבר קיים ב %s</string>
-    <string name="additional_contexts_and_projects">קונטקסטים ופרוייקטים נוספים</string>
-    <string name="enter_space_seperated_contexts_and_projects_these_will">הזינו @קונטקסטים ו +פרויקטים עם רווחים בינהם. אלו תמיד יהיו זמינים בשדות כתיבה של רשימת המטלות.</string>
     <string name="infinite">אינסופי</string>
-    <string name="browse_by_project">עיין לפי פרוייקט</string>
-    <string name="browse_by_context">עיין לפי קונטקסט</string>
-    <string name="insert_project">הזן פרוייקטים</string>
-    <string name="insert_context">הזן קונטקסטים</string>
-    <string name="browse_todo">עיין ברשימת מטלות</string>
-    <string name="browse_by_priority">עיין לפי עדיפות</string>
-    <string name="browse_by_due_date">עיין לפי תאריך גמר</string>
-    <string name="due_overdue">באיחור</string>
-    <string name="due_today">להיום</string>
-    <string name="due_future">לעתיד</string>
-    <string name="completed">הושלם</string>
-    <string name="match_any">התאם לפחות לאחד</string>
-    <string name="match_all">התאם לכל</string>
-    <string name="dynamic_notebook_root_links">חיפוש דינמי לשורש המחברת</string>
-    <string name="search_dynamically_for_notebook_root">על מנת לעקוב אחר קישורי ויקי, יש לחפש בצורה דינמית בקובץ הnotebook.zim בכדי לזהות את תיקיית השורש עבור אותה מחברת. סמן את זה במידה ואתם משתמשים ביותר ממחברת zim אחת או במידה ותיקיית המחברות המוגדרת באפליקציה אינה תואמת למחברת הzim שלכם.</string>
     <string name="share_into_format">נוסח עבור שיתוף לתוך</string>
     <string name="auto_format">פירמוט אוטומטי</string>
     <string name="insert_snippet">הוסף את הגזיר</string>

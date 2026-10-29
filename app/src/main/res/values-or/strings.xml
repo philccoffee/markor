@@ -101,8 +101,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="tried_to_create_shortcut_for_this_notice">ଆପଣଙ୍କ ହୋମ୍ ସ୍କ୍ରିନରେ ଏକ ସର୍ଟକଟ୍ ସୃଷ୍ଟି କରିବାକୁ ଚେଷ୍ଟା କରିଛି। ଧ୍ୟାନ ଦିଅନ୍ତୁ ଯେ କିଛି ଉନ୍ମୋଚକ ଏହାକୁ ସମର୍ଥନ କରିନପାରେ।</string>
     <string name="files_and_folders">ଫାଇଲ୍ ଓ ଫୋଲ୍ଡର୍</string>
     <string name="document_browser">ଡକ୍ୟୁମେଣ୍ଟ୍ ବ୍ରାଉଜର୍</string>
-    <string name="set_due_date">ଧାର୍ଯ୍ୟ ତାରିଖ ସେଟ୍ କରନ୍ତୁ</string>
-    <string name="insert_replace_date">ତାରିଖ ସନ୍ନିବେଶ କରନ୍ତୁ</string>
     <string name="create_note" needed="false">ନୋଟ୍ ସୃଷ୍ଟି କରନ୍ତୁ</string>
     <string name="special_documents" needed="false">ବିଶେଷ ଡକ୍ୟୁମେଣ୍ଟ୍</string>
     <string name="keep_screen_on" needed="false">ସ୍କ୍ରିନ୍ ସଚଳ ରଖନ୍ତୁ</string>
@@ -150,7 +148,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="community">ସମ୍ପ୍ରଦାୟ</string>
     <string name="contributors_public_add_yourself_description">ଯୋଗଦାନକାରୀ ସୂଚନା ଦେଖାନ୍ତୁ |. ଯୋଗଦାନ ପରେ ଏହାକୁ ଏକ ଅପ୍ଟ-ଇନ୍ ଆଧାରରେ ଏଠାରେ ଦେଖାଇବାକୁ ପ୍ରଦାନ କରନ୍ତୁ |</string>
     <string name="descending">ଅବରୋହଣ</string>
-    <string name="ascending">ଆରୋହଣ</string>
     <string name="location">ଅବସ୍ଥାନ</string>
     <string name="directory">ଡିରେକ୍ଟୋରୀ</string>
     <string name="recently_viewed_documents">ନିକଟରେ ଦେଖାଯାଇଥିବା ଡକ୍ୟୁମେଣ୍ଟଗୁଡ଼ିକ</string>
@@ -236,7 +233,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="skip">ବାଦ୍ ଦିଅ</string>
     <string name="keep_both_all">ଉଭୟ ରଖନ୍ତୁ (ସମସ୍ତ)</string>
     <string name="skip_all">ବାଦ୍ ଦିଅ (ସମସ୍ତ)</string>
-    <string name="dynamic_notebook_root_links">ନୋଟବୁକ୍ ମୂଳ ପାଇଁ ଡାଇନାମିକ୍ ସନ୍ଧାନ</string>
     <string name="share_into_format">ଏଥିରେ ଅଂଶୀଦାର - ଫର୍ମାଟ୍</string>
     <string name="auto_format">ସ୍ଵତଃ-ଫର୍ମାଟ୍</string>
     <string name="insert_snippet">ସ୍ନିପେଟ୍ ସନ୍ନିବେଶ କରନ୍ତୁ</string>

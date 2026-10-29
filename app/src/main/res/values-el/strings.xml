@@ -111,7 +111,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="archive">Αρχειοθέτηση</string>
     <string name="add_task">Προσθήκη εργασίας</string>
     <string name="add_x_witharg">Προσθήκη %s</string>
-    <string name="document_to_be_loaded_and_saved_as_witharg">Έγγραφο που θα φορτωθεί και θα αποθηκευτεί ως \"%s\"</string>
     <string name="refresh">Ανανέωση</string>
     <string name="create_shortcut">Δημιουργία συντόμευσης</string>
     <string name="tried_to_create_shortcut_for_this_notice">Προσπάθησε να δημιουργήσει μια συντόμευση στην αρχική οθόνη. Σημειώστε ότι ορισμένοι εκκινητές ενδέχεται να μην το υποστηρίξουν.</string>
@@ -119,8 +118,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="file_not_in_current_folder_do_copy__appspecific">Το αρχείο δεν βρίσκεται στον τρέχοντα φάκελο. Θέλετε να το αντιγράψετε στον τρέχοντα φάκελο? Αυτό θα αντικαταστήσει οποιοδήποτε υπάρχον αρχείο με το ίδιο όνομα.</string>
     <string name="files_and_folders">Αρχεία και φάκελοι</string>
     <string name="document_browser">Περιηγητής εγγράφων</string>
-    <string name="set_due_date">Ορισμός ημερομηνίας λήξης</string>
-    <string name="insert_replace_date">Εισαγωγή ημερομηνίας</string>
     <string name="create_note" needed="false">Δημιουργία Σημείωσης</string>
     <string name="special_documents" needed="false">Ειδικά έγγραφα</string>
     <string name="keep_screen_on" needed="false">Διατήρηση της οθόνης ενεργής</string>
@@ -151,8 +148,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="underline">Με υπογράμμιση</string>
     <string name="underline_hex_color_wether_or_not_to_description__appspecific">Αν θα υπογραμμιστεί ο δεκαεξαδικός κωδικός χρώματος σύμφωνα με το χρώμα</string>
     <string name="underline_hex_color_codes">Υπογράμμιση Δεκαεξαδικούς Κωδικούς Χρωμάτων</string>
-    <string name="insert_current_date_when_starting_new_task">Εισάγετε την τρέχουσα ημερομηνία κατά την έναρξη μιας νέας εργασίας</string>
-    <string name="tasks_with_todays_date">Εργασίες με τη σημερινή ημερομηνία</string>
     <string name="append_contexts_and_projects">Προσάρτηση συγκειμένων και έργων</string>
     <string name="append_contexts_and_projects_on_end_of_task">Προσάρτηση συγκειμένων και έργων στο τέλος μιας εργασίας κατά τη χρήση της κατάλληλης ενέργειας κειμένου</string>
     <string name="rtl_rendering">Δεξιά-προς-αριστερή προβολή</string>
@@ -167,8 +162,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="resources">Πόροι</string>
     <string name="space_between_lines_in_percent">Διάστημα μεταξύ των γραμμών σε ποσοστό</string>
     <string name="line_spacing">Απόσταση Γραμμών</string>
-    <string name="archive_does_move_done_tasks">Μετακίνηση εργασιών σε καθορισμένο αρχείο στον ίδιο φάκελο</string>
-    <string name="sort_tasks_by_selected_order">Ταξινόμηση εργασιών με βάση την επιλεγμένη σειρά</string>
     <string name="special_key">Ειδικό πλήκτρο</string>
     <string name="asciidoc_special_key">Περιεχόμενο AsciiDoc</string>
     <string name="key_ctrl_a">Επιλογή όλων (Ctrl+A)</string>
@@ -213,7 +206,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="project_team">Ομάδα Έργου</string>
     <string name="contributors_public_add_yourself_description">Εμφάνιση πληροφοριών συνεισφέροντος. Δώστε το να εμφανίζεται εδώ σε βάση opt-in μετά τη συμβολή</string>
     <string name="descending">φθίνουσα</string>
-    <string name="ascending">αύξουσα</string>
     <string name="disable_spelling_underline">Απενεργοποίηση ορθογραφικού ελέγχου υπογράμμισης</string>
     <string name="spellcheck_keyboard_suggestion_stay_red_underline_vanishes">Διατήρηση προτάσεων πληκτρολογίου, η κόκκινη υπογράμμιση εξαφανίζεται</string>
     <string name="location">Τοποθεσία</string>
@@ -276,8 +268,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="internal_storage">Εσωτερικός αποθηκευτικός χώρος</string>
     <string name="open_the_document_from_main_view">Μπορείτε να ανοίξετε το έγγραφο από την κύρια προβολή στο κάτω μέρος, τον περιηγητή αρχείων ή τον εκκινητή. Υπάρχει επίσης μια επιλογή για την προσθήκη κειμένου που κοινοποιήθηκε στο Markor.</string>
     <string name="notebook_is_the_home_of_your_files">Σημειωματάριο είναι ο φάκελος που το Markor φορτώνει στο πρόγραμμα περιήγησης αρχείων όταν ξεκινά η εφαρμογή. Είναι ο αρχικός φάκελος των αρχείων σας.</string>
-    <string name="quicknote_is_the_fastest_option_to_write_down_notes">Το QuickNote είναι η ταχύτερη επιλογή για εγγραφή σημειώσεων. Είναι ένα αρχείο σε μορφή Markdown με την προεπιλεγμένη τοποθεσία &gt;Notebook/QuickNote. d&lt;, μπορείτε να ορίσετε ένα προσαρμοσμένο αρχείο στις ρυθμίσεις.</string>
-    <string name="todo_is_the_easiest_way_">Διαχειριστείτε τις εργασίες σας με ToDo. Είναι ένα αρχείο σε μορφή todo.txt με την προεπιλεγμένη τοποθεσία &gt;Notebook/todo. xt&lt;, μπορείτε να ορίσετε μία διαδρομή στις ρυθμίσεις.</string>
     <string name="black">Μαύρο</string>
     <string name="white">Λευκό</string>
     <string name="view">Προβολή</string>
@@ -341,14 +331,12 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="link_color">Χρώμα συνδέσμου</string>
     <string name="add_context">Προσθήκη συγκειμένου</string>
     <string name="add_project">Προσθήκη έργου</string>
-    <string name="archive_completed_tasks">Αρχειοθέτηση ολοκληρωμένων εργασιών</string>
     <string name="create_new_file_or_folder">Δημιουργία νέου αρχείου ή φακέλου</string>
     <string name="choose_format">Επιλογή μορφής</string>
     <string name="selected">Επιλεγμένο</string>
     <string name="back">Πίσω</string>
     <string name="expand_collapse">Ανάπτυξη / Σύμπτυξη</string>
     <string name="essential">Ουσιαστικό</string>
-    <string name="append_human_readable_uuid_to_new_tasks">Προσάρτηση αναγνώσιμου από άνθρωπο UUID σε νέες εργασίες</string>
     <string name="action_order">Σειρά ενεργειών</string>
     <string name="toggle_action_visibility">Εναλλαγή ορατότητας ενέργειας</string>
     <string name="load_default_settings">Φόρτωση προεπιλεγμένων ρυθμίσεων</string>
@@ -363,7 +351,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="password_already_set_setting_a_new_password_will_overwrite">Ο κωδικός πρόσβασης έχει ήδη οριστεί. Ο ορισμός νέου κωδικού πρόσβασης θα αντικαταστήσει τον υπάρχοντα κωδικό πρόσβασης και ενδέχεται να μην μπορείτε να έχετε πρόσβαση σε αρχεία πια σε περίπτωση που ξεχάσετε τον κωδικό πρόσβασης.</string>
     <string name="code_block">Μπλοκ κώδικα</string>
     <string name="add_completion_date">Προσθήκη ημερομηνίας ολοκλήρωσης</string>
-    <string name="add_completion_date_for_todos_when_marking_them_as_done">Προσθήκη ημερομηνίας ολοκλήρωσης για todos κατά τη σήμανσή τους ως ολοκληρωμένα</string>
     <string name="file_description_format">Μορφή περιγραφής αρχείου</string>
     <string name="file_description_format_dialog">Μορφή για την περιγραφή κάτω από κάθε αρχείο στο πρόγραμμα περιήγησης αρχείων. Ακολουθεί τους κανόνες SimpleDateFormat του Android, με την προσθήκη του FS για την εμφάνιση του μεγέθους του αρχείου. Αφήστε κενό για να χρησιμοποιήσετε την προεπιλεγμένη μορφή για τον τόπο σας.\n\nΠαράδειγμα εισόδου:\nFS yyyyy MMM dd hh:mm:ss aa\nΜορφή εξόδου:\n30KB 2020 Μαρ 20 11:24:52 μμ</string>
     <string name="loading_default_value">Φόρτωση προεπιλεγμένης τιμής</string>
@@ -396,25 +383,7 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="skip_all">Παράλειψη (όλα)</string>
     <string name="overwrite_all">Αντικατάσταση (όλα)</string>
     <string name="copy_move_conflict_message">\'%s\' υπάρχει ήδη στο %s</string>
-    <string name="additional_contexts_and_projects">Πρόσθετα πλαίσια και έργα</string>
-    <string name="enter_space_seperated_contexts_and_projects_these_will">Εισάγετε διαχωρισμένα με κενά διαστήματα @contexts και +projects. Αυτά θα είναι πάντα ορατά στους διαλόγους εισαγωγής todo.txt.</string>
     <string name="infinite">Απεριόριστο</string>
-    <string name="browse_by_project">Αναζήτηση ανά έργο</string>
-    <string name="browse_by_context">Περιήγηση ανά περιβάλλον</string>
-    <string name="insert_project">Εισαγωγή έργων</string>
-    <string name="insert_context">Insert contexts</string>
-    <string name="browse_todo">Περιήγηση todo</string>
-    <string name="browse_by_priority">Αναζήτηση κατά προτεραιότητα</string>
-    <string name="browse_by_due_date">Περιήγηση κατά ημερομηνία λήξης</string>
-    <string name="due_overdue">Εκπρόθεσμο</string>
-    <string name="due_today">Λήξη σήμερα</string>
-    <string name="due_future">Εξόφληση στο μέλλον</string>
-    <string name="completed">Ολοκληρώθηκε</string>
-    <string name="advanced_filtering">Προηγμένα φίλτρα</string>
-    <string name="match_any">Ταίριασμα Οποιοδήποτε</string>
-    <string name="match_all">Ταίριασμα Όλων</string>
-    <string name="dynamic_notebook_root_links">Δυναμική αναζήτηση αρχής σημειωματάριου</string>
-    <string name="search_dynamically_for_notebook_root">Για να ακολουθήσετε τους συνδέσμους wiki, αναζητήστε δυναμικά το αρχείο notebook.zim για να εντοπίσετε τον αρχικό κατάλογο για το τρέχον σημειωματάριο. Ενεργοποιήστε αυτή την επιλογή αν χρησιμοποιείτε πολλά σημειωματάρια, ή τον κατάλογο σημειωματαρίων που έχει οριστεί στην εφαρμογή δεν αντιστοιχεί στο zim σημειωματάριο σας.</string>
     <string name="share_into_format_prefix_for_text_shared">Φορμάτ/Πρόθεμα για κείμενο που διαμοιράζεται στο Markor. Ακολουθεί τους κανόνες του Android SimpleDateFormat.\n\nΧρησιμοποιήστε το {{text}} για τη θέση του κειμένου. Αν δεν δοθεί, το κείμενο επικολλείται και το φορμάτ χρησιμοποιείται σαν πρόθεμα.</string>
     <string name="share_into_format">Κοινή χρήση σε - Μορφή</string>
     <string name="auto_format">Αυτόματη διαμόρφωση</string>
@@ -422,6 +391,5 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="error_could_not_open_file">Αδυναμία ανοίγματος του αρχείου.</string>
     <string name="document_error_clip">Αντιμετώπιση σφάλματος: Το κείμενο αντιγράφηκε στο πρόχειρο.</string>
     <string name="wont_save_min_length">Αρχεία με λιγότερους από %d χαρακτήρες, δεν αποθηκεύονται αυτόματα για να αποφευχθεί η απώλεια δεδομένων.</string>
-    <string name="advanced_filtering_help"><![CDATA[<small><a href="https://www.github.com/gsantner/markor/discussions/1940">Προχωρημένη σύνταξη φίλτρων</a></small>]]></string>
     <string name="filter">Φίλτρο</string>
 </resources>

@@ -32,7 +32,6 @@ import androidx.fragment.app.FragmentManager;
 import net.gsantner.markor.R;
 import net.gsantner.markor.format.FormatRegistry;
 import net.gsantner.markor.format.markdown.MarkdownActionButtons;
-import net.gsantner.markor.format.wikitext.WikitextLinkResolver;
 import net.gsantner.markor.frontend.filebrowser.MarkorFileBrowserFactory;
 import net.gsantner.markor.frontend.textview.TextViewUtils;
 import net.gsantner.markor.model.AppSettings;
@@ -51,12 +50,6 @@ public class AttachLinkOrFileDialog {
     private static String getImageFormat(final int textFormatId) {
         if (textFormatId == FormatRegistry.FORMAT_MARKDOWN) {
             return "![%TITLE%](%LINK%)";
-        } else if (textFormatId == FormatRegistry.FORMAT_WIKITEXT) {
-            return "{{%LINK%}}";
-        } else if (textFormatId == FormatRegistry.FORMAT_ASCIIDOC) {
-            return "image::%LINK%[\"%TITLE%\"]";
-        } else if (textFormatId == FormatRegistry.FORMAT_ORGMODE) {
-            return "#+CAPTION: %TITLE%\n[[file:%LINK%]]";
         } else {
             return "<img style='width:auto;max-height:256px;' alt='%TITLE%' src='%LINK%' />";
         }
@@ -65,25 +58,13 @@ public class AttachLinkOrFileDialog {
     private static String getLinkFormat(final int textFormatId) {
         if (textFormatId == FormatRegistry.FORMAT_MARKDOWN) {
             return "[%TITLE%](%LINK%)";
-        } else if (textFormatId == FormatRegistry.FORMAT_WIKITEXT) {
-            return "[[%LINK%|%TITLE%]]";
-        } else if (textFormatId == FormatRegistry.FORMAT_ASCIIDOC) {
-            return "link:%LINK%[%TITLE%]";
-        } else if (textFormatId == FormatRegistry.FORMAT_TODOTXT) {
-            return "%TITLE% link:%LINK%";
-        } else if (textFormatId == FormatRegistry.FORMAT_ORGMODE) {
-            return "[[file:%LINK%][%TITLE%]]";
         } else {
             return "<a href=\"%LINK%\">%TITLE%</a>";
         }
     }
 
     private static String getAudioFormat(final int textFormatId) {
-        if (textFormatId == FormatRegistry.FORMAT_WIKITEXT) {
-            return "[[%LINK%|%TITLE%]]";
-        } else {
-            return "<audio src='%LINK%' controls><a href='%LINK%'>%TITLE%</a></audio>";
-        }
+        return "<audio src='%LINK%' controls><a href='%LINK%'>%TITLE%</a></audio>";
     }
 
     public static void showInsertImageOrLinkDialog(
@@ -275,14 +256,6 @@ public class AttachLinkOrFileDialog {
                 .replace("%TITLE%", title)
                 .replace("%LINK%", path);
 
-        if (textFormatId == FormatRegistry.FORMAT_WIKITEXT && newText.endsWith("|]]")) {
-            newText = newText.replaceFirst("\\|]]$", "]]");
-        }
-
-        if (textFormatId == FormatRegistry.FORMAT_TODOTXT) {
-            newText = newText.replaceAll("\\n", " ");
-        }
-
         return newText;
     }
 
@@ -301,29 +274,17 @@ public class AttachLinkOrFileDialog {
     ) {
         final File notebookDir = as.getNotebookDirectory();
 
-        String path = "";
-        if (textFormatId == FormatRegistry.FORMAT_WIKITEXT) {
-            final boolean shouldDynamicallyDetermineRoot = as.isWikitextDynamicNotebookRootEnabled();
-            path = WikitextLinkResolver.resolveSystemFilePath(attachment, notebookDir, document, shouldDynamicallyDetermineRoot);
-            if (path.startsWith("/")) {
-                final File attachmentDir = WikitextLinkResolver.findAttachmentDir(document);
-                final File local = copyFileToAttachmentDir(attachment, attachmentDir);
-                path = WikitextLinkResolver.resolveSystemFilePath(local, notebookDir, document, shouldDynamicallyDetermineRoot);
-            }
+        final String path;
+        if (!GsFileUtils.isChild(notebookDir, attachment)) {
+            final File attachmentDir = as.getAttachmentFolder(document);
+            final File local = copyFileToAttachmentDir(attachment, attachmentDir);
+            path = GsFileUtils.relativePath(document, local);
         } else {
-            if (!GsFileUtils.isChild(notebookDir, attachment)) {
-                final File attachmentDir = as.getAttachmentFolder(document);
-                final File local = copyFileToAttachmentDir(attachment, attachmentDir);
-                path = GsFileUtils.relativePath(document, local);
-            } else {
-                path = GsFileUtils.relativePath(document, attachment);
-            }
+            path = GsFileUtils.relativePath(document, attachment);
         }
 
         // Remove trailing slashes if any
-        path = path.replaceAll("/+$", "");
-
-        return path;
+        return path.replaceAll("/+$", "");
     }
 
     public static String makeAttachmentLink(final int textFormatId, final String title, final File attachment, final File document) {
@@ -406,34 +367,11 @@ public class AttachLinkOrFileDialog {
         final MarkorContextUtils cu = new MarkorContextUtils(activity);
 
         final GsCallback.a1<File> setFields = file -> {
-            if (textFormatId == FormatRegistry.FORMAT_WIKITEXT) {
-                // About the Zim's window 'Insert Link', where it is possible to browse for a file to select,
-                // Zim defaults, for the first time, to the file link's path to set the description when it's
-                // considered empty.  Then, Zim will automatically replace a description with the path of the
-                // next selection only if the description had been already automatically set, or manually set
-                // before switching the file, to the path of the current selection.  Zim will not replace the
-                // description that had been manually set to the path of a future selection, after exchanging
-                // that file.  Nor Zim will replace an empty description if this happens after the first time
-                // a link is inserted.  Here, for clarity, always replace an empty description, or one set to
-                // the path of the current selection, with the path of the next selection.
-                if (nameEdit.getText().toString().equals(pathEdit.getText().toString())) {
-                    nameEdit.setText("");
-                }
-
-                final File notebookDir = as.getNotebookDirectory();
-                final boolean shouldDynamicallyDetermineRoot = as.isWikitextDynamicNotebookRootEnabled();
-                pathEdit.setText(WikitextLinkResolver.resolveSystemFilePath(file, notebookDir, currentFile, shouldDynamicallyDetermineRoot));
-
-                if (GsTextUtils.isNullOrEmpty(nameEdit.getText())) {
-                    nameEdit.setText(pathEdit.getText());
-                }
-            } else {
-                if (pathEdit != null) {
-                    pathEdit.setText(GsFileUtils.relativePath(currentFile, file));
-                }
-                if (nameEdit != null && GsTextUtils.isNullOrEmpty(nameEdit.getText())) {
-                    nameEdit.setText(GsFileUtils.getNameWithoutExtension(file.getName()));
-                }
+            if (pathEdit != null) {
+                pathEdit.setText(GsFileUtils.relativePath(currentFile, file));
+            }
+            if (nameEdit != null && GsTextUtils.isNullOrEmpty(nameEdit.getText())) {
+                nameEdit.setText(GsFileUtils.getNameWithoutExtension(file.getName()));
             }
         };
 
@@ -457,7 +395,7 @@ public class AttachLinkOrFileDialog {
                         break;
                     }
 
-                    final File currentDir = (textFormatId == FormatRegistry.FORMAT_WIKITEXT) ? WikitextLinkResolver.findAttachmentDir(currentFile) : currentFile.getParentFile();
+                    final File currentDir = currentFile.getParentFile();
                     final File rel = new File(currentDir, path).getAbsoluteFile();
                     if (rel.isFile()) {
                         cu.requestFileEdit(activity, rel);

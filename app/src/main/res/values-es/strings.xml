@@ -114,7 +114,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="archive">Archivar</string>
     <string name="add_task">Agregar tarea</string>
     <string name="add_x_witharg">Añadir %s</string>
-    <string name="document_to_be_loaded_and_saved_as_witharg">El documento se cargará y guardará como \"%s\"</string>
     <string name="refresh">Actualizar</string>
     <string name="create_shortcut">Crear acceso directo</string>
     <string name="tried_to_create_shortcut_for_this_notice">Se intentó añadir un acceso en tu pantalla principal. Ten presente que algunos lanzadores no permiten esto.</string>
@@ -122,8 +121,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="file_not_in_current_folder_do_copy__appspecific">El archivo no está ubicado en la carpeta actual. ¿Desea copiarlo a la carpeta actual? Esto sobreescribirá cualquier archivo existente con el mismo nombre.</string>
     <string name="files_and_folders">Archivos y carpetas</string>
     <string name="document_browser">Navegador de documentos</string>
-    <string name="set_due_date">Fecha límite</string>
-    <string name="insert_replace_date">Insertar fecha</string>
     <string name="create_note" needed="false">Crear nota</string>
     <string name="special_documents" needed="false">Documentos especiales</string>
     <string name="keep_screen_on" needed="false">Mantener pantalla encendida</string>
@@ -154,8 +151,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="underline">Subrayado</string>
     <string name="underline_hex_color_wether_or_not_to_description__appspecific">Especifica si subrayar los códigos de color hexadecimal de acuerdo a su color o no</string>
     <string name="underline_hex_color_codes">Subrayar códigos de color hexadecimal</string>
-    <string name="insert_current_date_when_starting_new_task">Inserta la fecha actual al iniciar una tarea nueva</string>
-    <string name="tasks_with_todays_date">Tareas con fecha de hoy</string>
     <string name="append_contexts_and_projects">Añadir contextos y proyectos</string>
     <string name="append_contexts_and_projects_on_end_of_task">Añadir contextos y proyectos al final de una tarea cuando se utiliza la acción de texto apropiada</string>
     <string name="rtl_rendering">Representación RTL</string>
@@ -170,8 +165,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="resources">Recursos</string>
     <string name="space_between_lines_in_percent">Porcentaje de espaciado entre líneas</string>
     <string name="line_spacing">Espaciado entre líneas</string>
-    <string name="archive_does_move_done_tasks">Mueve las tareas completadas al archivo especificado en la misma carpeta</string>
-    <string name="sort_tasks_by_selected_order">Ordenar tareas por orden seleccionado</string>
     <string name="special_key">Tecla especial</string>
     <string name="asciidoc_special_key">Contenido especial AsciiDoc</string>
     <string name="key_ctrl_a">Seleccionar todo (Ctrl + A)</string>
@@ -221,7 +214,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="community">Comunidad</string>
     <string name="contributors_public_add_yourself_description">Muestra información pública sobre los colaboradores. Estos pueden decidir si su información debe ser incluida con sus colaboraciones</string>
     <string name="descending">descendente</string>
-    <string name="ascending">ascendente</string>
     <string name="disable_spelling_underline">Deshabilitar subrayado de errores de ortografía</string>
     <string name="spellcheck_keyboard_suggestion_stay_red_underline_vanishes">Mantener sugerencias, elimina subrayado rojo</string>
     <string name="location">Ubicación</string>
@@ -284,8 +276,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="internal_storage">Almacenamiento interno</string>
     <string name="open_the_document_from_main_view">Puede abrir el documento desde la vista principal en la parte inferior, el navegador de archivos o el lanzador. También hay una opción para añadir texto compartido en Markor.</string>
     <string name="notebook_is_the_home_of_your_files">Notebook es la carpeta que Markor carga en el navegador de archivos cuando se inicia la aplicación. Es la carpeta de inicio de sus archivos.</string>
-    <string name="quicknote_is_the_fastest_option_to_write_down_notes">QuickNote es la opción más rápida para escribir notas. Es un archivo en formato Markdown con la ubicación predeterminada &gt;Notebook/QuickNote.md&lt;, puede establecer una ruta de archivo personalizada en la configuración.</string>
-    <string name="todo_is_the_easiest_way_">Administre sus tareas con ToDo. Es un archivo en formato todo.txt con la ubicación predeterminada &gt;Notebook/todo.txt&lt;, puede establecer una ruta de archivo personalizada en la configuración.</string>
     <string name="black">Negro</string>
     <string name="white">Blanco</string>
     <string name="view">Ver</string>
@@ -352,7 +342,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="link_color">Color de enlace</string>
     <string name="add_context">Añadir contexto</string>
     <string name="add_project">Añadir proyecto</string>
-    <string name="archive_completed_tasks">Archivar tareas completadas</string>
     <string name="create_new_file_or_folder">Crear un nuevo archivo o carpeta</string>
     <string name="choose_format">Elegir formato</string>
     <string name="clear_selection">Limpiar selección</string>
@@ -360,7 +349,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="back">Atrás</string>
     <string name="expand_collapse">Expandir / Contraer</string>
     <string name="essential">Esencial</string>
-    <string name="append_human_readable_uuid_to_new_tasks">Añadir UUID legible por humanos a nuevas tareas</string>
     <string name="action_order">Orden de acción</string>
     <string name="toggle_action_visibility">Alternar visibilidad de acción</string>
     <string name="load_default_settings">Cargar ajustes por defecto</string>
@@ -375,7 +363,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="password_already_set_setting_a_new_password_will_overwrite">La contraseña ya está configurada. Establecer una nueva contraseña sobrescribirá la contraseña existente y es posible que ya no pueda acceder a los archivos en caso de que olvide la contraseña.</string>
     <string name="code_block">Bloque de código</string>
     <string name="add_completion_date">Añadir fecha de finalización</string>
-    <string name="add_completion_date_for_todos_when_marking_them_as_done">Añadir fecha de finalización para las tareas al marcarlas como realizadas</string>
     <string name="file_description_format">Formato de descripción de archivo</string>
     <string name="file_description_format_dialog">Formato para la descripción bajo cada archivo en el navegador de archivos. Siga las reglas de SimpleDateFormat, con la adición de FS para mostrar el tamaño del archivo. Deje en blanco para usar el formato predeterminado para su ubicación.\n\nEjemplo de entrada:\nFS yyyy MMM dd hh:mm:ss aa\nFormato de salida:\n30KB 2020 Mar 20 11:24:52 PM</string>
     <string name="loading_default_value">Cargando valor por defecto</string>
@@ -408,25 +395,7 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="skip_all">Omitir (todo)</string>
     <string name="overwrite_all">Sobrescribir (todo)</string>
     <string name="copy_move_conflict_message">\'%s\' ya existe en %s</string>
-    <string name="additional_contexts_and_projects">Conjuntos y proyectos adicionales</string>
-    <string name="enter_space_seperated_contexts_and_projects_these_will">Introduzca @contexts y +projects separados por espacios. Estos siempre serán visibles en los diálogos de inserción de todo.txt.</string>
     <string name="infinite">Infinito</string>
-    <string name="browse_by_project">Navegar por proyecto</string>
-    <string name="browse_by_context">Navegar por contexto</string>
-    <string name="insert_project">Insertar proyectos</string>
-    <string name="insert_context">Insertar contextos</string>
-    <string name="browse_todo">Explorar tareas pendientes</string>
-    <string name="browse_by_priority">Explorar por prioridad</string>
-    <string name="browse_by_due_date">Explorar por fecha límite</string>
-    <string name="due_overdue">Vencido</string>
-    <string name="due_today">Vence hoy</string>
-    <string name="due_future">Vence en el futuro</string>
-    <string name="completed">Completado</string>
-    <string name="advanced_filtering">Filtrado avanzado</string>
-    <string name="match_any">Coincidir cualquiera</string>
-    <string name="match_all">Coincidir todos</string>
-    <string name="dynamic_notebook_root_links">Búsqueda dinámica de la raíz del cuaderno</string>
-    <string name="search_dynamically_for_notebook_root">Para seguir los enlaces de la wiki, busque dinámicamente el archivo notebook.zim para identificar el directorio raíz del cuaderno actual. Marque esta opción si utiliza múltiples cuadernos zim o el directorio de cuadernos establecido en la aplicación no corresponde a su cuaderno zim.</string>
     <string name="share_into_format_prefix_for_text_shared">Formato/prefijo para el texto compartido en Markor. Sigue las reglas SimpleDateFormat de Android.\n\nUse el marcador de posición {{text}} para ubicar el texto compartido. Si no se especifica, se agrega el texto compartido y se usa el formato como prefijo.</string>
     <string name="share_into_format">Compartir en - Formato</string>
     <string name="attachment_folder_name">Nombre de la carpeta adjunta</string>
@@ -437,7 +406,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="error_could_not_open_file">Error: No se pudo abrir el archivo.</string>
     <string name="document_error_clip">Error encontrado: Texto copiado al portapapeles.</string>
     <string name="wont_save_min_length">Los archivos con menos de %d caracteres no se guardan automáticamente para evitar la pérdida de datos.</string>
-    <string name="advanced_filtering_help"><![CDATA[<small><a href="https://www.github.com/gsantner/markor/discussions/1940">Sintaxis de filtrado avanzado</a></small>]]></string>
     <string name="filter">Filtro</string>
     <string name="text_case">Mayúscula/minúscula</string>
     <string name="use_tab_to_indent">Sangrar líneas con la tecla TAB</string>

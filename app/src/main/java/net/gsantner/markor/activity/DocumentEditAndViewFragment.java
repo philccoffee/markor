@@ -65,7 +65,6 @@ import net.gsantner.markor.model.Document;
 import net.gsantner.markor.util.MarkorContextUtils;
 import net.gsantner.markor.web.DraggableScrollbarWebView;
 import net.gsantner.markor.web.MarkorWebViewClient;
-import net.gsantner.markor.widget.TodoWidgetProvider;
 import net.gsantner.opoc.frontend.filebrowser.GsFileBrowserOptions;
 import net.gsantner.opoc.frontend.settings.GsFontPreferenceCompat;
 import net.gsantner.opoc.frontend.textview.TextViewUndoRedo;
@@ -331,9 +330,6 @@ public class DocumentEditAndViewFragment extends MarkorBaseFragment implements F
         _appSettings.setLastEditPosition(_document.path, TextViewUtils.getSelection(_hlEditor)[0]);
         _appSettings.setLastEditScrollY(_document.path, _verticalScrollView.getScrollY());
         _appSettings.setLastEditHeight(_document.path, _verticalScrollView.getHeight());
-        if (_document.path.equals(_appSettings.getTodoFile().getAbsolutePath())) {
-            TodoWidgetProvider.updateTodoWidgets();
-        }
         super.onPause();
     }
 
@@ -350,7 +346,6 @@ public class DocumentEditAndViewFragment extends MarkorBaseFragment implements F
         _cu.tintMenuItems(menu, true, _cu.rcolor(getContext(), R.color.dark__primary_text));
         _cu.setSubMenuIconsVisibility(menu, true);
 
-        final boolean isExperimentalFeaturesEnabled = _appSettings.isExperimentalFeaturesEnabled();
         final boolean isText = !_document.isBinaryFileNoTextLoading();
 
         menu.findItem(R.id.action_undo).setVisible(isText && _appSettings.isEditorHistoryEnabled());
@@ -379,7 +374,10 @@ public class DocumentEditAndViewFragment extends MarkorBaseFragment implements F
 
         menu.findItem(R.id.action_share_pdf).setVisible(true);
         menu.findItem(R.id.action_share_image).setVisible(true);
-        menu.findItem(R.id.action_load_epub).setVisible(isExperimentalFeaturesEnabled);
+
+        // Outline / headline list: primary entry point in this Markdown-only build
+        menu.findItem(R.id.action_headline_list).setVisible(isText && !_isPreviewVisible);
+        menu.findItem(R.id.submenu_format_selection).setVisible(false);
 
         // Setup SearchView for view-mode
         setupSearchView((SearchView) menu.findItem(R.id.action_search_view).getActionView());
@@ -631,18 +629,19 @@ public class DocumentEditAndViewFragment extends MarkorBaseFragment implements F
 
                 return true;
             }
-            case R.string.action_format_wikitext:
-            case R.string.action_format_keyvalue:
-            case R.string.action_format_todotxt:
-            case R.string.action_format_csv:
             case R.string.action_format_plaintext:
-            case R.string.action_format_asciidoc:
-            case R.string.action_format_orgmode:
             case R.string.action_format_markdown: {
                 if (itemId != _document.getFormat()) {
                     _document.setFormat(itemId);
                     applyTextFormat(itemId);
                     _appSettings.setDocumentFormat(_document.path, _document.getFormat());
+                }
+                return true;
+            }
+            case R.id.action_headline_list: {
+                // Outline: jump to headings in the current document
+                if (_format != null && _format.getActions() != null) {
+                    _format.getActions().runTitleClick();
                 }
                 return true;
             }
@@ -654,22 +653,6 @@ public class DocumentEditAndViewFragment extends MarkorBaseFragment implements F
             case R.id.action_send_debug_log: {
                 final String text = AppSettings.getDebugLog() + "\n\n------------------------\n\n\n\n" + Document.getMaskedContent(getTextString());
                 _cu.draftEmail(getActivity(), "Debug Log " + getString(R.string.app_name_real), text, "debug@localhost.lan");
-                return true;
-            }
-            case R.id.action_load_epub: {
-                MarkorFileBrowserFactory.showFileDialog(new GsFileBrowserOptions.SelectionListenerAdapter() {
-                                                            @Override
-                                                            public void onFsViewerSelected(String request, File file, final Integer lineNumber) {
-                                                                _hlEditor.setText(GsCoolExperimentalStuff.convertEpubToText(file, getString(R.string.page)));
-                                                            }
-
-                                                            @Override
-                                                            public void onFsViewerConfig(GsFileBrowserOptions.Options dopt) {
-                                                                dopt.titleText = R.string.select;
-                                                            }
-                                                        }, getParentFragmentManager(), activity,
-                        (context, file) -> file != null && file.getAbsolutePath().toLowerCase().endsWith(".epub")
-                );
                 return true;
             }
             case R.id.action_speed_read: {

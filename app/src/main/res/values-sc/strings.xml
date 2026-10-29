@@ -114,7 +114,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="archive">Archìvia</string>
     <string name="add_task">Annanghe una faina</string>
     <string name="add_x_witharg">Annanghe %s</string>
-    <string name="document_to_be_loaded_and_saved_as_witharg">Documentu de carrigare e sarvare comente \"%s\"</string>
     <string name="refresh">Agiorna</string>
     <string name="create_shortcut">Crea un\'incurtzada</string>
     <string name="tried_to_create_shortcut_for_this_notice">Apo proadu a creare un\'incurtzada a s\'ischermada printzipale tua. Ammenta·ti chi carchi allughidore diat pòdere non suportare custu.</string>
@@ -122,8 +121,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="file_not_in_current_folder_do_copy__appspecific">Su documentu no est in sa cartella atuale. Lu cheres copiare in sa cartella atuale? Custu at a subraiscrìere cale si siat documentu cun su matessi nùmene.</string>
     <string name="files_and_folders">Documentos e cartellas</string>
     <string name="document_browser">Esploradore de documentos</string>
-    <string name="set_due_date">Imposta sa data de iscadèntzia</string>
-    <string name="insert_replace_date">Inserta sa data</string>
     <string name="create_note" needed="false">Crea una nota</string>
     <string name="special_documents" needed="false">Documentos ispetziales</string>
     <string name="keep_screen_on" needed="false">Mantene s\'ischermu allutu</string>
@@ -154,8 +151,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="underline">Suta-lìnia</string>
     <string name="underline_hex_color_wether_or_not_to_description__appspecific">Sutalìnia o nono sos còdighes esadetzimales de sos colores a segunda de sos colores</string>
     <string name="underline_hex_color_codes">Sutalìnia sos còdighes esadetzimales de sos colores</string>
-    <string name="insert_current_date_when_starting_new_task">Inserta sa data currente cando incumentzas una faina noa</string>
-    <string name="tasks_with_todays_date">Fainas cun data de oe</string>
     <string name="append_contexts_and_projects">Annanghe cuntestos e progetos</string>
     <string name="append_contexts_and_projects_on_end_of_task">Annanghe cuntestos e progetos a s\'acabu de una faina cando ses impreende s\'atzione pro su testu apropriada</string>
     <string name="rtl_rendering">Renderizatzione dae destra a manca</string>
@@ -170,8 +165,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="resources">Risursas</string>
     <string name="space_between_lines_in_percent">Ispàtziu intre sas lìnias in pertzentuale</string>
     <string name="line_spacing">Ispatziadura de sas lìnias</string>
-    <string name="archive_does_move_done_tasks">Moe sas fainas acabadas in su documentu dislindadu in sa matessi cartella</string>
-    <string name="sort_tasks_by_selected_order">Òrdina sas fainas sighende s\'òrdine ischertadu</string>
     <string name="special_key">Tecla ispetziale</string>
     <string name="asciidoc_special_key">Cuntenutu ispetziale AsciiDoc</string>
     <string name="key_ctrl_a">Ischerta totu (Ctrl+A)</string>
@@ -221,7 +214,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="community">Comunidade</string>
     <string name="contributors_public_add_yourself_description">Ammustra informatziones a pitzu de sos contribuidores. Fruni·las pro las fàghere ammustrare inoghe si l\'ant isseberadu a pustis de sa contributzione</string>
     <string name="descending">achirrante</string>
-    <string name="ascending">ascendente</string>
     <string name="disable_spelling_underline">Disabìlita sa sutaliniadura de s\'ortografia</string>
     <string name="spellcheck_keyboard_suggestion_stay_red_underline_vanishes">Sos impòsitos de sa tastiera abarrant, sas sutaliniaduras rujas isparessent</string>
     <string name="location">Positzione</string>
@@ -284,8 +276,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="internal_storage">Memòria interna</string>
     <string name="open_the_document_from_main_view">Podes abèrrere su documentu dae sa vista printzipale in bassu, dae s\'esploradore de documentos o dae s\'allughidore. B\'at fintzas un\'optzione pro annànghere testu cumpartzidu in Markor.</string>
     <string name="notebook_is_the_home_of_your_files">\"Notas\" est sa cartella chi Markor carrigat in s\'esploradore de documentos cando s\'aplicatzione benit alluta. Est sa cartella de sos documentos tuos.</string>
-    <string name="quicknote_is_the_fastest_option_to_write_down_notes">QuickNote est s\'optzione prus lestra pro iscrìere notas. Est unu documentu in formadu Markdown, chi s\'agatat in &gt;Notebook/QuickNote.md&lt;. Podes impostare un\'àndala personalizada pro su documentu in sas impostatziones.</string>
-    <string name="todo_is_the_easiest_way_">Amministra sas fainas tuas cun ToDo. Est unu documentu in formadu todo.txt chi s\'agatat in &gt;Notebook/todo.txt&lt;. Podes impostare un\'àndala personalizada pro su documentu in sas impostatziones.</string>
     <string name="black">Nieddu</string>
     <string name="white">Biancu</string>
     <string name="view">Abbàida</string>
@@ -352,7 +342,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="link_color">Colore de su ligàmene</string>
     <string name="add_context">Annanghe cuntestu</string>
     <string name="add_project">Annanghe unu progetu</string>
-    <string name="archive_completed_tasks">Archìvia sas fainas acabadas</string>
     <string name="create_new_file_or_folder">Crea unu documentu o una cartella noa</string>
     <string name="choose_format">Issèbera su formadu</string>
     <string name="clear_selection">Isbòida sa seletzione</string>
@@ -360,7 +349,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="back">In palas</string>
     <string name="expand_collapse">Ismànnia / Mìnima</string>
     <string name="essential">Essentziale</string>
-    <string name="append_human_readable_uuid_to_new_tasks">Annanghe un\'UUID chi podet èssere lèghidu a sas fainas noas</string>
     <string name="action_order">Òrdine de atzione</string>
     <string name="toggle_action_visibility">Allughe/istuda sa visibilidade de s\'atzione</string>
     <string name="load_default_settings">Càrriga sas impostatziones predefinidas</string>
@@ -375,7 +363,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="password_already_set_setting_a_new_password_will_overwrite">Crae giai impostada. Impostende una crae noa as a subraiscrìere sa crae chi b\'est e dias pòdere no èssere prus in gradu de atzèdere a sos documentos, s\'in casu mai as a ismentigare sa crae.</string>
     <string name="code_block">Blocu de còdighe</string>
     <string name="add_completion_date">Inserta una data de cumpridura</string>
-    <string name="add_completion_date_for_todos_when_marking_them_as_done">Annanghe una data de cumpridura pro sas fainas cando las marcas comente acabadas</string>
     <string name="file_description_format">Formadu de descritzione de su documentu</string>
     <string name="file_description_format_dialog">Formadu pro sa descritzione in suta de cada documentu in s\'esploradore de documentos. Sighit sas règulas SimpleDateFormat de Android, cun s\'annànghida de FS pro ammustrare sa mannària de sos documentos.Lassa·lu bòidu pro impreare su formadu predefinidu pro sa limba tua..\n\nEsèmpiu de intrada:\nFS yyyy MMM dd hh:mm:ss aa\nFormadu de essida:\n30KB 2020 Mar 20 11:24:52 PM</string>
     <string name="loading_default_value">Carrighende su valore predefinidu</string>
@@ -408,25 +395,7 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="skip_all">Brinca (totus)</string>
     <string name="overwrite_all">Subraiscrie (totus)</string>
     <string name="copy_move_conflict_message">\'%s\' esistit giai in %s</string>
-    <string name="additional_contexts_and_projects">Cuntestos e progetos additzionales</string>
-    <string name="enter_space_seperated_contexts_and_projects_these_will">Inserta @cuntestos e +progetos iscrobados dae ispàtzios. Custos ant a èssere semper visìbiles in sas ventanas de diàlogu de insertadura de todo.txt.</string>
     <string name="infinite">Infinitu</string>
-    <string name="browse_by_project">Esplora pro progetu</string>
-    <string name="browse_by_context">Esplora pro cuntestu</string>
-    <string name="insert_project">Inserta progetos</string>
-    <string name="insert_context">Inserta cuntestos</string>
-    <string name="browse_todo">Esplora \'todo\'</string>
-    <string name="browse_by_priority">Esplora pro prioridade</string>
-    <string name="browse_by_due_date">Esplora pro data de iscadèntzia</string>
-    <string name="due_overdue">Iscadidu</string>
-    <string name="due_today">Iscadit oe</string>
-    <string name="due_future">Iscadèntzia in su tempus benidore</string>
-    <string name="completed">Cumpridu</string>
-    <string name="advanced_filtering">Filtràgiu avantzadu</string>
-    <string name="match_any">Currispondet a cale si siat</string>
-    <string name="match_all">Currispondet totu</string>
-    <string name="dynamic_notebook_root_links">Chirca dinàmica de sa raighina de sas notas</string>
-    <string name="search_dynamically_for_notebook_root">Pro sighire sos ligàmenes wiki chirca in manera dinàmica su documentu notebook.zim pro identificare sa cartella de raighina pro sas notas atuales. Marca·lu si impreas prus blocos de notas zim o si sa cartella de su blocu de notas impostada in s\'aplicatzione non currispondet a su blocu de notas zim tuo.</string>
     <string name="share_into_format_prefix_for_text_shared">Formadu/Prefissu pro su testu cumpartzidu in Markor. Sighit sas règulas SimpleDateFormat de Android.\n\nImprea su sinnapostu {{text}} pro pònnere in logu su testu cumpartzidu. Si no est dislindadu su testu cumpartzidu benit postu in fundu e su formadu s\'impreat comente prefissu.</string>
     <string name="share_into_format">Cumpartzi in - Formadu</string>
     <string name="attachment_folder_name">Nùmene de sa cartella de sos alligados</string>
@@ -437,7 +406,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="error_could_not_open_file">Errore: No at fatu a abèrrere su documentu.</string>
     <string name="document_error_clip">Errore agatadu: testu copiadu in punta de billete.</string>
     <string name="wont_save_min_length">Documentos cun prus pagu de %d caràteres non benint sarvados in automàticu pro prevenire pèrdidas de datos.</string>
-    <string name="advanced_filtering_help"><![CDATA[<small><a href="https://www.github.com/gsantner/markor/discussions/1940">Sintassi de filtràgiu avantzada</a></small>]]></string>
     <string name="filter">Filtru</string>
     <string name="text_case">Majùscula/minùscula</string>
     <string name="use_tab_to_indent">Indenta lìnias cun sa tecla TAB</string>

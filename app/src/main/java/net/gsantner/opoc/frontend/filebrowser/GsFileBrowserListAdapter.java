@@ -573,6 +573,20 @@ public class GsFileBrowserListAdapter extends RecyclerView.Adapter<GsFileBrowser
             return null;
         }
 
+        // Sandboxed views (e.g. the app-private workspace) must not be escaped: once the user is
+        // at the boundary there is no "go up" entry at all, but below it navigation works normally.
+        final File boundary = _dopt.confineToFolder;
+        if (boundary != null) {
+            if (_currentFolder.equals(boundary)) {
+                return null; // at the sandbox root: nothing above is reachable
+            }
+            if (GsFileUtils.isChild(boundary, _currentFolder)) {
+                return _currentFolder.getParentFile(); // inside the sandbox: ordinary go-up
+            }
+            // Outside the sandbox (should not normally happen): snap back to the root.
+            return boundary;
+        }
+
         final File ancestor = writableAncestor(_currentFolder);
         if (ancestor != null) {
             return ancestor;
@@ -643,18 +657,33 @@ public class GsFileBrowserListAdapter extends RecyclerView.Adapter<GsFileBrowser
             return;
         }
 
-        final File dir = file.getParentFile();
+        File dir = file.getParentFile();
+        // Never navigate above the sandbox: a freshly created file right at the boundary has the
+        // boundary's parent as its parent, which must not be loaded.
+        final File boundary = _dopt.confineToFolder;
+        if (boundary != null && dir != null
+                && !dir.equals(boundary) && !GsFileUtils.isChild(boundary, dir)) {
+            dir = boundary;
+        }
         if (dir != null) {
             loadFolder(dir, file);
         }
     }
 
-    private void doAfterChange(final GsCallback.a0 callback) {
+    private void doAfterChange(@Nullable final GsCallback.a0 callback) {
+        if (_recyclerView == null) {
+            if (callback != null) {
+                callback.callback();
+            }
+            return;
+        }
         _recyclerView.addOnLayoutChangeListener(new View.OnLayoutChangeListener() {
             @Override
             public void onLayoutChange(View v, int l, int t, int r, int b, int ol, int ot, int or, int ob) {
                 _recyclerView.removeOnLayoutChangeListener(this);
-                callback.callback();
+                if (callback != null) {
+                    callback.callback();
+                }
             }
         });
     }
@@ -691,6 +720,18 @@ public class GsFileBrowserListAdapter extends RecyclerView.Adapter<GsFileBrowser
 
     private void loadFolder(final File folder, final File show) {
         if (folder == null || _recyclerView == null) {
+            return;
+        }
+
+        // Defence in depth: never load a folder outside the configured sandbox, no matter how the
+        // navigation request was triggered (back stack, intent, programmatic call). Redirect to the
+        // boundary instead of aborting, so the UI always ends up in a valid, refreshed state.
+        final File boundary = _dopt.confineToFolder;
+        if (boundary != null && folder != GO_BACK_SIGNIFIER
+                && !folder.equals(boundary) && !GsFileUtils.isChild(boundary, folder)) {
+            _backStack.push(_currentFolder != null ? _currentFolder : boundary);
+            _currentFolder = boundary;
+            doAfterChange(null);
             return;
         }
 

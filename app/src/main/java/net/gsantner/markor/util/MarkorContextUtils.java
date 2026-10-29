@@ -23,10 +23,7 @@ import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 
 import net.gsantner.markor.R;
-import net.gsantner.markor.activity.openeditor.OpenEditorQuickNoteActivity;
-import net.gsantner.markor.activity.openeditor.OpenEditorTodoActivity;
 import net.gsantner.markor.activity.openeditor.OpenFromShortcutOrWidgetActivity;
-import net.gsantner.markor.activity.openeditor.OpenShareIntoActivity;
 import net.gsantner.markor.model.AppSettings;
 import net.gsantner.markor.model.Document;
 import net.gsantner.opoc.frontend.filebrowser.GsFileBrowserListAdapter;
@@ -47,10 +44,7 @@ public class MarkorContextUtils extends GsContextUtils {
     }
 
     public <T extends GsContextUtils> T applySpecialLaunchersVisibility(final Context context, boolean extraLaunchersEnabled) {
-        setLauncherActivityEnabled(context, OpenEditorQuickNoteActivity.class, extraLaunchersEnabled);
-        setLauncherActivityEnabled(context, OpenEditorTodoActivity.class, extraLaunchersEnabled);
-        setLauncherActivityEnabled(context, OpenShareIntoActivity.class, extraLaunchersEnabled);
-        setLauncherActivityEnabledFromString(context, "net.gsantner.markor.AliasDocumentProcessText", extraLaunchersEnabled);
+        // Extra launchers (QuickNote / To-do / Share-into / ProcessText) were removed in this build
         return thisp();
     }
 

@@ -7,14 +7,6 @@
 #########################################################*/
 package net.gsantner.markor.frontend;
 
-import static net.gsantner.markor.format.todotxt.TodoTxtTask.SttTaskSimpleComparator.BY_CONTEXT;
-import static net.gsantner.markor.format.todotxt.TodoTxtTask.SttTaskSimpleComparator.BY_CREATION_DATE;
-import static net.gsantner.markor.format.todotxt.TodoTxtTask.SttTaskSimpleComparator.BY_DESCRIPTION;
-import static net.gsantner.markor.format.todotxt.TodoTxtTask.SttTaskSimpleComparator.BY_DUE_DATE;
-import static net.gsantner.markor.format.todotxt.TodoTxtTask.SttTaskSimpleComparator.BY_LINE;
-import static net.gsantner.markor.format.todotxt.TodoTxtTask.SttTaskSimpleComparator.BY_PRIORITY;
-import static net.gsantner.markor.format.todotxt.TodoTxtTask.SttTaskSimpleComparator.BY_PROJECT;
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
@@ -52,9 +44,6 @@ import androidx.core.content.ContextCompat;
 import net.gsantner.markor.R;
 import net.gsantner.markor.activity.DocumentActivity;
 import net.gsantner.markor.format.ActionButtonBase;
-import net.gsantner.markor.format.todotxt.TodoTxtBasicSyntaxHighlighter;
-import net.gsantner.markor.format.todotxt.TodoTxtFilter;
-import net.gsantner.markor.format.todotxt.TodoTxtTask;
 import net.gsantner.markor.frontend.filesearch.FileSearchDialog;
 import net.gsantner.markor.frontend.filesearch.FileSearchEngine;
 import net.gsantner.markor.frontend.filesearch.FileSearchResultSelectorDialog;
@@ -164,370 +153,6 @@ public class MarkorDialogFactory {
         }
     }
 
-    public static void showSttArchiveDialog(final Activity activity, final String lastName, final GsCallback.a1<String> callback) {
-        final DialogOptions dopt = baseConf(activity);
-        dopt.callback = callback;
-        final List<String> highlightedData = new ArrayList<>();
-        final List<String> availableData = new ArrayList<>();
-        availableData.add("todo.archive.txt");
-        availableData.add("todo.done.txt");
-        availableData.add("archive.txt");
-        availableData.add("done.txt");
-        if (!TextUtils.isEmpty(lastName)) {
-            highlightedData.add(lastName);
-            if (!availableData.contains(lastName)) {
-                availableData.add(lastName);
-            }
-            dopt.state.searchText = lastName;
-        }
-
-        dopt.data = availableData;
-        dopt.highlightData = highlightedData;
-        dopt.searchHintText = R.string.search_or_custom;
-        dopt.messageText = activity.getString(R.string.archive_does_move_done_tasks);
-        dopt.isSoftInputVisible = false;
-        GsSearchOrCustomTextDialog.showMultiChoiceDialogWithSearchFilterUI(activity, dopt);
-    }
-
-    public static void showSttSortDialogue(Activity activity, final GsCallback.a2<String, Boolean> callback) {
-        final AppSettings as = AppSettings.get(activity);
-        final DialogOptions dopt = baseConf(activity);
-        final List<String> availableData = new ArrayList<>();
-        final List<Integer> availableDataToIconMap = new ArrayList<>();
-
-        final String o_context = activity.getString(R.string.context);
-        final String o_project = activity.getString(R.string.project);
-        final String o_prio = activity.getString(R.string.priority);
-        final String o_date = activity.getString(R.string.date);
-        final String o_textline = activity.getString(R.string.text_lines);
-        final String o_description = activity.getString(R.string.description);
-        final String o_duedate = activity.getString(R.string.due_date);
-        final String d_asc = " (" + activity.getString(R.string.ascending) + ")";
-        final String d_desc = " (" + activity.getString(R.string.descending) + ")";
-        final String optLastSelected = "showSttSortDialogue.last_selected";
-
-        dopt.callback = arg1 -> {
-            as.setString(optLastSelected, arg1);
-            String[] values = arg1
-                    .replace(o_context, BY_CONTEXT)
-                    .replace(o_project, BY_PROJECT)
-                    .replace(o_prio, BY_PRIORITY)
-                    .replace(o_date, BY_CREATION_DATE)
-                    .replace(o_textline, BY_LINE)
-                    .replace(o_description, BY_DESCRIPTION)
-                    .replace(o_duedate, BY_DUE_DATE)
-                    .split(" ");
-            callback.callback(values[0], values[1].contains(d_desc.replace(" ", "")));
-        };
-
-        final GsCallback.a2<String, Integer> addToList = (o_by, iconRes) -> {
-            availableData.add(o_by + d_asc);
-            availableData.add(o_by + d_desc);
-            availableDataToIconMap.add(iconRes);
-            availableDataToIconMap.add(iconRes);
-        };
-        addToList.callback(o_prio, R.drawable.ic_star_border_black_24dp);
-        addToList.callback(o_project, R.drawable.ic_new_label_black_24dp);
-        addToList.callback(o_context, R.drawable.gs_email_sign_black_24dp);
-        addToList.callback(o_date, R.drawable.ic_date_range_black_24dp);
-        addToList.callback(o_duedate, R.drawable.ic_date_range_black_24dp);
-        addToList.callback(o_description, R.drawable.ic_text_fields_black_24dp);
-        addToList.callback(o_textline, R.drawable.ic_text_fields_black_24dp);
-
-        dopt.data = availableData;
-        dopt.highlightData = Collections.singletonList(as.getString(optLastSelected, o_context + d_desc));
-        dopt.iconsForData = availableDataToIconMap;
-        dopt.okButtonText = 0;
-
-        dopt.titleText = R.string.sort_tasks_by_selected_order;
-        dopt.messageText = "";
-        dopt.searchHintText = R.string.search_or_custom;
-        dopt.isSearchEnabled = false;
-        GsSearchOrCustomTextDialog.showMultiChoiceDialogWithSearchFilterUI(activity, dopt);
-    }
-
-    public static void showSttFilteringDialog(final Activity activity, final EditText text) {
-        final DialogOptions dopt = baseConf(activity);
-
-        final List<String> options = new ArrayList<>();
-        final List<Integer> icons = new ArrayList<>();
-        final List<GsCallback.a0> callbacks = new ArrayList<>();
-
-        options.add(activity.getString(R.string.priority));
-        icons.add(R.drawable.ic_star_black_24dp);
-        callbacks.add(() -> showSttKeySearchDialog(activity, text, R.string.browse_by_priority, false, false, TodoTxtFilter.TYPE.PRIORITY));
-
-        options.add(activity.getString(R.string.due_date));
-        icons.add(R.drawable.ic_date_range_black_24dp);
-        callbacks.add(() -> showSttKeySearchDialog(activity, text, R.string.browse_by_due_date, false, false, TodoTxtFilter.TYPE.DUE));
-
-        options.add(activity.getString(R.string.project));
-        icons.add(R.drawable.ic_new_label_black_24dp);
-        callbacks.add(() -> showSttKeySearchDialog(activity, text, R.string.browse_by_project, true, true, TodoTxtFilter.TYPE.PROJECT));
-
-        options.add(activity.getString(R.string.context));
-        icons.add(R.drawable.gs_email_sign_black_24dp);
-        callbacks.add(() -> showSttKeySearchDialog(activity, text, R.string.browse_by_context, true, true, TodoTxtFilter.TYPE.CONTEXT));
-
-        options.add(activity.getString(R.string.advanced_filtering));
-        icons.add(R.drawable.ic_extension_black_24dp);
-        callbacks.add(() -> {
-            final DialogOptions dopt2 = makeSttLineSelectionDialog(activity, text, t -> true);
-            dopt2.titleText = R.string.advanced_filtering;
-            dopt2.messageText = Html.fromHtml(activity.getString(R.string.advanced_filtering_help));
-            final String[] queryHolder = new String[1];
-            dopt2.searchFunction = (query, line, index) -> {
-                queryHolder[0] = query;
-                return TodoTxtFilter.isMatchQuery(new TodoTxtTask(line), query);
-            };
-            addSaveQuery(activity, dopt2, () -> queryHolder[0]);
-            GsSearchOrCustomTextDialog.showMultiChoiceDialogWithSearchFilterUI(activity, dopt2);
-        });
-
-        // Add saved views
-        final List<Pair<String, String>> savedViews = TodoTxtFilter.loadSavedFilters(activity);
-        final List<Integer> indices = GsCollectionUtils.range(savedViews.size());
-        Collections.sort(indices, (a, b) -> savedViews.get(a).first.compareTo(savedViews.get(b).first));
-
-        for (final int i : indices) {
-            // No icon for the saved searches
-            final String title = savedViews.get(i).first;
-            final String query = savedViews.get(i).second;
-            options.add(title);
-            icons.add(R.drawable.empty_blank);
-            callbacks.add(() -> {
-                final DialogOptions doptView = makeSttLineSelectionDialog(activity, text, t -> TodoTxtFilter.isMatchQuery(t, query));
-                setQueryTitle(doptView, title, query);
-
-                // Delete view
-                doptView.neutralButtonText = R.string.delete;
-                doptView.isSoftInputVisible = false;
-                doptView.neutralButtonCallback = viewDialog -> showConfirmDialog(activity, R.string.confirm_delete, title, null, () -> {
-                    viewDialog.dismiss();
-                    TodoTxtFilter.deleteFilterIndex(activity, i);
-                });
-
-                GsSearchOrCustomTextDialog.showMultiChoiceDialogWithSearchFilterUI(activity, doptView);
-            });
-        }
-
-        dopt.data = options;
-        dopt.iconsForData = icons;
-        dopt.positionCallback = (posn) -> callbacks.get(posn.get(0)).callback();
-        dopt.isSearchEnabled = false;
-        dopt.titleText = R.string.browse_todo;
-
-        GsSearchOrCustomTextDialog.showMultiChoiceDialogWithSearchFilterUI(activity, dopt);
-    }
-
-    /**
-     * Filter todos with specified keys.
-     * <p>
-     * Will display a list of keys. The user can select multiple keys and a list of todos which match the keys will be displayed.
-     * The user can then search and select one or more (filtered) todos.
-     *
-     * @param activity     Context activity
-     * @param text         Edit Text with todos
-     * @param title        Dialog title
-     * @param enableSearch Whether key search is enabled
-     * @param enableAnd    Whether 'and' keys makes sense / is enabled
-     * @param queryType    Key used with TodoTxtFilter
-     */
-    public static void showSttKeySearchDialog(
-            final Activity activity,
-            final EditText text,
-            final int title,
-            final boolean enableSearch,
-            final boolean enableAnd,
-            final TodoTxtFilter.TYPE queryType
-    ) {
-        final DialogOptions dopt = baseConf(activity);
-
-        // Populate options
-        // -------------------------------------
-
-        final List<TodoTxtTask> allTasks = TodoTxtTask.getAllTasks(text.getText());
-        final List<TodoTxtFilter.SttFilterKey> keys = TodoTxtFilter.getKeys(activity, allTasks, queryType);
-
-        // Add other cases
-        final List<String> data = new ArrayList<>();
-        final List<String> hlData = new ArrayList<>();
-        for (final TodoTxtFilter.SttFilterKey k : keys) {
-            final String opt = String.format("%s (%d)", k.key, k.count);
-            data.add(opt);
-            if (k.query == null) {
-                hlData.add(opt);
-            }
-        }
-        dopt.data = data;
-        dopt.highlightData = hlData;
-
-        // Set up _and_ key
-        // -------------------------------------
-
-        final boolean[] useAnd = {false};
-        if (enableAnd) {
-            dopt.neutralButtonText = R.string.match_any;
-            dopt.neutralButtonCallback = (dialog) -> {
-                Button neutralButton;
-                if (dialog != null && (neutralButton = dialog.getButton(AlertDialog.BUTTON_NEUTRAL)) != null) {
-                    useAnd[0] = !useAnd[0];
-                    neutralButton.setText(useAnd[0] ? R.string.match_all : R.string.match_any);
-                }
-            };
-        }
-
-        // Other options
-        // -------------------------------------
-        dopt.titleText = title;
-        dopt.isSearchEnabled = enableSearch;
-        dopt.searchHintText = R.string.search;
-        dopt.selectionMode = DialogOptions.SelectionMode.MULTIPLE;
-
-        // Callback to actually show tasks
-        // -------------------------------------
-        dopt.positionCallback = (keyIndices) -> {
-
-            // Build a query
-            final List<String> queryKeys = new ArrayList<>();
-            for (final Integer index : keyIndices) {
-                queryKeys.add(keys.get(index).query);
-            }
-            final String query = TodoTxtFilter.makeQuery(queryKeys, useAnd[0], queryType);
-
-            final DialogOptions doptSel = makeSttLineSelectionDialog(activity, text, t -> TodoTxtFilter.isMatchQuery(t, query));
-            setQueryTitle(doptSel, activity.getString(title), query);
-            addSaveQuery(activity, doptSel, () -> query);
-
-            GsSearchOrCustomTextDialog.showMultiChoiceDialogWithSearchFilterUI(activity, doptSel);
-        };
-        GsSearchOrCustomTextDialog.showMultiChoiceDialogWithSearchFilterUI(activity, dopt);
-    }
-
-    private static void setQueryTitle(final DialogOptions dopt, final String subTitle, final String query) {
-        // Remove the actual title
-        dopt.titleText = 0;
-        // Use a message text with 2 lines and a bold name
-        dopt.messageText = Html.fromHtml(String.format("<b>%s</b><br><small>%s</small>", subTitle, query));
-    }
-
-    // Add the save query dialog
-    private static void addSaveQuery(final Activity activity, final DialogOptions dopt, final GsCallback.s0 getQuery) {
-        // Callback to save view
-        dopt.neutralButtonText = R.string.save;
-        dopt.neutralButtonCallback = (dialog) -> {
-            final String query = getQuery.callback();
-            // Get save name
-            final DialogOptions doptSave = baseConf(activity);
-            doptSave.titleText = R.string.name;
-            doptSave.searchHintText = R.string.empty_string;
-            doptSave.callback = saveTitle -> {
-                if (!TextUtils.isEmpty(saveTitle)) {
-                    TodoTxtFilter.saveFilter(activity, saveTitle, query);
-                }
-            };
-            // Note that we do not dismiss the existing view
-            GsSearchOrCustomTextDialog.showMultiChoiceDialogWithSearchFilterUI(activity, doptSave);
-        };
-    }
-
-    /**
-     * Make a dialog for searching and selecting lines of a todo-txt file
-     *
-     * @param activity Activity
-     * @param text     EditText containing the todo.txt file
-     * @param filter   Filter selecting certain todos (by context, project etc etc)
-     * @return Dialogoptions for the dialog. Can be further modified by the caller
-     */
-    public static DialogOptions makeSttLineSelectionDialog(
-            final Activity activity,
-            final EditText text,
-            final GsCallback.b1<TodoTxtTask> filter
-    ) {
-        final AppSettings as = AppSettings.get(activity);
-        final DialogOptions dopt = baseConf(activity);
-        final List<TodoTxtTask> allTasks = TodoTxtTask.getAllTasks(text.getText());
-        final List<String> lines = new ArrayList<>();
-        final List<Integer> lineIndices = new ArrayList<>();
-        for (int i = 0; i < allTasks.size(); i++) {
-            if (filter.callback(allTasks.get(i))) {
-                lines.add(allTasks.get(i).getLine());
-                lineIndices.add(i);
-            }
-        }
-        dopt.data = lines;
-        dopt.titleText = R.string.search;
-        dopt.dataFilter = "[^\\s]+"; // Line must have one or more non-whitespace to display
-        dopt.selectionMode = DialogOptions.SelectionMode.MULTIPLE;
-        dopt.highlighter = as.isHighlightingEnabled() ? getSttHighlighter(as) : null;
-        dopt.positionCallback = (posns) -> {
-            final List<Integer> selIndices = new ArrayList<>();
-            for (final Integer p : posns) {
-                selIndices.add(lineIndices.get(p));
-            }
-            TextViewUtils.selectLines(text, selIndices);
-        };
-
-        return dopt;
-    }
-
-    @Nullable
-    private static Editable getCurrentSearchText(final AlertDialog dialog) {
-        final Window window = dialog.getWindow();
-        if (window == null) {
-            return null;
-        }
-        final View view = window.getDecorView().findViewWithTag("EDIT");
-        return view instanceof EditText ? ((EditText) view).getText() : null;
-    }
-
-    // Search dialog for todo.txt
-    public static void showSttSearchDialog(final Activity activity, final EditText text) {
-        final DialogOptions dopt = makeSttLineSelectionDialog(activity, text, t -> true);
-        dopt.titleText = R.string.search_documents;
-        dopt.neutralButtonText = R.string.replace;
-        dopt.neutralButtonCallback = dialog -> {
-            final Editable searchText = getCurrentSearchText(dialog);
-            dialog.dismiss();
-            SearchAndReplaceTextDialog.showSearchReplaceDialog(activity, text.getText(), searchText, TextViewUtils.getSelection(text));
-        };
-        GsSearchOrCustomTextDialog.showMultiChoiceDialogWithSearchFilterUI(activity, dopt);
-    }
-
-    /**
-     * Allow to choose between Hexcolor / foreground / background color, pass back stringid
-     */
-    public static void showColorSelectionModeDialog(Activity activity, GsCallback.a1<Integer> callback) {
-        final DialogOptions dopt = baseConf(activity);
-
-        final String hexcode = activity.getString(R.string.hexcode);
-        final String fg = activity.getString(R.string.foreground);
-        final String bg = activity.getString(R.string.background);
-
-        dopt.callback = arg1 -> {
-            int id = R.string.hexcode;
-            if (fg.equals(arg1)) {
-                id = R.string.foreground;
-            } else if (bg.equals(arg1)) {
-                id = R.string.background;
-            }
-            callback.callback(id);
-        };
-
-        dopt.data = new ArrayList<>(Arrays.asList(hexcode, fg, bg));
-        dopt.titleText = R.string.color;
-        dopt.isSearchEnabled = false;
-        dopt.okButtonText = 0;
-        dopt.messageText = activity.getString(R.string.set_foreground_or_background_color_hexcolor_also_possible);
-        GsSearchOrCustomTextDialog.showMultiChoiceDialogWithSearchFilterUI(activity, dopt);
-    }
-
-    /**
-     * Shows all checkboxes in the file in a muti select dialog.
-     * The multi select can be used to check or uncheck them.
-     * <p>
-     * Long pressing a line will jump to the line in the file.
-     */
     public static void showDocumentChecklistDialog(
             final Activity activity,
             final Editable text,
@@ -542,74 +167,6 @@ public class MarkorDialogFactory {
         final List<Integer> indices = new ArrayList<>(); // Indices of the check char in the line
         final Matcher matcher = checkPattern.matcher("");
 
-        GsTextUtils.forEachline(text, (index, start, end) -> {
-            final String line = text.subSequence(start, end).toString();
-            matcher.reset(line);
-            if (matcher.find()) {
-                final int cs = matcher.start(checkGroup);
-                final char c = line.charAt(cs);
-                if (checkedChars.indexOf(c) >= 0) {
-                    checked.add(lines.size());
-                }
-                lines.add(line);
-                indices.add(cs + start);
-            }
-            return true;
-        });
-
-        final DialogOptions dopt = baseConf(activity);
-        dopt.selectionMode = DialogOptions.SelectionMode.MULTIPLE;
-        dopt.data = lines;
-        dopt.preSelected = checked;
-        dopt.titleText = R.string.check_list;
-
-        final String check = Character.toString(checkedChars.charAt(0));
-        final String uncheck = Character.toString(uncheckedChars.charAt(0));
-        final TextViewUtils.ChunkedEditable chunked = TextViewUtils.ChunkedEditable.wrap(text);
-
-        dopt.positionCallback = (result) -> {
-            // Result has the indices of the checker lines which are selected
-            for (final int i : GsCollectionUtils.setDiff(checked, result)) {
-                final int cs = indices.get(i);
-                chunked.replace(cs, cs + 1, uncheck);
-            }
-
-            for (final int i : GsCollectionUtils.setDiff(result, checked)) {
-                final int cs = indices.get(i);
-                chunked.replace(cs, cs + 1, check);
-            }
-
-            chunked.applyChanges();
-        };
-
-        if (showCallback != null) {
-            dopt.callback = (line) -> {
-                final int index = lines.indexOf(line);
-                if (index >= 0) {
-                    final int cs = indices.get(index);
-                    final int end = TextViewUtils.getLineEnd(text, cs);
-                    showCallback.callback(end);
-                }
-            };
-        }
-
-        GsSearchOrCustomTextDialog.showMultiChoiceDialogWithSearchFilterUI(activity, dopt);
-    }
-
-    // Insert items
-    public static void showInsertItemsDialog(
-            final Activity activity,
-            final Editable text,
-            final Pattern checkPattern,
-            final int checkGroup,
-            final String checkedChars,
-            final String uncheckedChars,
-            final @Nullable GsCallback.a1<Integer> showCallback
-    ) {
-        final List<String> lines = new ArrayList<>();    // String of each line
-        final Set<Integer> checked = new HashSet<>();    // Whether the line is checked
-        final List<Integer> indices = new ArrayList<>(); // Indices of the check char in the line
-        final Matcher matcher = checkPattern.matcher("");
         GsTextUtils.forEachline(text, (index, start, end) -> {
             final String line = text.subSequence(start, end).toString();
             matcher.reset(line);
@@ -698,72 +255,37 @@ public class MarkorDialogFactory {
             final Activity activity,
             final int title,
             final Collection<T> items,
-            final GsCallback.s1<T> toString,
-            final GsCallback.a1<T> callback
-    ) {
-        final DialogOptions dopt = baseConf(activity);
-        dopt.titleText = title;
-        final List<T> data = items instanceof List ? (List<T>) items : new ArrayList<>(items);
-        dopt.data = GsCollectionUtils.map(data, toString::callback);
-        dopt.positionCallback = i -> callback.callback(data.get(i.get(0)));
-        dopt.isSearchEnabled = true;
-        GsSearchOrCustomTextDialog.showMultiChoiceDialogWithSearchFilterUI(activity, dopt);
-    }
-
-    @RequiresApi(api = Build.VERSION_CODES.O)
-    public static void showGlobFilesDialog(
-            final Activity activity,
-            final File searchDir,
+            final GsCallback.r1<String, T> getName,
             final GsCallback.a1<File> callback
     ) {
         final DialogOptions dopt = baseConf(activity);
-        dopt.titleText = R.string.search_documents;
+        dopt.titleText = title;
         dopt.isSearchEnabled = true;
-        dopt.state.searchText = "**/[!.]*.*";
-        dopt.callback = (query) -> {
-            final List<File> found = GsFileUtils.searchFiles(searchDir, query);
-            final DialogOptions dopt2 = baseConf(activity);
-            dopt2.titleText = R.string.select;
-            dopt2.isSearchEnabled = true;
-            dopt2.data = GsCollectionUtils.map(found, File::getPath);
-            if (found != null) {
-                dopt2.positionCallback = (result) -> callback.callback(found.get(result.get(0)));
+        final List<String> names = new ArrayList<>();
+        for (final T item : items) {
+            names.add(getName.callback(item));
+        }
+        dopt.data = names;
+        dopt.positionCallback = (posn) -> {
+            try {
+                final T item = new ArrayList<>(items).get(posn.get(0));
+                if (item instanceof File) {
+                    callback.callback((File) item);
+                }
+            } catch (IndexOutOfBoundsException ignored) {
             }
-            dopt2.neutralButtonText = R.string.search;
-            dopt2.neutralButtonCallback = dialog2 -> {
-                dialog2.dismiss();
-                showGlobFilesDialog(activity, searchDir, callback);
-            };
-            GsSearchOrCustomTextDialog.showMultiChoiceDialogWithSearchFilterUI(activity, dopt2);
         };
         GsSearchOrCustomTextDialog.showMultiChoiceDialogWithSearchFilterUI(activity, dopt);
     }
 
-    // Insert items
-    public static void showUpdateItemsDialog(
-            final Activity activity,
-            final @StringRes int title,
-            final Set<String> allKeys,
-            final Set<String> currentKeys,
-            final GsCallback.a1<Collection<String>> callback
-    ) {
-        final DialogOptions dopt = baseConf(activity);
-        dopt.data = new ArrayList<>(allKeys);
-        dopt.preSelected = GsCollectionUtils.map(currentKeys, s -> dopt.data.indexOf(s));
-        dopt.titleText = title;
-        dopt.searchHintText = R.string.search_or_custom;
-        dopt.selectionMode = DialogOptions.SelectionMode.MULTIPLE;
-        dopt.callback = (str) -> callback.callback(GsCollectionUtils.union(currentKeys, Collections.singleton(str)));
-        dopt.positionCallback = (newSel) -> callback.callback(
-                GsCollectionUtils.map(newSel, pi -> dopt.data.get(pi).toString()));
-
-        GsSearchOrCustomTextDialog.showMultiChoiceDialogWithSearchFilterUI(activity, dopt);
-    }
-
-    // Get a callback which applies highlighting spans to a todo.txt line
-    private static GsCallback.a1<Spannable> getSttHighlighter(final AppSettings as) {
-        final SyntaxHighlighterBase h = new TodoTxtBasicSyntaxHighlighter(as).configure();
-        return s -> h.setSpannable(s).recompute().applyStatic().applyDynamic();
+    // Get the text of the search field of a dialog
+    private static Editable getCurrentSearchText(final AlertDialog dialog) {
+        if (dialog == null || dialog.getWindow() == null) {
+            return null;
+        }
+        final Window window = dialog.getWindow();
+        final View view = window.getDecorView().findViewWithTag("EDIT");
+        return view instanceof EditText ? ((EditText) view).getText() : null;
     }
 
     // Basic search dialog
@@ -936,46 +458,6 @@ public class MarkorDialogFactory {
         dopt.dialogHeightDp = 400;
         dopt.titleText = R.string.font_size;
         dopt.dialogWidthDp = WindowManager.LayoutParams.WRAP_CONTENT;
-        GsSearchOrCustomTextDialog.showMultiChoiceDialogWithSearchFilterUI(activity, dopt);
-    }
-
-    public static void showPriorityDialog(Activity activity, char selectedPriority, GsCallback.a1<String> callback) {
-        final DialogOptions dopt = baseConf(activity);
-
-        List<String> availableData = new ArrayList<>();
-        List<String> highlightedData = new ArrayList<>();
-        String none = activity.getString(R.string.none);
-        availableData.add(none);
-        for (int i = 'A'; i <= ((int) 'Z'); i++) {
-            availableData.add(Character.toString((char) i));
-        }
-        highlightedData.add(none);
-        if (selectedPriority != TodoTxtTask.PRIORITY_NONE) {
-            highlightedData.add(Character.toString(selectedPriority));
-        }
-
-        final List<Integer> dataIcons = new ArrayList<>();
-        dataIcons.add(R.drawable.ic_delete_black_24dp);
-        for (int i = 0; i <= 5; i++) {
-            dataIcons.add(R.drawable.ic_star_border_black_24dp);
-        }
-
-        dopt.iconsForData = dataIcons;
-        dopt.data = availableData;
-        dopt.highlightData = highlightedData;
-        dopt.titleText = R.string.priority;
-        dopt.okButtonText = 0;
-        dopt.messageText = "";
-        dopt.isSearchEnabled = false;
-        dopt.dialogWidthDp = WindowManager.LayoutParams.WRAP_CONTENT;
-        dopt.dialogHeightDp = 475;
-        dopt.positionCallback = (result) -> {
-            if (result != null && !result.isEmpty()) {
-                final int index = result.get(0);
-                callback.callback(index > 0 ? availableData.get(index) : Character.toString(TodoTxtTask.PRIORITY_NONE));
-            }
-        };
-
         GsSearchOrCustomTextDialog.showMultiChoiceDialogWithSearchFilterUI(activity, dopt);
     }
 

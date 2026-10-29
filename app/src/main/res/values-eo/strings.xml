@@ -93,7 +93,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="add_x_witharg">Aldoni %s</string>
     <string name="files_and_folders">Dosieroj kaj dosierujoj</string>
     <string name="document_browser">Dokumenta foliumilo</string>
-    <string name="set_due_date">Agordi limdaton</string>
     <string name="create_note" needed="false">Krei Noton</string>
     <string name="app_settings" needed="false">Aplikaĵaj Agordoj</string>
     <string name="editor_settings" needed="false">Redaktilaj Agordoj</string>
@@ -108,7 +107,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="underline">Substreki</string>
     <string name="underline_hex_color_wether_or_not_to_description__appspecific">Ĉu substreki la heksajn kolorkodojn laŭ koloro</string>
     <string name="underline_hex_color_codes">Substreki Heksajn Kolorkodojn</string>
-    <string name="tasks_with_todays_date">Taskoj kun hodiaŭa dato</string>
     <string name="use_monospace_for_code">Uzu egalinterspacan litertipon por kodo</string>
     <string name="general">Ĝeneralaj</string>
     <string name="key_ctrl_a">Elekti ĉiujn (Ctrl+A)</string>
@@ -136,7 +134,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="project_team">Projekta teamo</string>
     <string name="community">Komunumo</string>
     <string name="contributors_public_add_yourself_description">Montri informojn pri kontribuanto. Provizu ĝin montri ĉi tie sur elektebla bazo post kontribuado</string>
-    <string name="ascending">ascenda</string>
     <string name="location">Loko</string>
     <string name="text_lines">Tekstaj Linioj</string>
     <string name="text_characters">Tekstaj Signoj</string>
@@ -170,7 +167,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="cancel">Rezigni</string>
     <string name="folder_first">Dosierujo unue</string>
     <string name="go_to">Iri al</string>
-    <string name="quicknote_is_the_fastest_option_to_write_down_notes">Quicknote estas la plej rapida elekto por skribi notojn. Ĝi estas dosiero en la Markdown dosierformo kun la defaŭlta situo &gt;Notebook/QuickNote.md&lt;, vi povas agordi propran dosiersituon per la agordoj.</string>
     <string name="black">Nigra</string>
     <string name="white">Blanka</string>
     <string name="view">Vido</string>
@@ -229,15 +225,5 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="skip_all">Preterpasi (tutoj)</string>
     <string name="overwrite_all">Superskribi (tutoj)</string>
     <string name="copy_move_conflict_message">\'%s\' jam ekzistas en %s</string>
-    <string name="additional_contexts_and_projects">Aldonaj kontekstoj kaj projektoj</string>
-    <string name="enter_space_seperated_contexts_and_projects_these_will">Enskribi @kontekstojn kaj +projektojn apartigitaj per spacetoj. Ĉi tiuj videblos ĉiufoje ĉe todo.txt enmetaj dialogoj.</string>
     <string name="infinite">Infinita</string>
-    <string name="browse_by_project">Esplori per projekto</string>
-    <string name="browse_by_context">Esplori per kunteksto</string>
-    <string name="insert_project">Enmeti projektojn</string>
-    <string name="insert_context">Enmeti kontekstojn</string>
-    <string name="due_overdue">Tarda</string>
-    <string name="due_today">Ŝuldata hodiaŭ</string>
-    <string name="due_future">Ŝuldata estonce</string>
-    <string name="completed">Finita</string>
 </resources>

@@ -114,7 +114,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="archive">Arkiv</string>
     <string name="add_task">Lägg till uppgift</string>
     <string name="add_x_witharg">Lägg till %s</string>
-    <string name="document_to_be_loaded_and_saved_as_witharg">Välj vilket dokument du vill använda som \"%s\"</string>
     <string name="refresh">Uppdatera</string>
     <string name="create_shortcut">Skapa genväg</string>
     <string name="tried_to_create_shortcut_for_this_notice">Försökte lägga till en genväg till startskärmen för att redigera det här dokumentet. Notera att detta inte stöds av alla hemskärmsappar.</string>
@@ -123,8 +122,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="files_and_folders">Filer och mappar</string>
     <string name="document_browser">Dokumentbläddrare</string>
     <string name="file_browser">Filhanterare</string>
-    <string name="set_due_date">Ange förfallodatum</string>
-    <string name="insert_replace_date">Infoga datum</string>
     <string name="create_note" needed="false">Skapa anteckning</string>
     <string name="special_documents" needed="false">Specialdokument</string>
     <string name="keep_screen_on" needed="false">Håll skärmen påslagen</string>
@@ -156,8 +153,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="underline">Understruken</string>
     <string name="underline_hex_color_wether_or_not_to_description__appspecific">Ge färger skrivna som hexkod ett understreck i aktuell färg</string>
     <string name="underline_hex_color_codes">Färgmarkera hexkoder</string>
-    <string name="insert_current_date_when_starting_new_task">Infoga aktuellt datum när du skapar en ny uppgift</string>
-    <string name="tasks_with_todays_date">Uppgifter med dagens datum</string>
     <string name="append_contexts_and_projects">Bifoga kontexter och projekt</string>
     <string name="append_contexts_and_projects_on_end_of_task">Bifoga kontexter och projekt i slutet av en uppgift när du använder lämplig textåtgärd</string>
     <string name="rtl_rendering">VTH-visning</string>
@@ -172,8 +167,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="resources">Resurser</string>
     <string name="space_between_lines_in_percent">Avståndet mellan raderna i procent</string>
     <string name="line_spacing">Radavstånd</string>
-    <string name="archive_does_move_done_tasks">Flytta klara uppgifter till angiven fil i samma mapp</string>
-    <string name="sort_tasks_by_selected_order">Sortera uppgifter efter vald ordning</string>
     <string name="special_key">Specialtangenter</string>
     <string name="asciidoc_special_key">Särskilt AsciiDoc-innehåll</string>
     <string name="key_ctrl_a">Välj allt (Ctrl+A)</string>
@@ -220,7 +213,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="community">Gemenskap</string>
     <string name="contributors_public_add_yourself_description">Visa bidragsinformation. Lämna information för att synas här, om du vill, efter bidragande</string>
     <string name="descending">fallande ordning</string>
-    <string name="ascending">stigande</string>
     <string name="disable_spelling_underline">Stäng av stavningsunderstrykning</string>
     <string name="spellcheck_keyboard_suggestion_stay_red_underline_vanishes">Tangentbordsförslag förblir, röda understrykningar försvinner</string>
     <string name="location">Plats</string>
@@ -282,8 +274,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="internal_storage">Intern lagring</string>
     <string name="open_the_document_from_main_view">Du kan öppna dokumentet från huvudvyns nederkant, filhanteraren eller din programkörare. Det är möjligt att lägga till text delad till Markor.</string>
     <string name="notebook_is_the_home_of_your_files">Anteckningsboken är katalogen Markor hämtar filhanteraren när programmet startas. Det är dina filers hemkatalaog.</string>
-    <string name="quicknote_is_the_fastest_option_to_write_down_notes">SnabbAnteckning är det snabbaste sättet att göra anteckningar. Det är en fil i Markdown-format som ligger i &gt;Notebook/QuickNote.md&lt;, du kan ändra vart filen sparas i inställningarna.</string>
-    <string name="todo_is_the_easiest_way_">Hantera dina uppgifter med ToDo. Det är en fil i todo.txt format med standardplats &gt;Notebook/todo.txt&lt; Du kan ställa in en anpassad sökväg i inställningarna.</string>
     <string name="black">Svart</string>
     <string name="white">Vit</string>
     <string name="view">Visa</string>
@@ -352,7 +342,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="link_color">Länkfärg</string>
     <string name="add_context">Lägg till kontext</string>
     <string name="add_project">Lägg till projekt</string>
-    <string name="archive_completed_tasks">Arkivera slutförda uppgifter</string>
     <string name="create_new_file_or_folder">Skapa en ny fil eller mapp</string>
     <string name="choose_format">Välj format</string>
     <string name="clear_selection">Rensa markering</string>
@@ -360,7 +349,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="back">Tillbaka</string>
     <string name="expand_collapse">Expandera / Komprimera</string>
     <string name="essential">Viktig</string>
-    <string name="append_human_readable_uuid_to_new_tasks">Lägg till läsbar UUID för nya uppgifter</string>
     <string name="action_order">Ordning för textåtgärds-knappar</string>
     <string name="toggle_action_visibility">Växla åtgärdens synlighet</string>
     <string name="load_default_settings">Ladda standardinställningar</string>
@@ -380,7 +368,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="password_already_set_setting_a_new_password_will_overwrite">Lösenord har redan angetts. Ett nytt lösenord kommer att skriva över det befintliga lösenordet och du kanske inte kommer åt filerna längre om du glömmer lösenordet.</string>
     <string name="code_block">Kodblock</string>
     <string name="add_completion_date">Lägg till slutdatum</string>
-    <string name="add_completion_date_for_todos_when_marking_them_as_done">Lägg till slutdatum för uppgifter när de markeras som utförda</string>
     <string name="file_description_format">Filens beskrivningsformat</string>
     <string name="file_description_format_dialog">Formatering av beskrivningen under varje fil i filbläddraren. Följer Android SimpleDateFormat regler, med tillägg av FS för att visa filstorlek. Lämna tomt för att använda standardformatet för din plats.\n\nExempel på indata:\nFS yyyyy MMM dd hh:mm:ss aa\nUtdata:\n30KB 2020 Mar 20 11:24:52</string>
     <string name="loading_default_value">Laddar standardvärde</string>
@@ -414,25 +401,7 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="skip_all">Hoppa över (alla)</string>
     <string name="overwrite_all">Skriv över (alla)</string>
     <string name="copy_move_conflict_message">\'%s\' finns redan i %s</string>
-    <string name="additional_contexts_and_projects">Ytterligare kontexter och projekt</string>
-    <string name="enter_space_seperated_contexts_and_projects_these_will">Skriv @kontexter och +projekt separerade av mellanslag. Dessa kommer alltid att synas på todo.txt infoga-dialogrutor.</string>
     <string name="infinite">Oändlig</string>
-    <string name="browse_by_project">Bläddra efter projekt</string>
-    <string name="browse_by_context">Bläddra efter kontext</string>
-    <string name="insert_project">Infoga projekt</string>
-    <string name="insert_context">Infoga kontexter</string>
-    <string name="browse_todo">Bläddra i uppgift</string>
-    <string name="browse_by_priority">Bläddra efter prioritet</string>
-    <string name="browse_by_due_date">Bläddra efter förfallodatum</string>
-    <string name="due_overdue">Förfallen</string>
-    <string name="due_today">Förfaller idag</string>
-    <string name="due_future">Förfaller i framtiden</string>
-    <string name="completed">Slutförd</string>
-    <string name="advanced_filtering">Avancerad filtrering</string>
-    <string name="match_any">Matcha alla</string>
-    <string name="match_all">Matcha alla</string>
-    <string name="dynamic_notebook_root_links">Dynamisk sökning efter anteckningsbok rot</string>
-    <string name="search_dynamically_for_notebook_root">För att följa wiki-länkar, dynamiskt söka efter filen notebook.zim för att identifiera rotkatalogen för den aktuella anteckningsboken. Kontrollera detta om du använder flera anteckningsböcker för zim eller den anteckningsbok som anges i appen inte motsvarar din anteckningsbok för zim.</string>
     <string name="share_into_format_prefix_for_text_shared">Format/prefix för text delad i Markor. Följer Androids regler för SimpleDateFormat.\n\nAnvänd {{text}} för att placera din text. Om taggen in är angiven kommer texten att användas som prefix i slutet.</string>
     <string name="share_into_format">Dela till - Format</string>
     <string name="attachment_folder_name">Namn på katalog för bilagor</string>
@@ -443,7 +412,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="error_could_not_open_file">Fel: Kunde inte öppna fil.</string>
     <string name="document_error_clip">Ett fel uppstod: Text kopierad till urklipp.</string>
     <string name="wont_save_min_length">Filer med färre än %d tecken sparas inte automatiskt i syfte för att förhindra förlust av data.</string>
-    <string name="advanced_filtering_help"><![CDATA[<small><a href="https://www.github.com/gsantner/markor/discussions/1940">Syntax för avancerade filter</a></small>]]></string>
     <string name="filter">Filter</string>
     <string name="use_tab_to_indent">Använd tab för indentering</string>
 </resources>

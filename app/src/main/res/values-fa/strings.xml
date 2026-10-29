@@ -110,7 +110,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="archive">بایگانی</string>
     <string name="add_task">افزودن کار</string>
     <string name="add_x_witharg">افزودن %s</string>
-    <string name="document_to_be_loaded_and_saved_as_witharg">این پرونده بارگزاری و ذخیره شد با نام \"%s\"</string>
     <string name="refresh">تازه کردن</string>
     <string name="create_shortcut">ایجاد میانبر</string>
     <string name="tried_to_create_shortcut_for_this_notice">ما میانبری به این پرونده در صفحه اصلی تلفن شما ایجاد کردیم؛ اما ممکن است بعضی لانچرها از این قابلیت پشتیبانی نکنند.</string>
@@ -118,8 +117,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="file_not_in_current_folder_do_copy__appspecific">فایل انتخاب شده در پوشه یادداشت های برنامه نیست. آیا می‌خواهید آن را به پوشه کنونی کپی کنید؟ این موجب بازنویسی آن فایل روی فایل‌های هم نام خواهد شد.</string>
     <string name="files_and_folders">فایل‌ها و پوشه‌ها</string>
     <string name="document_browser">مرورگر پرونده</string>
-    <string name="set_due_date">تعیین زمان پایان‌کار</string>
-    <string name="insert_replace_date">وارد کردن تاریخ</string>
     <string name="create_note" needed="false">ایجاد یادداشت</string>
     <string name="special_documents" needed="false">مطالب ویژه</string>
     <string name="keep_screen_on" needed="false">روشن نگه داشتن صفحه نمایش</string>
@@ -150,8 +147,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="underline">زیرخط</string>
     <string name="underline_hex_color_wether_or_not_to_description__appspecific">کد های رنگی بر اساس رنگشان زیرخط‌ دار بشوند یا نه</string>
     <string name="underline_hex_color_codes">زیر خط دار کردن کد های رنگی</string>
-    <string name="insert_current_date_when_starting_new_task">هنگامی که کار جدید ثبت می‌کنم تاریخ امروز را وارد کن</string>
-    <string name="tasks_with_todays_date">کارها با تاریخ امروز</string>
     <string name="append_contexts_and_projects">بعد از اینکه پرونده بارگزاری شد، موقعیت مکان‌نما در انتهای پرونده قرار بگیرد</string>
     <string name="append_contexts_and_projects_on_end_of_task">پیوست متن‌ها و پروژه‌ها در پایان کار، هنگامی که از میان‌بر متنی مناسب استفاده می‌کنید</string>
     <string name="rtl_rendering">رندر راست به چپ</string>
@@ -166,8 +161,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="resources">منابع</string>
     <string name="space_between_lines_in_percent">فاصله خطوط به درصد</string>
     <string name="line_spacing">فاصله خطوط</string>
-    <string name="archive_does_move_done_tasks">کارهای انجام شده را به فایلی در یک پوشه انتقال دهید</string>
-    <string name="sort_tasks_by_selected_order">مرتب سازی لیست کار ها بر اساس گزینه انتخاب شده</string>
     <string name="special_key">کلید ویژه</string>
     <string name="asciidoc_special_key">محتوای خاص اَسکیداک</string>
     <string name="key_ctrl_a">انتخاب همه (Ctrl + A)</string>
@@ -213,7 +206,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="community">انجمن</string>
     <string name="contributors_public_add_yourself_description">Show contributor info. Provide it to be shown here on an opt-in basis after contributing</string>
     <string name="descending">رو به پایین</string>
-    <string name="ascending">رو به بالا</string>
     <string name="disable_spelling_underline">غیر فعال کردن زیرخط غلط املایی</string>
     <string name="spellcheck_keyboard_suggestion_stay_red_underline_vanishes">Keyboard suggestions stay, red underline vanishes</string>
     <string name="location">مکان</string>
@@ -274,8 +266,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="internal_storage">حافظه داخلی</string>
     <string name="open_the_document_from_main_view">You can open the document from main view on the bottom, the file browser or the launcher. There is also a option to append text shared into Markor.</string>
     <string name="notebook_is_the_home_of_your_files">Notebook is the folder that Markor loads in the file browser when the app is started. It is the home folder of your files.</string>
-    <string name="quicknote_is_the_fastest_option_to_write_down_notes">QuickNote is the fastest option to write down notes. It is a file in Markdown format with default location &gt;Notebook/QuickNote.md&lt;, you can set a custom filepath in the settings.</string>
-    <string name="todo_is_the_easiest_way_">Manage your tasks with ToDo. It is a file in todo.txt format with default location &gt;Notebook/todo.txt&lt;, you can set a custom filepath in the settings.</string>
     <string name="black">سیاه</string>
     <string name="white">سفید</string>
     <string name="view">نمایش</string>
@@ -339,7 +329,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="link_color">Link color</string>
     <string name="add_context">Add context</string>
     <string name="add_project">Add project</string>
-    <string name="archive_completed_tasks">Archive completed tasks</string>
     <string name="create_new_file_or_folder">ساخت پرونده یا پوشه جدید</string>
     <string name="choose_format">انتخاب قالب</string>
     <string name="clear_selection">پاک کردن موارد انتخابی</string>
@@ -347,7 +336,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="back">بازگشت</string>
     <string name="expand_collapse">گسترش دادن / بستن</string>
     <string name="essential">ضروری</string>
-    <string name="append_human_readable_uuid_to_new_tasks">افزودن UUID قابل خواندن توسط انسان به وظایف جدید</string>
     <string name="action_order">ترتیب کنش</string>
     <string name="toggle_action_visibility">تغییر وضعیت پیدایی کنش</string>
     <string name="load_default_settings">بار کردن تنظیمات پیش‌فرض</string>
@@ -361,7 +349,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="password_already_set_setting_a_new_password_will_overwrite">گذرواژه از قبل تنظیم شده است. تنظیم گذرواژه جدید بر روی گذرواژه موجود نوشته می‌شود و اگر گذرواژه را فراموش کنید، دیگر نمی‌توانید به پرونده‌های خود دسترسی داشته باشید.</string>
     <string name="code_block">بلوک کد</string>
     <string name="add_completion_date">افزودن تاریخ تکمیل</string>
-    <string name="add_completion_date_for_todos_when_marking_them_as_done">افزودن تاریخ تکمیل برای فهرست کارها زمانی که همه‌شان انجام شده باشند</string>
     <string name="file_description_format">قالب توضیحات پرونده</string>
     <string name="file_description_format_dialog">قالب برای توضیحات هر پرونده در مرور پرونده. از قوائد SimpleDateFormat اندروید پیروی می‌کند به اضافه FS برای نمایش اندازه پرونده. خالی بگذارید تا از قالب پیش‌فرض برای محل شما استفاده کند.\n\nمثال‌هایی از ورودی:\nFS yyyy MMM dd hh:mm:ss aa\nقالب خروجی:\n30KB 2020 Mar 20 11:24:52 PM</string>
     <string name="loading_default_value">بارکردن مقادیر پیش‌فرض</string>
@@ -394,32 +381,12 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="skip_all">Skip (all)</string>
     <string name="overwrite_all">Overwrite (all)</string>
     <string name="copy_move_conflict_message">در %s موجود می باشد</string>
-    <string name="additional_contexts_and_projects">بعد از اینکه پرونده بارگزاری شد، موقعیت مکان‌نما در انتهای پرونده قرار بگیرد</string>
-    <string name="enter_space_seperated_contexts_and_projects_these_will">Enter space-separated @contexts and +projects. These will always be visible at todo.txt insert dialogs.</string>
     <string name="infinite">نامحدود</string>
-    <string name="browse_by_project">مرور بر حسب پروژه</string>
-    <string name="browse_by_context">مرور بر حسب زمینه</string>
-    <string name="insert_project">درج پروژه‌ها</string>
-    <string name="insert_context">درج زمینه‌ها</string>
-    <string name="browse_todo">مرور فهرست کار</string>
-    <string name="browse_by_priority">مرور بر حسب اولویت</string>
-    <string name="browse_by_due_date">مرور بر حسب موعد اتمام</string>
-    <string name="due_overdue">سررسیده</string>
-    <string name="due_today">سررسید امروز</string>
-    <string name="due_future">سررسید در آینده</string>
-    <string name="completed">تمام شده</string>
-    <string name="advanced_filtering">صافی پیشرفته</string>
-    <string name="match_any">مطالبقت با هر کدام</string>
-    <string name="match_all">مطابقت با همه</string>
-    <string name="dynamic_notebook_root_links">Dynamic search for notebook root</string>
-    <string name="search_dynamically_for_notebook_root">In order to follow wiki links, dynamically search for the notebook.zim file to identify the root directory for the current notebook. Check this if you use multiple zim notebooks or the notebook directory set in the app does not correspond to your zim notebook.</string>
     <string name="share_into_format">Share into - Format</string>
     <string name="auto_format">تعیین فرمت خودکار</string>
     <string name="insert_snippet">جای‌گذاری اِسنیپتِ</string>
     <string name="error_could_not_open_file">ارور: فایل باز نشد.</string>
     <string name="document_error_clip">ارور: متن به کلیپبرد افزوده شد.</string>
     <string name="wont_save_min_length">جهت جلوگیری از ازدست‌رفتن داده، فایل‌هایی با تعداد کاراکتر کمتر از %d به‌صورت خودکار ذخیره نخواهند شد.</string>
-    <string name="advanced_filtering_help"><![CDATA[<small><a href="https://www.github.com/gsantner/markor/discussions/1940">
-سینتکس صافی پیشرفته </a></small>]]></string>
     <string name="filter">صافی</string>
 </resources>

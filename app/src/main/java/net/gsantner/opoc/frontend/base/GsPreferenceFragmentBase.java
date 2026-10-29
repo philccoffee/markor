@@ -40,6 +40,7 @@
  */
 package net.gsantner.opoc.frontend.base;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -329,6 +330,9 @@ public abstract class GsPreferenceFragmentBase<AS extends GsSharedPreferencesPro
     }
 
 
+    // Restricted / deprecated in the androidx PreferenceFragmentCompat API, but must still be
+    // overridden so that preference change callbacks are dispatched to this fragment.
+    @SuppressLint("RestrictedApi")
     @Override
     public Fragment getCallbackFragment() {
         return this;

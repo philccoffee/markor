@@ -109,7 +109,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="archive">Arkistoi</string>
     <string name="add_task">Lisää tehtävä</string>
     <string name="add_x_witharg">Lisää %s</string>
-    <string name="document_to_be_loaded_and_saved_as_witharg">Ladattava ja tallennettava asiakirja nimellä \"%s\"</string>
     <string name="refresh">Päivitä</string>
     <string name="create_shortcut">Luo pikakuvake</string>
     <string name="tried_to_create_shortcut_for_this_notice">Yritettiin luoda pikakuvake aloitusnäyttöön. Huomaa, että jotkut käynnistimet eivät ehkä tue tätä.</string>
@@ -117,8 +116,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="file_not_in_current_folder_do_copy__appspecific">Tiedostoa ei löydy nykyisestä kansiosta. Haluatko kopioida sen nykyiseen kansioon? Tämä korvaa kaikki olemassa olevat tiedostot samalla nimellä.</string>
     <string name="files_and_folders">Tiedostot ja kansiot</string>
     <string name="document_browser">Asiakirjaselain</string>
-    <string name="set_due_date">Aseta eräpäivä</string>
-    <string name="insert_replace_date">Insert date</string>
     <string name="create_note" needed="false">Luo muistiinpano</string>
     <string name="special_documents" needed="false">Erikoisasiakirjat</string>
     <string name="keep_screen_on" needed="false">Pidä näyttö päällä</string>
@@ -149,8 +146,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="underline">Alleviivaus</string>
     <string name="underline_hex_color_wether_or_not_to_description__appspecific">Alleviivataanko heksavärikoodeja värin mukaan</string>
     <string name="underline_hex_color_codes">Alleviivaa heksavärikoodit</string>
-    <string name="insert_current_date_when_starting_new_task">Lisää nykyinen päivämäärä, kun uusi tehtävä aloitetaan</string>
-    <string name="tasks_with_todays_date">Tehtävät tämän päivän päivämäärällä</string>
     <string name="append_contexts_and_projects">Lisää asiayhteydet ja projektit</string>
     <string name="append_contexts_and_projects_on_end_of_task">Lisää asiayhteydet ja projektit tehtävän loppuun, kun käytät asianmukaista tekstitoimintoa</string>
     <string name="rtl_rendering">RTL-hahmonnus</string>
@@ -165,8 +160,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="resources">Resurssit</string>
     <string name="space_between_lines_in_percent">Rivien välinen tila prosentteina</string>
     <string name="line_spacing">Riviväli</string>
-    <string name="archive_does_move_done_tasks">Siirrä tehdyt tehtävät samassa kansiossa olevaan määritettyyn tiedostoon</string>
-    <string name="sort_tasks_by_selected_order">Lajittele tehtävät valitun järjestyksen mukaan</string>
     <string name="special_key">Erikoisnäppäin</string>
     <string name="key_ctrl_a">Valitse kaikki (Ctrl+A)</string>
     <string name="start_on_bottom">Aloita alhaalta</string>
@@ -206,7 +199,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="project_team">Projektiryhmä</string>
     <string name="contributors_public_add_yourself_description">Näytä osallistujatiedot. Lähetä halutessasi tiedot näkyäksesi täällä osallistumisen jälkeen</string>
     <string name="descending">laskeva</string>
-    <string name="ascending">nouseva</string>
     <string name="disable_spelling_underline">Poista oikeinkirjoituksen alleviivaus käytöstä</string>
     <string name="spellcheck_keyboard_suggestion_stay_red_underline_vanishes">Näppäimistöehdotukset pysyvät, punainen alleviivaus katoaa</string>
     <string name="location">Sijainti</string>
@@ -268,8 +260,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="internal_storage">Sisäinen tallennustila</string>
     <string name="open_the_document_from_main_view">Voit avata asiakirjan päänäkymästä alhaalla, tiedostoselain tai kantorakettien päänäkymästä. Myös Markoriin on mahdollista liittää yhteinen teksti.</string>
     <string name="notebook_is_the_home_of_your_files">Muistiinpanot on kansio, jonka Markor lataa tiedostoselaimeen, kun sovellus käynnistetään. Se on tiedostojesi kotikansio.</string>
-    <string name="quicknote_is_the_fastest_option_to_write_down_notes">QuickNote on nopein vaihtoehto muistiinpanojen kirjoittamiseen. Se on tiedosto Markdown-muodossa, jonka oletussijainti on &gt;Notebook/QuickNote.md&lt;, voit määrittää mukautetun tiedostopolun asetuksissa.</string>
-    <string name="todo_is_the_easiest_way_">Hallitse tehtäviäsi ToDo:lla. Se on tiedosto todo.txt-muodossa, jonka oletussijainti on &gt;Notebook/todo.txt&lt;, voit määrittää mukautetun tiedostopolun asetuksissa.</string>
     <string name="black">Musta</string>
     <string name="white">Valkoinen</string>
     <string name="view">Näytä</string>
@@ -333,14 +323,12 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="link_color">Linkin väri</string>
     <string name="add_context">Lisää konteksti</string>
     <string name="add_project">Lisää projekti</string>
-    <string name="archive_completed_tasks">Arkistoi suoritetut tehtävät</string>
     <string name="create_new_file_or_folder">Luo uusi tiedosto tai kansio</string>
     <string name="choose_format">Valitse muoto</string>
     <string name="selected">Valittu</string>
     <string name="back">Takaisin</string>
     <string name="expand_collapse">Laajenna / Tiivistä</string>
     <string name="essential">Olennainen</string>
-    <string name="append_human_readable_uuid_to_new_tasks">Lisää ihmisen luettavissa oleva UUID uusiin tehtäviin</string>
     <string name="action_order">Toiminnon järjestys</string>
     <string name="toggle_action_visibility">Vaihda toiminnan näkyvyyttä</string>
     <string name="load_default_settings">Lataa oletusasetukset</string>
@@ -355,7 +343,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="password_already_set_setting_a_new_password_will_overwrite">Salasana on jo asetettu. Uuden salasanan asettaminen ylikirjoittaa olemassa olevan, etkä välttämättä pääse enää käsiksi tiedostoihisi, jos unohdat salasanan.</string>
     <string name="code_block">Koodilohko</string>
     <string name="add_completion_date">Lisää valmistumispäivä</string>
-    <string name="add_completion_date_for_todos_when_marking_them_as_done">Lisää todoksen valmistumispäivä kun merkitään ne valmiiksi</string>
     <string name="file_description_format">Tiedoston kuvauksen muoto</string>
     <string name="file_description_format_dialog">Muotoile kuvauksen alla jokaisen tiedoston tiedostoselain. Follows Android SimpleDateFormat säännöt, lisäämällä FS näytetään tiedoston koko. Jätä tyhjäksi käyttääksesi paikallista oletusmuotoa. @ title: group\n\nEsimerkkisyöte:\nFS yyyy MMM dd hh:mm:ss aa\nOutput format:\n30KB 2020 Mar 20 11:24:52</string>
     <string name="loading_default_value">Ladataan oletusarvoa</string>
@@ -388,24 +375,7 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="skip_all">Ohita (kaikki)</string>
     <string name="overwrite_all">Korvaa (kaikki)</string>
     <string name="copy_move_conflict_message">\'%s\' on jo olemassa %s</string>
-    <string name="additional_contexts_and_projects">Lisätaustat ja -hankkeet</string>
-    <string name="enter_space_seperated_contexts_and_projects_these_will">Syötä välilyönti erotettu @kontekstit ja +projektit. Nämä näkyvät aina osoitteessa: todo.txt insert dialogit.</string>
     <string name="infinite">Loputon</string>
-    <string name="browse_by_project">Selaa projektissa</string>
-    <string name="browse_by_context">Selaa kontekstin mukaan</string>
-    <string name="insert_project">Lisää projekteja</string>
-    <string name="insert_context">Insert contexts</string>
-    <string name="browse_todo">Selaa todoa</string>
-    <string name="browse_by_priority">Selaa prioriteetin mukaan</string>
-    <string name="browse_by_due_date">Selaa eräpäivän mukaan</string>
-    <string name="due_overdue">Myöhässä</string>
-    <string name="due_today">Erääntyy tänään</string>
-    <string name="due_future">Tulevaisuudessa erääntyvät</string>
-    <string name="completed">Valmis</string>
-    <string name="match_any">Täsmää Mikä Tahansa</string>
-    <string name="match_all">Täsmää Kaikki</string>
-    <string name="dynamic_notebook_root_links">Dynaaminen haku muistikirjan juurille</string>
-    <string name="search_dynamically_for_notebook_root">Seuratakseen wiki linkkejä, etsi dynaamisesti notebook.zim-tiedostoa, joka tunnistaa nykyisen muistikirjan juurihakemiston. Valitse tämä, jos käytät useita zim-muistikirjoja tai sovelluksessa asetettu notebook-hakemisto ei vastaa zim-muistikirjaasi.</string>
     <string name="share_into_format">Jaa - Muoto</string>
     <string name="auto_format">Automaattimuotoilu</string>
     <string name="insert_snippet">Insert snippet</string>

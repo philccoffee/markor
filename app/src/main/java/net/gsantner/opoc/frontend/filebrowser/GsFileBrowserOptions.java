@@ -15,6 +15,7 @@ import android.os.Environment;
 
 import androidx.annotation.ColorRes;
 import androidx.annotation.DrawableRes;
+import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 
 import net.gsantner.opoc.util.GsFileUtils;
@@ -54,6 +55,15 @@ public class GsFileBrowserOptions {
                 rootFolder = Environment.getExternalStorageDirectory(),
                 mountedStorageFolder = null,
                 startFolder = null;
+
+        /**
+         * When set, navigation is confined to this directory: the "go up" entry disappears once
+         * the current folder *is* this directory, so the user cannot browse outside of it.
+         * Used for sandboxed views such as the app-private workspace.
+         */
+        @Nullable
+        public File confineToFolder = null;
+
         public String requestId = "show_dialog";
 
         public String descriptionFormat = null;

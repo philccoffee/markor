@@ -109,7 +109,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="archive">Kho lưu trữ</string>
     <string name="add_task">Thêm tác vụ</string>
     <string name="add_x_witharg">Thêm %s</string>
-    <string name="document_to_be_loaded_and_saved_as_witharg">Tài liệu được tải và lưu dưới dạng \"%s\"</string>
     <string name="refresh">Làm mới</string>
     <string name="create_shortcut">Tạo lối tắt</string>
     <string name="tried_to_create_shortcut_for_this_notice">Cố gắng để tạo một shortcut để màn hình của bạn. Lưu ý rằng một số bệ phóng có thể hỗ trợ điều này.</string>
@@ -117,8 +116,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="file_not_in_current_folder_do_copy__appspecific">Tệp được chọn không nằm trong thư mục này. Bạn có muốn sao chép? Hành động này sẽ ghi đè dữ liệu lên các tệp trùng tên.</string>
     <string name="files_and_folders">Tệp và cặp</string>
     <string name="document_browser">Trình duyệt tài liệu</string>
-    <string name="set_due_date">Đặt thời hạn</string>
-    <string name="insert_replace_date">Nhập thời gian</string>
     <string name="create_note" needed="false">Tạo ghi chú</string>
     <string name="special_documents" needed="false">Tài liệu đặc biệt</string>
     <string name="keep_screen_on" needed="false">Giữ màn hình luôn bật</string>
@@ -144,8 +141,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="underline">Gạch chân</string>
     <string name="underline_hex_color_wether_or_not_to_description__appspecific">Tùy chọn gạch các màu thuộc mã màu hex</string>
     <string name="underline_hex_color_codes">Gạch chân mã màu hex</string>
-    <string name="insert_current_date_when_starting_new_task">Nhập ngày hiện hành khi khởi tạo công việc</string>
-    <string name="tasks_with_todays_date">Các công việc hôm nay</string>
     <string name="append_contexts_and_projects">Thêm ngữ cảnh và dự án</string>
     <string name="append_contexts_and_projects_on_end_of_task">Thêm ngữ cảnh và dự án vào cuối mỗi mục công việc khi sử dụng đúng nội dung</string>
     <string name="rtl_rendering">Kết xuất phải sang trái</string>

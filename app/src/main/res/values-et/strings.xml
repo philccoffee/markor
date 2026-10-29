@@ -114,7 +114,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="archive">Arhiiv</string>
     <string name="add_task">Lisa ülesanne</string>
     <string name="add_x_witharg">Lisa %s</string>
-    <string name="document_to_be_loaded_and_saved_as_witharg">Kirjutis laaditakse ja salvestatakse kui %s</string>
     <string name="refresh">Värskenda</string>
     <string name="create_shortcut">Loo otsetee</string>
     <string name="tried_to_create_shortcut_for_this_notice">Proovib luua otsetee sinu kodukraanike. Mõned käivitajad ei võimalda seda.</string>
@@ -122,8 +121,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="file_not_in_current_folder_do_copy__appspecific">Fail ei asu praeguses kaustas. Kas soovite selle praegusesse kausta kopeerida? See kirjutab üle kõik sama nimega failid.</string>
     <string name="files_and_folders">Failid ja kaustad</string>
     <string name="document_browser">Dokumentide sirvija</string>
-    <string name="set_due_date">Sea tähtaeg</string>
-    <string name="insert_replace_date">Sisesta kuupäev</string>
     <string name="create_note" needed="false">Puhasta märge</string>
     <string name="special_documents" needed="false">Erilised dokumendid</string>
     <string name="keep_screen_on" needed="false">Hoia ekraanil</string>
@@ -154,8 +151,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="underline">Jooni alla</string>
     <string name="underline_hex_color_wether_or_not_to_description__appspecific">Kas alla joonida kuueteistkümnend värvikoodid vastavalt värvile</string>
     <string name="underline_hex_color_codes">Jooni alla kuueteistkümnend värvikoodid</string>
-    <string name="insert_current_date_when_starting_new_task">Sisesta uue ülesande alustamisel praegune kuupäev</string>
-    <string name="tasks_with_todays_date">Ülesanded tänase kuupäevaga</string>
     <string name="append_contexts_and_projects">Lisa kontekste ja ettevõtmisi</string>
     <string name="append_contexts_and_projects_on_end_of_task">Kui kasutate sobivat tekstitoimingut, lisage ülesande lõppu kontekstid ja projektid</string>
     <string name="rtl_rendering">Paremalt vasakule</string>
@@ -170,8 +165,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="resources">Vahendid</string>
     <string name="space_between_lines_in_percent">Ridade vahekaugus protsentides</string>
     <string name="line_spacing">Ridade vahe</string>
-    <string name="archive_does_move_done_tasks">Liiguta lõpetatud ülesanded eraldi faili samas kaustas</string>
-    <string name="sort_tasks_by_selected_order">Järjesta ülesanded valitud järjekorda</string>
     <string name="special_key">Eriklahvid</string>
     <string name="asciidoc_special_key">Eriline AsciiDoc sisu</string>
     <string name="key_ctrl_a">Vali kõik (Ctrl+A)</string>
@@ -218,7 +211,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="community">Kogukond</string>
     <string name="contributors_public_add_yourself_description">Kuva kaastöötajateave. Esitage see, et see kuvatakse siin pärast panuse andmist, kui soovite</string>
     <string name="descending">kahanev</string>
-    <string name="ascending">suurenev</string>
     <string name="disable_spelling_underline">Keela kirjavigade allajoonimine</string>
     <string name="spellcheck_keyboard_suggestion_stay_red_underline_vanishes">Sõnasoovitused jäävad, punased allajoonimised kaovad</string>
     <string name="location">Asukoht</string>
@@ -280,8 +272,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="internal_storage">Sisemine salvestusruum</string>
     <string name="open_the_document_from_main_view">Dokumendi saate avada altpoolt põhivaates, failibrauseris või käivitusprogrammis. Samuti on võimalik Markorisse jagatud teksti lisada.</string>
     <string name="notebook_is_the_home_of_your_files">Märkmik/Notebook on kaust, mille Markor rakenduse käivitamisel failihaldurisse laadib. See on teie failide kodukaust.</string>
-    <string name="quicknote_is_the_fastest_option_to_write_down_notes">QuickNote on kiireim võimalus märkmete kirjutamiseks. See on Markdown-vormingus fail, mille vaikeasukoht &gt;Notebook/QuickNote.md&lt;, seadistustes saate kohandada failitee.</string>
-    <string name="todo_is_the_easiest_way_">Halda oma ülesandeid TodDo abil. See on faili todo.txt vormingus vaikimisi asukohas &gt;Notebook/todo.txt&lt;, mille failiteed saad seadetes muuta.</string>
     <string name="black">Must</string>
     <string name="white">Valge</string>
     <string name="view">Vaade</string>
@@ -347,7 +337,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="link_color">Lingi värv</string>
     <string name="add_context">Lisa valdkond</string>
     <string name="add_project">Lisa ettevõtmisi</string>
-    <string name="archive_completed_tasks">Hoiusta lõpetatud ülesanded</string>
     <string name="create_new_file_or_folder">Loo uus kirjutis või kaust</string>
     <string name="choose_format">Vali vorming</string>
     <string name="clear_selection">Ära vali midagi</string>
@@ -355,7 +344,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="back">Tagasi</string>
     <string name="expand_collapse">Laienda/ ahenda</string>
     <string name="essential">Hädavajalik</string>
-    <string name="append_human_readable_uuid_to_new_tasks">Lisage uutele ülesannetele inimloetav UUID</string>
     <string name="action_order">Toimingute järjekord</string>
     <string name="toggle_action_visibility">Lülita toimingu näitamist</string>
     <string name="load_default_settings">Laadi vaikimisi seaded</string>
@@ -370,7 +358,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="password_already_set_setting_a_new_password_will_overwrite">Parool on juba määratud. Uue salasõna määramine kirjutab olemasoleva üle ja selle unustamise korral ei pruugi te enam failidele juurde pääseda.</string>
     <string name="code_block">Koodiread</string>
     <string name="add_completion_date">Lisa lõpetamise kuupäev</string>
-    <string name="add_completion_date_for_todos_when_marking_them_as_done">Lõprtatuks märkimisel lisage ülesannete täitmise kuupäev</string>
     <string name="file_description_format">Faili kirjelduse vorming</string>
     <string name="file_description_format_dialog">Iga faili all oleva kirjelduse vorming failihalduris. Järgib Androidi SimpleDateFormat reegleid, millele on lisatud faili suuruse kuvamiseks FS. Oma asukoha vaikevormingu kasutamiseks jätke väli tühjaks.\n\nNäidis sisend:\nFS yyyy MMM pp hh:mm:ss aa\nVäljundvorming:\n30KB 20. mär 2020 23:24:52</string>
     <string name="loading_default_value">Laadi vaikimisi väärtus</string>
@@ -403,25 +390,7 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="skip_all">Jäta vahele (kõik)</string>
     <string name="overwrite_all">Kirjuta üle (kõik)</string>
     <string name="copy_move_conflict_message">\'%s\' on juba asukohas %s olemas</string>
-    <string name="additional_contexts_and_projects">Täiendavad valdkonnad ja ettevõtmised</string>
-    <string name="enter_space_seperated_contexts_and_projects_these_will">Sisesta tühikuga eraldatud @valdkonnad ja +ettevõtmised. Need on alati nähtavad faili todo.txt sisestusdialoogides.</string>
     <string name="infinite">Piiramata</string>
-    <string name="browse_by_project">Sirvi ettevõtmise kaupa</string>
-    <string name="browse_by_context">Sirvi valdkonna kaupa</string>
-    <string name="insert_project">Sisesta ettevõtmised</string>
-    <string name="insert_context">Sisesta valdkonnad</string>
-    <string name="browse_todo">Sirvi tegemisi</string>
-    <string name="browse_by_priority">Sirvi tähtsuse järgi</string>
-    <string name="browse_by_due_date">Sirvi tähtaja järgi</string>
-    <string name="due_overdue">Tähtaja ületanud</string>
-    <string name="due_today">Tähtaeg täna</string>
-    <string name="due_future">Tähtajani on veel aega</string>
-    <string name="completed">Lõpetatud</string>
-    <string name="advanced_filtering">Täpsem eraldamine</string>
-    <string name="match_any">Leia mistahes</string>
-    <string name="match_all">Leia kõik</string>
-    <string name="dynamic_notebook_root_links">Märkmiku juure otsimine</string>
-    <string name="search_dynamically_for_notebook_root">Vikilinkide järgimiseks otsige dünaamiliselt faili notebook.zim, et tuvastada praeguse märkmiku juurkataloog. Märkige see, kui kasutate mitut zim-märkmikku või rakenduses määratud märkmikukataloog ei vasta teie zim-märkmikule.</string>
     <string name="share_into_format_prefix_for_text_shared">Markoris jagatud teksti vorming/eesliide. Järgib Androidi SimpleDateFormat reegleid.\n\nKasutage jagatud teksti paigutamiseks kohahoidjat {{text}}. Kui pole määratud, lisatakse jagatud tekst ja vormingut kasutatakse prefiksina.</string>
     <string name="share_into_format">Jaga valitud vormingus</string>
     <string name="attachment_folder_name">Manuste kausta nimi</string>
@@ -432,6 +401,5 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="error_could_not_open_file">Viga: ei saa faili avatud.</string>
     <string name="document_error_clip">Ilmnes viga: tekst kopeeriti lõikelauale.</string>
     <string name="wont_save_min_length">Alla %d tähemärgiga faile ei salvestata automaatselt vältimaks andmete kadumist.</string>
-    <string name="advanced_filtering_help"><![CDATA[<small><a href="https://www.github.com/gsantner/markor/discussions/1940">Täpsemalt tegevuste eraldamise päringukeelest</a></small>]]></string>
     <string name="filter">Eralda</string>
 </resources>

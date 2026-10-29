@@ -108,7 +108,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="archive">காப்பகம்</string>
     <string name="add_task">செயலை சேர்க்கவும்</string>
     <string name="add_x_witharg">%s ஐச் சேர்</string>
-    <string name="document_to_be_loaded_and_saved_as_witharg">ஏற்றப்பட போகிற ஆவணம் மற்றும் \"%s\" வாக சேமிக்கப்பட்டது</string>
     <string name="refresh">புதுப்பி</string>
     <string name="create_shortcut">குறுக்குவழியை உருவாக்கு</string>
     <string name="tried_to_create_shortcut_for_this_notice">உங்கள் முகப்பு பக்கத்தில் ஒரு குருக்குவழியை உருவாக்க முயற்சி செய்யப்பட்டது. சில பயன்பாட்டு ஏவிகள் இத்தகைய முயற்சிக்கு ஆதரவு தராது.</string>
@@ -116,8 +115,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="file_not_in_current_folder_do_copy__appspecific">ஆவணம் தற்போதய கோப்புறையில் இல்லை. அதை தற்போதைய கோப்புறைக்கு நகலெடுக்க விரும்புகிறீர்களா? து செயல் அந்த கோப்புறையில் ஏற்கனவே அதே பெயரில் வேறு ஏதெனும் ஆவணம் இருந்தால் அதன் மீது மேலெழுதப்படும்.</string>
     <string name="files_and_folders">கோப்பு மற்றும் கோப்புறைகள்</string>
     <string name="document_browser">ஆவணங்களின் உலாவி</string>
-    <string name="set_due_date">முடிவு தேதி</string>
-    <string name="insert_replace_date">தேதியை சொருகு</string>
     <string name="create_note" needed="false">குறிப்பை உருவாக்கு</string>
     <string name="special_documents" needed="false">சிறப்பு கோப்புகள்</string>
     <string name="keep_screen_on" needed="false">திரையை இயக்கத்தில் வைத்திரு</string>
@@ -147,8 +144,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="underline">அடிக்கோடு</string>
     <string name="underline_hex_color_wether_or_not_to_description__appspecific">நிறங்களுக்கு ஏற்ப Hex வண்ண குறியீடுகளை அடிக்கோடிட்டு காட்டவா</string>
     <string name="underline_hex_color_codes">Hex வண்ண குறியீடுகளை அடிக்கோடிடு</string>
-    <string name="insert_current_date_when_starting_new_task">ஒரு புதிய செயலை தொடங்கும் போது தற்போதைய தேதியை சேர்க்கவும்</string>
-    <string name="tasks_with_todays_date">இன்றைய தேதியை கொண்டிருக்கும் செயல்கள்</string>
     <string name="append_contexts_and_projects">சூழல்கள் மற்றும் திட்டங்களையும் சேர்க்கவும்</string>
     <string name="append_contexts_and_projects_on_end_of_task">உரை நடவடிக்கைகளுக்கு ஏற்ப ஒரு செயலின் முடிவில் சூழல்களையும் மற்றும் திட்டங்களையும் சேர்க்கவும்</string>
     <string name="rtl_rendering">RTL(வலமிருந்து இடம்) ஒழுங்கமைவு</string>
@@ -161,8 +156,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="resources">வளங்கள்</string>
     <string name="space_between_lines_in_percent">வரிகளுக்கு இடையேயான இடைவெளி சதவீதம்</string>
     <string name="line_spacing">வரி இடைவெளி</string>
-    <string name="archive_does_move_done_tasks">முடிக்கப்பட்ட செயல்களை அதே கோப்புறையில் உள்ள குறிப்பிட்ட ஆவணத்திற்கு நகர்த்தவும்</string>
-    <string name="sort_tasks_by_selected_order">தேர்ந்தெடுக்கப்பட்ட ஒழுங்கின் படி செயல்களை வரிசைப்படுத்து</string>
     <string name="special_key">சிறப்பு விசை</string>
     <string name="key_ctrl_a">அனைத்தையும் தேர்வு செய் (Ctrl+A)</string>
     <string name="start_on_bottom">கீழிருந்து தொடங்கு</string>
@@ -201,7 +194,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="community">சமூகம்</string>
     <string name="contributors_public_add_yourself_description">பங்களிப்பாளரின் விவரத்தை காண்பிக்கவும். தன்னுடைய பங்களிப்பை வழங்கிய பிறகு அந்த நபரின் விருப்பத்தின் படியே இங்கே அவரின் விவரங்கள் காண்பிக்கப்படவேண்டும்</string>
     <string name="descending">இறங்கு வரிசை</string>
-    <string name="ascending">ஏறுவரிசை</string>
     <string name="disable_spelling_underline">எழுத்து பிழைகளை அடிகோடிடுவதை முடக்கவும்</string>
     <string name="spellcheck_keyboard_suggestion_stay_red_underline_vanishes">விசைப்பலகை பரிந்துரைகள் இருக்கும், சிவப்பு அடிக்கோடு மறைந்துவிடும்</string>
     <string name="location">இடம்</string>
@@ -262,8 +254,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="internal_storage">அகச் சேமிப்பகம்</string>
     <string name="open_the_document_from_main_view">கீழேயுள்ள பிரதான பார்வை, கோப்பு உலாவி அல்லது துவக்கியிலிருந்து ஆவணத்தைத் திறக்கலாம். பகிரப்பட்ட உரையை சேர்ப்பதற்கும் Markor ல் ஒரு விருப்ப தேர்வு உள்ளது.</string>
     <string name="notebook_is_the_home_of_your_files">குறிப்புப்புத்தகம் என்பது ஒரு கோப்புறையாகும் Markor ஆவண உலாவியில் இருந்து செயலி தொடங்கும்போது இதை ஏற்றுகிறது. இதுவே உங்கள் ஆவணங்களின் முதன்மை கோப்புறையாகும்.</string>
-    <string name="quicknote_is_the_fastest_option_to_write_down_notes">QuickNote என்பது விரைவாக குறிப்புகளை எழுதுவதற்கு ஒரு தேர்வாகும். இது Markdown முறையில் உள்ள ஒரு ஆவணமாகும் இதன் இயல்புநிலை இடமானது &gt;Notebook/QuickNote.md&lt;, நீங்கள் இந்த ஆவணத்திற்கு வேறு ஒரு கோப்பு பாதையை அமைப்புகளில் மாற்ற முடியும்.</string>
-    <string name="todo_is_the_easiest_way_">உங்கள் செயல்களை நிர்வகிக்க ToDo வகை ஆவணத்தை பயன்படுத்தவும். அது  todo.txt முறையில் உள்ள ஆவணமாகும் இதன் இயல்புநிலை இடமானது &gt;Notebook/todo.txt&lt;, நீங்கள் இந்த ஆவணத்திற்கு வேறு ஒரு கோப்பு பாதையை அமைப்புகளில் மாற்ற முடியும்.</string>
     <string name="black">கருப்பு</string>
     <string name="white">வெள்ளை</string>
     <string name="view">பார்வை</string>
@@ -324,14 +314,12 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="link_color">இணைப்பின் நிறம்</string>
     <string name="add_context">சூழலை சேர்க்கவும்</string>
     <string name="add_project">திட்டத்தை சேர்க்கவும்</string>
-    <string name="archive_completed_tasks">முடிக்கப்பட்ட செயல்களை காப்பகத்தில் சேர்க்கவும்</string>
     <string name="create_new_file_or_folder">புதிய ஆவணம் அல்லது கோப்புறையை உருவாக்கவும்</string>
     <string name="choose_format">வடிவமைப்பை தேர்ந்தெடு</string>
     <string name="selected">தேர்வுசெய்யப்பட்டது</string>
     <string name="back">பின்னால்</string>
     <string name="expand_collapse">விரிவாக்கு / சுருக்கு</string>
     <string name="essential">அத்தியாவசியமானவை</string>
-    <string name="append_human_readable_uuid_to_new_tasks">மனிதர்கள் படிக்கக்கூடிய UUID ஐ புதிய செயல்களுடன் சேர்க்கவும்</string>
     <string name="action_order">நடவடிக்கைகளின் வரிசை</string>
     <string name="load_default_settings">இயல்புநிலை அமைப்புகளை ஏற்றுக</string>
     <string name="drag">இழுக்கவும்</string>

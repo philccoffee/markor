@@ -123,7 +123,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="archive">Archive</string>
     <string name="add_task">Add task</string>
     <string name="add_x_witharg">Add %s</string>
-    <string name="document_to_be_loaded_and_saved_as_witharg">Document to be loaded and saved as "%s"</string>
     <string name="save_or_not">Do you want to save the changes you made?</string>
     <string name="reload_or_not">Do you want to abandon the changes and reload?</string>
     <string name="refresh">Refresh</string>
@@ -134,8 +133,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="files_and_folders">Files and folders</string>
     <string name="document_browser">Document browser</string>
     <string name="file_browser">File Browser</string>
-    <string name="set_due_date">Set due date</string>
-    <string name="insert_replace_date">Insert date</string>
 
     <string name="create_note" needed="false">Create Note</string>
     <string name="special_documents" needed="false">Special documents</string>
@@ -177,8 +174,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
 
     <string name="underline_hex_color_wether_or_not_to_description__appspecific">Whether to underline hex color codes according to color</string>
     <string name="underline_hex_color_codes">Underline Hex Color Codes</string>
-    <string name="insert_current_date_when_starting_new_task">Insert the current date when starting a new task</string>
-    <string name="tasks_with_todays_date">Tasks with today\'s date</string>
     <string name="append_contexts_and_projects">Append contexts and projects</string>
     <string name="append_contexts_and_projects_on_end_of_task">Append contexts and projects at the end of a task when using the appropriate text action</string>
     <string name="rtl_rendering">RTL rendering</string>
@@ -193,8 +188,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="resources">Resources</string>
     <string name="space_between_lines_in_percent">Space between lines in percent</string>
     <string name="line_spacing">Line Spacing</string>
-    <string name="archive_does_move_done_tasks">Move done tasks to specified file in same folder</string>
-    <string name="sort_tasks_by_selected_order">Sort tasks by selected order</string>
     <string name="special_key">Special Key</string>
     <string name="asciidoc_special_key">Special AsciiDoc Content</string>
     <string name="key_page_up">Page Up (PgUp)</string>
@@ -264,7 +257,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="contributors_public_add_yourself_description">Show contributor info. Provide it to be shown here on an opt-in basis after contributing</string>
 
     <string name="descending">descending</string>
-    <string name="ascending">ascending</string>
 
     <string name="disable_spelling_underline">Disable spelling underline</string>
     <string name="spellcheck_keyboard_suggestion_stay_red_underline_vanishes">Keyboard suggestions stay, red underline vanishes</string>
@@ -334,8 +326,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="internal_storage">Internal storage</string>
     <string name="open_the_document_from_main_view">You can open the document from main view on the bottom, the file browser or the launcher. There is also a option to append text shared into Markor.</string>
     <string name="notebook_is_the_home_of_your_files">Notebook is the folder that Markor loads in the file browser when the app is started. It is the home folder of your files.</string>
-    <string name="quicknote_is_the_fastest_option_to_write_down_notes">QuickNote is the fastest option to write down notes. It is a file in Markdown format with default location &gt;Notebook/QuickNote.md&lt;, you can set a custom filepath in the settings.</string>
-    <string name="todo_is_the_easiest_way_">Manage your tasks with ToDo. It is a file in todo.txt format with default location &gt;Notebook/todo.txt&lt;, you can set a custom filepath in the settings.</string>
     <string name="black">Black</string>
     <string name="white">White</string>
     <string name="view">View</string>
@@ -407,7 +397,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="link_color">Link color</string>
     <string name="add_context">Add context</string>
     <string name="add_project">Add project</string>
-    <string name="archive_completed_tasks">Archive completed tasks</string>
     <string name="overline">Overline</string>
     <string name="superscript">Superscript</string>
     <string name="subscript">Subscript</string>
@@ -419,7 +408,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="back">Back</string>
     <string name="expand_collapse">Expand / Collapse</string>
     <string name="essential">Essential</string>
-    <string name="append_human_readable_uuid_to_new_tasks">Append human readable UUID to new tasks</string>
     <string name="action_order">Action order</string>
     <string name="show_bottom_action_bar">Show bottom action bar</string>
     <string name="toggle_action_visibility">Toggle action visibility</string>
@@ -447,7 +435,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="password_already_set_setting_a_new_password_will_overwrite">Password already set. Setting a new password will overwrite the existing password and you may not be able to access files anymore in case you forget the password.</string>
     <string name="code_block">Code block</string>
     <string name="add_completion_date">Add completion date</string>
-    <string name="add_completion_date_for_todos_when_marking_them_as_done">Add completion date for todos when marking them as done</string>
     <string name="file_description_format">File description format</string>
     <string name="file_description_format_dialog">Format for the description under each file in the file browser. Follows Android\'s SimpleDateFormat rules, with the addition of FS for showing file size. Leave blank to use the default format for your locale.\n\nExample input:\nFS yyyy MMM dd hh:mm:ss aa\nOutput format:\n30KB 2020 Mar 20 11:24:52 PM</string>
     <string name="loading_default_value">Loading default value</string>
@@ -482,25 +469,7 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="skip_all">Skip (all)</string>
     <string name="overwrite_all">Overwrite (all)</string>
     <string name="copy_move_conflict_message">\'%s\' already exists in %s</string>
-    <string name="additional_contexts_and_projects">Additional contexts and projects</string>
-    <string name="enter_space_seperated_contexts_and_projects_these_will">Enter space-separated @contexts and +projects. These will always be visible at todo.txt insert dialogs.</string>
     <string name="infinite">Infinite</string>
-    <string name="browse_by_project">Browse by project</string>
-    <string name="browse_by_context">Browse by context</string>
-    <string name="insert_project">Insert projects</string>
-    <string name="insert_context">Insert contexts</string>
-    <string name="browse_todo">Browse todo</string>
-    <string name="browse_by_priority">Browse by priority</string>
-    <string name="browse_by_due_date">Browse by due date</string>
-    <string name="due_overdue">Overdue</string>
-    <string name="due_today">Due today</string>
-    <string name="due_future">Due in future</string>
-    <string name="completed">Completed</string>
-    <string name="advanced_filtering">Advanced filtering</string>
-    <string name="match_any">Match Any</string>
-    <string name="match_all">Match All</string>
-    <string name="dynamic_notebook_root_links">Dynamic search for notebook root</string>
-    <string name="search_dynamically_for_notebook_root">In order to follow wiki links, dynamically search for the notebook.zim file to identify the root directory for the current notebook. Check this if you use multiple zim notebooks or the notebook directory set in the app does not correspond to your zim notebook.</string>
     <string name="share_into_format_prefix_for_text_shared">Format/Prefix for text shared into Markor. Follows Android\'s SimpleDateFormat rules.\n\nUse the placeholder {{text}} to position the shared text. If not specified, the shared text is appended and the format used as a prefix.</string>
     <string name="share_into_format">Share into - Format</string>
     <string name="attachment_folder_name">Attachment folder name</string>
@@ -511,7 +480,6 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="error_could_not_open_file">Error: Could not open file.</string>
     <string name="document_error_clip">Error encountered: Text copied to clipboard.</string>
     <string name="wont_save_min_length">Files with fewer than %d characters not saved automatically in order to prevent data loss.</string>
-    <string name="advanced_filtering_help"><![CDATA[<small><a href="https://www.github.com/gsantner/markor/discussions/1940">Advanced filtering syntax</a></small>]]></string>
     <string name="filter">Filter</string>
     <string name="text_case">Text Case</string>
     <string name="toggle_case">Toggle Case (Case→CASE→case)</string>
@@ -522,4 +490,31 @@ work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
     <string name="static_cursor">Static cursor</string>
     <string name="disable_cursor_blinking">Disable cursor blinking</string>
     <string name="folder_local">Folder local</string>
+
+    <!-- Encrypted archive workspace -->
+    <string name="sevenzip_workspace_title">ZIP Workspace</string>
+    <string name="sevenzip_workspace_summary">Open a password protected ZIP archive and edit its content</string>
+    <string name="sevenzip_workspace_missing">Workspace is not available. Please open the archive again.</string>
+    <string name="sevenzip_select_archive">Select ZIP archive</string>
+    <string name="sevenzip_password_title">Password required</string>
+    <string name="sevenzip_password_message">Enter the password for %s</string>
+    <string name="sevenzip_password_hint">Password</string>
+    <string name="sevenzip_extracting">Extracting archive…</string>
+    <string name="sevenzip_extract_failed_title">Could not extract archive</string>
+    <string name="sevenzip_unavailable_title">Archive support unavailable</string>
+    <string name="sevenzip_unavailable_message">Encrypted ZIP support is not available in this build.</string>
+    <string name="sevenzip_pack">Pack</string>
+    <string name="sevenzip_pack_empty_workspace">Nothing to pack — the workspace is empty.</string>
+    <string name="sevenzip_pack_success_title">Packed successfully</string>
+    <string name="sevenzip_pack_success_message">Created %s
+The workspace will be cleared now.</string>
+    <string name="sevenzip_pack_failed_title">Could not pack workspace</string>
+    <string name="sevenzip_unpack">Unpack</string>
+    <string name="sevenzip_unpacking">Unpacking archive…</string>
+    <string name="sevenzip_unpack_success">Archive unpacked</string>
+    <string name="sevenzip_unpack_failed">Could not unpack archive</string>
+    <string name="sevenzip_packing">Packing workspace…</string>
+    <string name="sevenzip_no_picker">No file picker available on this device</string>
+    <string name="sevenzip_pack_password_title">Password for the new archive</string>
+    <string name="sevenzip_pack_password_message">Leave empty to create an unencrypted archive.</string>
 </resources>
